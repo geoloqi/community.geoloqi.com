@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>crashes leaving GPS function running - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/27/crashes-leaving-gps-function-running/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_index" class="Vanilla Discussion Index ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/bug-reports" class="TabLink">Bug Reports</a></li>
+   </ul>
+   <div class="SubTab">crashes leaving GPS function running</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_27">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/91/George">George</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/27/crashes-leaving-gps-function-running/p1" class="Permalink" name="Item_1" rel="nofollow">February 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana;"><span style="font-size: 10pt;">My Geoloqi ver 20120223 running on a 3Gs iphone crashed but the GPS functionality is still running making the phone very hot and killing the battery. Tried restarting then exiting Geoloqi as well as restarting the phone but the GPS functionality is still going. I exited all programs and restarted the phone again and still no luck. The GPS icon is still showing, the phone is getting really hot and the battery is running down extremely quickly.</span><span style="font-size: 10pt;">&nbsp;PLEASE help ASAP</span></span>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>4 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/27/crashes-leaving-gps-function-running?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/27/crashes-leaving-gps-function-running?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_48">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/48#Comment_48" class="Permalink" name="Item_2" rel="nofollow">February 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			George,<div><br></div><div>I'm sorry to hear about your issues with the app. Before I get in to the details, first allow me to point out that at any point you can prevent Geoloqi from accessing your location by going to the iPhone's "Settings" app and revoking location privileges for Geoloqi.</div><div><br></div><div>Now, for the details. When the app is in "battery-safe" mode, you will see the location icon in the top bar, but that doesn't necessarily mean the GPS is on. The iPhone has the ability to use background location without using GPS by watching for changes in cell phone towers, etc.</div><div><br></div><div>We will make sure to do some more tests with an iPhone 3GS (most of our recent tests are on the iPhone 4 and 4S) and will look in to this issue. Thanks for pointing this out to us!</div><div><br></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_49">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/91/George">George</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/49#Comment_49" class="Permalink" name="Item_3" rel="nofollow">February 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div>Thanks for your quick response. I was really surprised to link up with anyone over the weekend.&nbsp;</div><div><br></div>I will try changing the location services in the setting as you suggest. Not sure though why the location service icon should be showing though if there are no programs running. My biggest concern is that the battery is running down very quickly, and the phone is quite hot.&nbsp;<div><br></div><div>I will let you know if I make any progress.</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_50">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/50#Comment_50" class="Permalink" name="Item_4" rel="nofollow">February 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			iOS 4 introduced the capability for iPhone apps to be registered for location updates even when they are not running.This doesn't necessarily mean the GPS itself is on, because the phone has the capability to receive location updates via wifi or cell tower changes.<div><br></div><div>You can read more on Apple's documentation page:&nbsp;<a href="https://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html" target="_blank" rel="nofollow">https://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html</a></div><div><br></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_51">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/91/George">George</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/51#Comment_51" class="Permalink" name="Item_5" rel="nofollow">February 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana;"><span style="font-size: 10pt;">Thank you for the lead - I was successful in turning off the location services for the program - the icon disappeared from the menu bar.&nbsp;</span></span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">Turning the location services back on for Geoloqi and the icon showed up in the menu bar even though the program is not running.</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">I turned the phone off and on and the icon still appeared in the bar as soon as I allowed Geoloqi access to location services - again the program is not running.&nbsp;</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">I apologize that I seem to be creating a problem for you with this. Is there any information from the phone that I can provide you that would be helpful.</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div><span style="font-family: Arial, Verdana;"><span style="font-size: 10pt;">FYI - the crash happened twice - I think I&nbsp;</span><span style="font-size: 13px;">inadvertently</span><span style="font-size: 10pt;">&nbsp;"pulled down" the summary screen (not sure what this is really called) and the program crashed - I allowed the phone to send the information when the program restarted - hopefully that will help with the trouble shooting.&nbsp;</span></span></div><div><span style="font-family: Arial, Verdana;"><span style="font-size: 10pt;"><br></span></span></div><div><span style="font-family: Arial, Verdana;"><span style="font-size: 10pt;">feel free to contact me at 636-686-0005 if I can provide any information that will be helpful for you in trouble shooting the issue.</span></span></div>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2F27%2Fcrashes-leaving-gps-function-running" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1 Active"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               February 2012            </li>
+                        <li>
+               <strong><a href="/profile/91/George" class="UserLink">George</a></strong>
+               February 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="27" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f240419bf91" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="51" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="Z0VC8JJ3AXXM" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/27/crashes-leaving-gps-function-running" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

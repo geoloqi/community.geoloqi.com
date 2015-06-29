@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Geoloqi 20120219 version removes helpful features - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/42/geoloqi-20120219-version-removes-helpful-features/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F113">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">Geoloqi 20120219 version removes helpful features</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_42">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/188/MYHRi1h0Juy3U2jCM">MYHRi1h0Juy3U2jCM</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/42/geoloqi-20120219-version-removes-helpful-features/p1" class="Permalink" name="Item_1" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I have upgraded to the latest iphone app version, and for my situation it appears that you have removed some very useful features that ruined the ability to use the app in locations with limited cell data service:<br>Example situation - I have used the previous version of your app on my iphone while riding a dirtbike in the LA to Barstow to Vegas two day dirt bike ride. My role in the ride was to offer aid to any injured riders and repairs to their equipment.&nbsp; Using your app, I was able to have a record of my location throughout the day available to anyone who logged into my geoloqi map.&nbsp; This allowed others to return to the exact location of an injured rider to transport them.&nbsp; <br>1. The phone was charging during the ride to allow it to work all day.&nbsp; <br>2. I set the app to create a location point every 2 minutes while I was moving, and then to try to upload it to the server every 5 minutes.&nbsp; <br>3. I sent the link to my location map to my coworkers and they could see both my current location AND the track of where I had been during the complete day (which was the most useful feature).&nbsp; With the limited (only every 2 minutes) frequency of creating a location point, people who logged in could see a long track showing my location during the entire 9 hour ride since the max number of track points was not exceeded throughout the day.<br>4.&nbsp; Key feature was even when I was out of cell phone range, your app would create a location point every 2 minutes.&nbsp; Then upon returning to an area with cell phone coverage all of the previous points would be updated.<br><br>I then tried to do the same thing with the new version of the Iphone app:<br>Option 1 - set to Battery Tracking mode - During a ride in an area with limited cell phone coverage, only 4 location points were captured during the entire day.&nbsp; Since this mode appears to rely on movement based on cell phone tower changes, it would not record any location points when out of cell phone tower range.<br>Option 2 - Realtime - Records tons of location points and uploads them constantly.&nbsp; However, because there is so many location points there was only a tiny length of track shown on the website (maybe 15 minutes of location data).&nbsp; All data for where I was previous in the day was unavailable!<br>Option 3 - Custom set to 5 or 10 min rate limit - Uploaded location points to the server every 5 or 10 minutes, but there was no way to throttle it from recording many location points per minute (like I could in the previous version!).&nbsp; Hence the website was updated at a slower rate, but there were still 100's of points being uploaded.&nbsp; So again, the max length of the track I could see on the website was maybe a half hour.<br><br>In the latest version of the software:<br>1.&nbsp; What is the max number of track points that are stored and displayed on the geoloqi map?&nbsp; Is there any way that this number of points can be increased?<br>2.&nbsp; Is there any way to limit the rate that track points are created so that the overall length of the track shown on the website can be extended to show locations for an entire day (or two)?<br>3.&nbsp; Failing all of the above, can I please have access to the previous version of the Geoloqi app so that I can have something that works in my situation?<br><br>Thank you for your time.<br>Frank<br>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>6 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/113?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/113?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_89">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/89#Comment_89" class="Permalink" name="Item_2" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thanks for the detailed feedback, Frank.<div><br></div><div>We've found that most of our users did not take advantage of the fine-grained controls like you have, so we removed them from the app's Settings screen. <span style="font-size: 10pt;">However, if you go to the iPhone Settings app and click on Geoloqi, you should be able to configure the "Custom" preset values such as how often to record a data point.</span></div><div><span style="font-size: 10pt;"><br></span></div><div><span style="font-size: 10pt;">The Geoloqi map on the website by default only shows the last 500 points logged. If you click on "history" you'll be able to change the amount of data displayed, as well as retrieve history for other date ranges.</span></div><div><br></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_113">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/188/MYHRi1h0Juy3U2jCM">MYHRi1h0Juy3U2jCM</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/113#Comment_113" class="Permalink" name="Item_3" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thank you for the reply.&nbsp; I did not see the Geoloqi settings in the Iphone Settings app before, this is helpful!<br><br>Follow on questions:<br>1. Tracking Limit preset - This would be minimum time between track points?<br><br>2. Distance Filter preset - Min distance moved before storing a track point, got that one<br><br>3. Rate Limit Preset - Is this the min time between server calls to upload track points?<br>4. I only see options to adjust the battery saver and High resolution mode and no settings for "Custom"??&nbsp; It would be great to be able to set the tracking point storage rate and upload to server rate, but doesn't appear that I can?&nbsp; Since Battery saver uses celltowers to determine movement (which doesn't work out where there are no towers), I guess I am limited to adjusting the High Resolution values.<br>5. Since the High Resolution mode only gives me Distance Filter and Tracking Limit presets, every time a track point is stored it will try to upload to the server, right?<br><br>6. On the Geoloqi website, when i adjust the "history" length of data points, it allows me (when i am logged in) to see a longer history.&nbsp; However, are all people who follow my geoloqi link limited to just 500 points, or can I extend the number of points they can view also?<br><br>Thank you so much for your help.&nbsp; I want to ensure the next time I need to use your software, that I have it set optimally.<br>Frank<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_120">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/120#Comment_120" class="Permalink" name="Item_4" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			1. Yes, the tracking limit will prevent a point from being recorded more frequently than this.<div><br></div><div>2. Correct.</div><div><br></div><div>3. The rate limit controls how often the app will try to send data to the server. If the app hasn't sent data in this amount of time it will try.</div><div><br></div><div>4. Understood. I will see about adding back the options for custom mode.</div><div><br></div><div>5. Correct, hi-res mode tries to send data to the server in real-time. If there is no network connection it will buffer the data locally and send them up in a batch later.</div><div><br></div><div>6. People following your link are limited in the number of points that show up when they load the map. Unfortunately there isn't a way for you to adjust it on the site. If you wanted more customization options, you could use our <a rel="nofollow" href="https://developers.geoloqi.com/client-libraries/Javascript">Javascript SDK</a> and embed it on your own site. That would allow you to do even more customizations.</div><div><br></div><div>Hope this helps!</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_127">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/188/MYHRi1h0Juy3U2jCM">MYHRi1h0Juy3U2jCM</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/127#Comment_127" class="Permalink" name="Item_5" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p>Aaron,</p><p>Thanks for the feedback.&nbsp; I tried using the app again this weekend in an area without cell phone coverage and encountered a bug.</p><p>Settings - realtime mode, with settings/geoloqi set to distance filter of 200M and tracking limit of 1 min.&nbsp; Geoloqi app running in background on Iphone while music player active.</p><p>In the morning while in cell coverage area, it properly marked a track point every minute and uploaded to the&nbsp;server.&nbsp; </p><p>When I&nbsp;entered a no coverage area, it placed a track point in the queue every minute while moving (as expected) and I had about 75 points queued up.&nbsp; </p><p>However, when i re-entered a cell coverage area, Geoloqi never uploaded the queued points to the server.&nbsp;&nbsp; I verified I has internet connectivity and I left it run for an hour while driving and the data was never uploaded.&nbsp; I then tried switching from Realtime to Custom mode in an attempt to get the app operational.&nbsp; All points in the queue disappeared, and the app started uploading location points from my current location (all data since going out of cell phone coverage was lost).</p><p>In the previous version of the app, entering/leaving cell phone coverage areas worked perfectly.&nbsp; However, there appears to be a bug in the current version.</p><p>Thank you,</p><p>Frank</p>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_128">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/128#Comment_128" class="Permalink" name="Item_6" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thanks for the bug report. I will definitely take a look at why it's not sending the points when you get back into cell coverage.<div><br></div><div>I'm surprised to hear that you lost the data from when the app was offline. Can you show me on a map where you were when the data was lost, and give me a rough estimate of the time date and time so I can look for it in the logs? I'd like to check out what the server got around that time. Thanks!</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_132">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/188/MYHRi1h0Juy3U2jCM">MYHRi1h0Juy3U2jCM</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/132#Comment_132" class="Permalink" name="Item_7" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p>To be clear, the 75 queued points appeared to be wiped from the Geoloqi app when I switched from Realtime mode to Custom mode after I was back in cell phone coverage area for over an hour.&nbsp; (when switching to Custom mode, the queue was "wiped" at the phone and never uploaded to the server).&nbsp; </p><p>I was out of cell range when I&nbsp;did a loop north of La Canada Flintridge on Hwy 2.&nbsp; It tracked my arrival to the base of the mountain at 9 am 3/31, and then the online tracks picked up after I switched to Custom mode in the afternoon in Torrance, CA.&nbsp; </p><p>&nbsp;</p>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F113%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F113" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F113" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               April 2012            </li>
+                        <li>
+               <strong><a href="/profile/188/MYHRi1h0Juy3U2jCM" class="UserLink">MYHRi1h0Juy3U2jCM</a></strong>
+               April 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="42" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f24afd440f9" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="132" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="0JNOAAG162VU" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/113" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

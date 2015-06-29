@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>500 - Internal Server - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/130/500-internal-server/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F403">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">500 - Internal Server</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_130">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/456/4iNLA1j5bWLpk1q7x">4iNLA1j5bWLpk1q7x</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/130/500-internal-server/p1" class="Permalink" name="Item_1" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p>Hi,</p><p>I have been creating places using my application but all of sudden I am getting an error 500 - Internal Server error. The code was working one minute and just started&nbsp;giving the error the next minute.&nbsp;Could someone give any suggestions on this. Is this some kind of bug recently? </p>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>6 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/403?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/403?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_397">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/397#Comment_397" class="Permalink" name="Item_2" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			We just deployed a change which caused a few errors in certain place/update and place/create calls. Please try again and it should be fixed now.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_399">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/457/juyE21idKTDDCn1jm">juyE21idKTDDCn1jm</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/399#Comment_399" class="Permalink" name="Item_3" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p>Thanks Aaron!. It works now. Similarly, there is one more issue. I have few places in layer. Whenever I query for nearby places with a latitude and longitude, the response contains all the places in the layer and not just the ones near the location parameter I am passing. May I know if this is way the query is intended to work?</p><p>Thanks for your help!</p>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_400">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/400#Comment_400" class="Permalink" name="Item_4" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Can you give me the layer ID and let me know what parameters you are using with place/nearby so I can take a look at a few things?&nbsp;		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_402">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/457/juyE21idKTDDCn1jm">juyE21idKTDDCn1jm</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/402#Comment_402" class="Permalink" name="Item_5" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p>Sure, </p><p>Below is the query I am running</p><p><a rel="nofollow" href="https://api.geoloqi.com/1/place/nearby?latitude=47.6062095&amp;longtude=-122.33207&amp;layer_id=1RML&amp;distance=10000">https://api.geoloqi.com/1/place/nearby?latitude=47.6062095&amp;longtude=-122.33207&amp;layer_id=1RML&amp;distance=10000</a></p><p>I have 6 places in this layer "1RML" but all around latitude "25.715", longitude "-80.274". The above query pulls all these places in the result.</p><p>&nbsp;</p><p>Thanks</p>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_403">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/403#Comment_403" class="Permalink" name="Item_6" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			You're going to hate me for this, but here's the problem:<div><br></div><div>You called the "longitude" parameter "longtude" missing the "i".</div><div><br></div><div>Because of this, it doesn't use the latitude/longitude provided (since there is no longitude) and instead, uses the last location on your own account to search around.</div><div><br></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_404">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/457/juyE21idKTDDCn1jm">juyE21idKTDDCn1jm</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/404#Comment_404" class="Permalink" name="Item_7" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p>ahhhh. I hate myself. Sorry about the trouble. Since there was no error code returned I din't bother to check the query I was passing.</p><p>&nbsp;</p><p>Thanks and lot.</p>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F403%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F403" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F403" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               October 2012            </li>
+                        <li>
+               <strong><a href="/profile/457/juyE21idKTDDCn1jm" class="UserLink">juyE21idKTDDCn1jm</a></strong>
+               October 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="130" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f24a52d5fb4" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="404" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="PC4QFXF34L5A" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/403" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>What is the use of LQTrackerProfile and difference between different tracker profiles? - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_index" class="Vanilla Discussion Index ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">What is the use of LQTrackerProfile and difference between different tracker profiles?</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_89">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/347/Ui9xc1i2S3ucXe49">Ui9xc1i2S3ucXe49</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/89/what-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles/p1" class="Permalink" name="Item_1" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">Hi,</span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; I am using android sdk.I am setting&nbsp;tracker profile using trackerObject.setProfile(LQtrackerProfile newProfile). I am able to set off,passive,Logging tracker profiles.But what is difference between them.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; If i set logging mode then i will go to offline mode after some time i will connected to network in this case location points will updated to server.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Please any one tell me.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Thank you. &nbsp;</span></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>15 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/89/what-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles/p1?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/89/what-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles/p1?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_289">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>2</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/289#Comment_289" class="Permalink" name="Item_2" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Our mobile SDK supports five different tracking profiles for different use-cases. I've highlighted some of their features below:<br><br>- OFF: The tracker is off and will not request location updates or upload any data.<br>- ROUGH: The tracker will request infrequent location updates, generally this data is only useful for metro-level location (city or county size), although you may occasionally get a more accurate fix. This is useful for rough location tracking, when you want to save battery.<br>- ADAPTIVE/PASSIVE: The most dynamic profile, this will attempt to manage the device's battery-life for you. The goal being higher accuracy, more frequent updates when the device is near interesting places (geofences) and lower accuracy, less frequent updates when further away.<br>- LOGGING: The device will request very frequent, high-accuracy updates and send them in batches to the server. This is useful when real-time updates are not needed, but you want a high-resolution trail from the user.<br>- REAL-TIME: Similar to LOGGING, this profile will open a socket connection to the server and stream updates from the device in near real-time. This is for use-cases like MapAttack! when you need high-resolution real-time updates.<br><br>If you're using LOGGING or REAL-TIME modes you will need to manage the battery-life of your device on your own. You should turn off LOGGING/REAL-TIME when you don't need it, or drop into a more battery efficient profile (like ADAPTIVE or ROUGH).<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_296">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>2</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/296#Comment_296" class="Permalink" name="Item_3" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Ronald, all location data will be batched to the device and uploaded to the server when you have an active connection again *except* in the real-time profile. When using real-time the location data is sent immediately and discarded whether or not it was successfully sent.<br><br>So if you're using Rough, Adaptive, or Logging the data will be batched and sent when your device reconnects to the network.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_293">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/328/Ronald">Ronald</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/293#Comment_293" class="Permalink" name="Item_4" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi twaddington,<div><br></div><div>&nbsp; &nbsp; &nbsp;Thank you very much for replying.I will try latest android sdk.</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_294">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/328/Ronald">Ronald</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/294#Comment_294" class="Permalink" name="Item_5" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">Hi twaddington,</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">&nbsp;&nbsp;</div><div style="text-align: left;"><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; I have another question please clarify it.</span><span style="background-color: rgb(255, 255, 255); text-align: left;"><span style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; font-size: small;"><span style="line-height: 18px;">&nbsp;My device has&nbsp;WiFi&nbsp;network not&nbsp;data-connection&nbsp;i selected either Rough or Adaptive or Logging or Realtime, location points are updated in server, okay its fine.</span></span></span></div><div style="text-align: left;"><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div style="text-align: left;"><span style="background-color: rgb(255, 255, 255); text-align: left;"><span style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; font-size: small;"><span style="line-height: 18px;">&nbsp; &nbsp; I disconnected the&nbsp;WiFi&nbsp;network &nbsp;and set mode either&nbsp;</span></span></span><span style="background-color: rgb(255, 255, 255); font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; font-size: small; line-height: 18px;">&nbsp;</span><span style="background-color: rgb(255, 255, 255);"><span style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; font-size: small;"><span style="line-height: 18px;">Rough or Adaptive or Logging or Realtime, &nbsp;the location points are not updated to server,okay it is also fine.<span style="color: #000099;">After some time i connected to&nbsp;WiFi then old location points will update to server or not?&nbsp;</span></span></span></span></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><span style="line-height: 18px; text-align: left; background-color: rgb(255, 255, 255); font-size: small;">&nbsp;( if network drops out and later reconnects,no data is lost this is in sdk docs )</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_299">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/328/Ronald">Ronald</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/299#Comment_299" class="Permalink" name="Item_6" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi twaddington,<div><br></div><div>&nbsp; &nbsp; Thank you very much for giving reply.</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_300">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/328/Ronald">Ronald</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/300#Comment_300" class="Permalink" name="Item_7" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">Hi twaddington,</span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">&nbsp;</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">&nbsp; &nbsp; &nbsp;In my android app set to Logging when i have an active connection,yes this location data updated to server.</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">After some time my my active network drops and reconnects after 5 hours.<span style="color: #000099;">I checked in server whether location data is updated or not, when i am in inactive.No data was updated.I checked location data using python script.</span></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">python script:</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">&nbsp; &nbsp;&nbsp;g.get('location/history?count=500&amp;before=2012-07-19T23:59:59'):</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div><span style="font-family: Arial, Verdana; font-size: small;">Thank you&nbsp;very much.</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_301">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/301#Comment_301" class="Permalink" name="Item_8" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			You're saying you don't see the data? It may take some time after your network reconnects for it to upload the batched data. If the network connection is weak, the data may fail to upload, which means it will retry again later when your network signal is stronger.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_304">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/353/cKDVB1iU1UMG2Zvri">cKDVB1iU1UMG2Zvri</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/304#Comment_304" class="Permalink" name="Item_9" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Does it mean in Passive mode, i should define user's geofence other than the location coordinates so that user's can get a more accurate/timely notification ?&nbsp;		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_315">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/315#Comment_315" class="Permalink" name="Item_10" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I'm not sure what you mean by that. You can make the radius of the geofence larger to make sure it's triggered. Smaller geofences are sometimes more difficult to trigger if the user's device cannot get an accurate location fix.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_324">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/347/Ui9xc1i2S3ucXe49">Ui9xc1i2S3ucXe49</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/324#Comment_324" class="Permalink" name="Item_11" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">Hi twaddington,</span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp;i developed one app using your latest android sdk. I registered with username,i got&nbsp;access-token and i set tracker profile mode as ROUGH. In this scenario i got only last location but i did not get location history.Again I checked after one day,this time also i did not get location history.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Please tell me is ROUGH mode working fine ? and How ROUGH mode works ?</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">( I am living in metro level city )</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Thank you very much.</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_325">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/325#Comment_325" class="Permalink" name="Item_12" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			The ROUGH profile depends on the network location, so you must have a mobile network or wifi signal to receive any location fixes. It provides city or metro level location fixes, however you may occasionally get more accurate fixes if other applications are using the GPS. If you don't move around a lot you might only receive a single fix. This is because the device won't provide new location fixes to the Geoloqi SDK if it hasn't moved beyond a large radius. You should use ROUGH mode if you want high battery savings, but only need to know if the user is moving into or out of a city or metro sized region.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_326">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/347/Ui9xc1i2S3ucXe49">Ui9xc1i2S3ucXe49</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/326#Comment_326" class="Permalink" name="Item_13" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div><span style="color: #000099;">Hi twaddington,</span></div><div><span style="color: #000099;"><br></span></div><span style="color: #000099;">&nbsp;Thank You Very much for replying.</span>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_327">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/347/Ui9xc1i2S3ucXe49">Ui9xc1i2S3ucXe49</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/327#Comment_327" class="Permalink" name="Item_14" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">Hi twaddington,</span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; I set tracker profile mode as ADAPTIVE,location fixes are updated&nbsp;up-to&nbsp;ten minutes only.After i did not any updates in server.I am in activity connection,here no network drops.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Please tell me why this happens to me.</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_329">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/329#Comment_329" class="Permalink" name="Item_15" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			The ADAPTIVE profile will only send location fixes if you are moving around and near points of interest (geofences). If you're not moving around much or not near a geofence the device will ratchet down the GPS and stop sending location fixes. If you need more up to date location information use the LOGGING or REALTIME profiles.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_394">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/350/jeremytodter">jeremytodter</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/394#Comment_394" class="Permalink" name="Item_16" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi Twaddington<br><br>I'm jumping on the end of this one, just to clarify something, if you'd be so kind.<br><br>You mentioned above that we have to manage the battery ourselves if using LOGGING or REALTIME, does turning it on/off frequently require a 'startup' time for the coords to begin being logged again?&nbsp; <br><br>I'm using the iPhone SDK with Titanium.<br><br>Is there any way to create a CUSTOM profile as with the geoloqi app that allows us to keep tracking on but specifiy the frequency and tracking limit etc?&nbsp; If not, is there a plan to introduce this in upcoming releases?<br><br>What are you suggestions for conserving battery?&nbsp; I require accurate data, though not specifically in realtime, so I'm using LOGGING mode, though when running full-time it still drains the battery after 6 or so hours.<br><br>Thanks for your help.<br>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2F89%2Fwhat-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles%2Fp1" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/353/cKDVB1iU1UMG2Zvri" class="UserLink">cKDVB1iU1UMG2Zvri</a></strong>
+               July 2012            </li>
+                        <li>
+               <strong><a href="/profile/350/jeremytodter" class="UserLink">jeremytodter</a></strong>
+               September 2012            </li>
+                        <li>
+               <strong><a href="/profile/328/Ronald" class="UserLink">Ronald</a></strong>
+               July 2012            </li>
+                        <li>
+               <strong><a href="/profile/13/twaddington" class="UserLink">twaddington</a></strong>
+               July 2012            </li>
+                        <li>
+               <strong><a href="/profile/347/Ui9xc1i2S3ucXe49" class="UserLink">Ui9xc1i2S3ucXe49</a></strong>
+               July 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="89" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f249d4976b1" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="394" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="GUE1L1HICVAA" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/89/what-is-the-use-of-lqtrackerprofile-and-difference-between-different-tracker-profiles/p1" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

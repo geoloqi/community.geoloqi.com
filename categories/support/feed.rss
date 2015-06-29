@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+      <title>Support - Geoloqi Community</title>
+      <link>http://community.geoloqi.com/categories/support/feed.rss</link>
+      <pubDate>Sat, 28 Feb 15 14:25:11 -0800</pubDate>
+         <description>Support - Geoloqi Community</description>
+   <language>en-CA</language>
+   <atom:link href="/discussions/feed.rss" rel="self" type="application/rss+xml" />
+   <item>
+      <title>How to control the number of messages sent in a day?</title>
+      <link>http://community.geoloqi.com/discussion/3253/how-to-control-the-number-of-messages-sent-in-a-day</link>
+      <pubDate>Thu, 14 Nov 2013 16:16:01 -0800</pubDate>
+      <dc:creator>Concepto</dc:creator>
+      <guid isPermaLink="false">3253@/discussions</guid>
+      <description><![CDATA[We want to limit the number of push notifications sent in a day using the Places and triggers already set<div><br /></div><div>Is it possible to control the number of messages sent by day and activate the messages the next date?</div><div><br /></div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>Message and callback on trigger?</title>
+      <link>http://community.geoloqi.com/discussion/3211/message-and-callback-on-trigger</link>
+      <pubDate>Fri, 11 Oct 2013 03:43:54 -0700</pubDate>
+      <dc:creator>rgbinnovation</dc:creator>
+      <guid isPermaLink="false">3211@/discussions</guid>
+      <description><![CDATA[Hi everyone  is it possible to have a trigger send out a push notification (message) as well as calling a URL? I have objects in a remote database that are linked to each trigger, and I want change the objects in my database depending on which trigger was fired.<br /><br />For example, all objects linked to trigger A should have a value increments by one,<br /><br />However, I still want the push notification to go out,<br /><br />Any thoughts or ideas?<br /><br />Regards,<br /><br />Bob]]></description>
+   </item>
+   <item>
+      <title>message/send working only in Dev mode</title>
+      <link>http://community.geoloqi.com/discussion/170/messagesend-working-only-in-dev-mode</link>
+      <pubDate>Thu, 28 Feb 2013 13:22:31 -0800</pubDate>
+      <dc:creator>HPdRa1juJ2ePMcF8</dc:creator>
+      <guid isPermaLink="false">170@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Hi,</span><div><br /></div><div>I'm trying to use message/send to test by push notification on iOS.</div><div>I'm receiving the push on&nbsp;<span><b>LQPushNotificationModeDev</b> mode, but not on&nbsp;</span><span><b>LQPushNotificationModeLive</b></span><span> mode.</span></div><div><span><br /></span></div><div><span>What I changed to use Live mode:</span></div><div><span><br /></span></div><div><span>- I set&nbsp;</span><span><b>LQPushNotificationModeLive</b> inside the&nbsp;</span><span><b>didRegisterForRemoteNotificationsWithDeviceToken</b></span><span> method.</span></div><div><span>- Using an <b>AdHoc Distribution Provisioning Profile</b>.</span></div><div><span>- Production push certificate of the same Bundle ID was uploaded to the Geoloqi portal, inside my app settings.</span></div><div><span><br /></span></div><div><span>Am I missing anything?</span></div><div><br /></div><div><span>This is the parameters I'm sending on message/send:</span></div><div><b><span>user_id:&nbsp;</span><span style="font-family: Arial, Verdana; font-size: small;">2PfV</span></b></div><div><span style="font-family: Arial, Verdana; font-size: small;"><b>layer_id:&nbsp;4Lk2</b></span></div><div><span><b>text: test</b></span></div><div><span><br /></span></div><div><span>Maybe the problem is that my device was already subscribed to this layer on Dev mode?</span></div><div><span>How can I be sure that it's working on production?</span></div><div><span><br /></span></div><div><span>Thanks</span></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />]]></description>
+   </item>
+   <item>
+      <title>Concerned that Geoloqi&#039;s own app, Geonotes, does not work well</title>
+      <link>http://community.geoloqi.com/discussion/380/concerned-that-geoloqi039s-own-app-geonotes-does-not-work-well</link>
+      <pubDate>Tue, 06 Aug 2013 23:53:45 -0700</pubDate>
+      <dc:creator>ruPuJ1m9fQUwWf3pv</dc:creator>
+      <guid isPermaLink="false">380@/discussions</guid>
+      <description><![CDATA[<span>I have been in the designing phase of development and now I'm ready to start actually developing it. I was planning on using Geoloqi's API but I have tested Geonotes on 3 different phones (iPhone 5, GS3, and Galaxy Note 2) each with 3 Geonotes and I only had 1 actually work. This is really concerning if the app that Geoloqi has developed itself doesn't work.</span><br /><br /><span>I don't know what kind of response I am looking for but maybe someone can help. Maybe there was an outage of some kind, I'm not sure, but I was really looking forward to using Geoloqi and have a big part of my app based around it.</span>]]></description>
+   </item>
+   <item>
+      <title>General Questions</title>
+      <link>http://community.geoloqi.com/discussion/1/general-questions</link>
+      <pubDate>Sun, 27 Nov 2011 19:30:33 -0800</pubDate>
+      <dc:creator>caseorganic</dc:creator>
+      <guid isPermaLink="false">1@/discussions</guid>
+      <description><![CDATA[New to Geoloqi? Ask a question here!<br />]]></description>
+   </item>
+   <item>
+      <title>How Does Geonote works?</title>
+      <link>http://community.geoloqi.com/discussion/246/how-does-geonote-works</link>
+      <pubDate>Fri, 19 Jul 2013 00:42:23 -0700</pubDate>
+      <dc:creator>rajababar</dc:creator>
+      <guid isPermaLink="false">246@/discussions</guid>
+      <description><![CDATA[I have created a geo note at some lat lng, what i was expecting that when ever i entered that region i will receive that geonote as a Push Message but its not working like that, can any one explain how geonote supposed to be work? why im not receiving the note when user enter the note bounds? where as i tried triggers they are working perfectly alright]]></description>
+   </item>
+   <item>
+      <title>Geoloqi SDK</title>
+      <link>http://community.geoloqi.com/discussion/5/geoloqi-sdk</link>
+      <pubDate>Sun, 27 Nov 2011 19:34:23 -0800</pubDate>
+      <dc:creator>caseorganic</dc:creator>
+      <guid isPermaLink="false">5@/discussions</guid>
+      <description><![CDATA[Using the SDK? Ask questions and share info here.]]></description>
+   </item>
+   <item>
+      <title>Cannot run GeoloqiAndroidSdk (github) demo</title>
+      <link>http://community.geoloqi.com/discussion/215/cannot-run-geoloqiandroidsdk-github-demo</link>
+      <pubDate>Tue, 09 Jul 2013 01:08:13 -0700</pubDate>
+      <dc:creator>s3techummi</dc:creator>
+      <guid isPermaLink="false">215@/discussions</guid>
+      <description><![CDATA[I'm trying to setup the in GeoloqiSdk in my project but i cannot successfully run??i have followed the github guide but still failed?? Please help]]></description>
+   </item>
+   <item>
+      <title>Streaming Server/JS</title>
+      <link>http://community.geoloqi.com/discussion/213/streaming-serverjs</link>
+      <pubDate>Fri, 05 Jul 2013 12:52:05 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">213@/discussions</guid>
+      <description><![CDATA[if I have an JS app (Titanium) that subscribes to the group, does it automatically send the location update?<div><br /></div><div>If I have a JS page on a web server to process the updates, do I have to authenticate first? I am using the sample code and the trip example works but I cannot get a group to work.</div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>IOS tracker sample not working properly</title>
+      <link>http://community.geoloqi.com/discussion/196/ios-tracker-sample-not-working-properly</link>
+      <pubDate>Mon, 29 Apr 2013 06:43:24 -0700</pubDate>
+      <dc:creator>ABHIGNA</dc:creator>
+      <guid isPermaLink="false">196@/discussions</guid>
+      <description><![CDATA[when &nbsp;i run app on my ios device my current location is not displayed and when i click on Register button it gives me an error message that&nbsp;<b>"</b><b>Failed to register for push notifications: Error Domain=NSCocoaErrorDomain Code=3000 "no valid 'aps-environment' entitlement string found for application</b><b>" &nbsp; and </b><span>when i click on Get Location button i get the following Error &nbsp;"&nbsp;</span><b>Error: Error Domain=api.geoloqi.com Code=404 "Not Found" UserInfo=0x1cd85ef0 {NSUnderlyingError=0x1cd58930 "The operation couldn‚Äôt be completed. (api.geoloqi.com error 404.)", NSLocalizedDescription=Not Found}</b><span>" &nbsp;also &nbsp;i have attached image that how TrackerSampleApp &nbsp;looks when app loads. can anybody please help me out? ... Thanks. &nbsp;&nbsp;</span>]]></description>
+   </item>
+   <item>
+      <title>How to get the user_id to send message?</title>
+      <link>http://community.geoloqi.com/discussion/160/how-to-get-the-user_id-to-send-message</link>
+      <pubDate>Wed, 16 Jan 2013 21:53:25 -0800</pubDate>
+      <dc:creator>37FX31jor5WahLhz</dc:creator>
+      <guid isPermaLink="false">160@/discussions</guid>
+      <description><![CDATA[Hi,<div><br /></div><div>I've just create a new account and I'm trying to send myself a message with the console to my Geoloqi iPhone app.</div><div><br /></div><div>I'm able to send myself a message with the map. I can't with the console since I don't have the user_id. I can't find anything in the API to retrieve it.</div><div><br /></div><div>Can someone point me in the right direction?</div><div><br /></div><div>Thanks</div>]]></description>
+   </item>
+   <item>
+      <title>Invalid Client Credentials</title>
+      <link>http://community.geoloqi.com/discussion/74/invalid-client-credentials</link>
+      <pubDate>Wed, 13 Jun 2012 14:16:07 -0700</pubDate>
+      <dc:creator>Nu8Dc1iM3ga1kqqQp</dc:creator>
+      <guid isPermaLink="false">74@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Hi -</span><div><br /></div><div>So I downloaded and installed the Sample iPhone app, updated the LQConfig.h file, and successfully ran the app on my phone.&nbsp;</div><div><br /></div><div>I also downloaded the Geoloqi SDK PHP library and used the demo_oauth.php demo as the basis of my web application and added the "<a rel="nofollow" href="https://developers.geoloqi.com/api/user/list" title="API/user/list">user/list</a><span>&nbsp;(GET)"</span>&nbsp;API call. However, I got the following error:</div><div><br /></div><div><span>"Response for GET user/list:</span><br /><span>stdClass Object ( [error] =&gt; invalid_client_credentials )"</span></div><div><span><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Can anyone explain why this may be happening, even though my phone should be considered a "user" because it installed the app.&nbsp;</span></div>]]></description>
+   </item>
+   <item>
+      <title>Push Notification Setup on Android using Titanium module</title>
+      <link>http://community.geoloqi.com/discussion/108/push-notification-setup-on-android-using-titanium-module</link>
+      <pubDate>Thu, 16 Aug 2012 11:33:41 -0700</pubDate>
+      <dc:creator>ytwater</dc:creator>
+      <guid isPermaLink="false">108@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">I'm having trouble getting push&nbsp;notifications&nbsp;working with the Geoloqi module in&nbsp;titanium.</span><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've followed the guide here:&nbsp;<a rel="nofollow" href="https://developers.geoloqi.com/android/push-notifications">https://developers.geoloqi.com/android/push-notifications</a></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've edited my application and pasted my Google API Key, but I don't know if it gets saved. &nbsp;When I re-edit the application, the field is blanked out again.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've tried creating a user with the "device_id" and "mac", but those never get saved to the user.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've tried the example app.js under \modules\android\ti.geoloqi\1.0\example\app.js</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Here's my modified app. &nbsp;I'm trying to create a user that registers a device, which I assume is required to get push&nbsp;notifications.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Pasted here:&nbsp;<a rel="nofollow" href="http://pastebin.com/YnhqCHw7">http://pastebin.com/YnhqCHw7</a></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div>]]></description>
+   </item>
+   <item>
+      <title>Not triggering on leave</title>
+      <link>http://community.geoloqi.com/discussion/201/not-triggering-on-leave</link>
+      <pubDate>Wed, 08 May 2013 02:12:11 -0700</pubDate>
+      <dc:creator>hRo6a1k5USP5VCviW</dc:creator>
+      <guid isPermaLink="false">201@/discussions</guid>
+      <description><![CDATA[Hello,<div><br /></div><div>I'm have two triggers for a place: on enter and on leave. The first trigger, on enter, is&nbsp;<span>always</span><span>&nbsp;fired correctly but the other one isn't fired at all.</span></div><div>Is there anything that I might be missing here?</div><div><br /></div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>adding users to layers</title>
+      <link>http://community.geoloqi.com/discussion/200/adding-users-to-layers</link>
+      <pubDate>Tue, 07 May 2013 17:10:54 -0700</pubDate>
+      <dc:creator>jrojas</dc:creator>
+      <guid isPermaLink="false">200@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Hi, Im having a weird problem regarding adding new users to a layer:</span><div><br />After I create a public layer from the console, I add a user to it, using the php API.&nbsp;</div><div><br /></div><div>The code snipet would be:</div><div><br /><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">		</span>// make request</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">		</span>$geoloqi = GeoloqiApi::createWithAccessToken(GEOLOQI_APPLICATION_ACCESS_TOKEN);</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">		</span>$a = $geoloqi-&gt;post('user/create_anon', array(</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">			</span>'device_id' &nbsp;<span class="Apple-tab-span">		</span>=&gt; my_device_id,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">			</span>'client_secret'<span class="Apple-tab-span">		</span>=&gt; GEOLOQI_API_SECRET,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">			</span>'key' &nbsp; &nbsp; &nbsp;<span class="Apple-tab-span">			</span>=&gt; the_id_of_the_user_in_my_database,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">			</span>'client_id' <span class="Apple-tab-span">			</span>=&gt; GEOLOQI_API_KEY,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">			</span>'layers_ids' &nbsp; <span class="Apple-tab-span">		</span>=&gt; layer_id_provided_by_the_create_layer_api</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span class="Apple-tab-span">		</span>));</span></div></div><div><br />After that, I open the application, hopeing that when I access the following service, my device/user would show up</div><div><br /></div><div><span style="font-family: Arial, Verdana; font-size: small;">layer/users/</span><span>layer_id_provided_by_the_create_layer_api</span></div><div><span><br /></span></div><div><span>but nothing appears there.</span></div><div><span><br /></span></div><div><span>Could there be a problem with the registration?</span></div><div><span><br /></span></div><div><span>The answer Im getting is:</span></div><blockquote><div><span style="font-family: Courier New; font-size: small;"><br /></span></div><div><pre><span style="font-family: Arial;"><span style="font-size: small;">object(stdClass)#</span><span style="font-size: small;">39 (9) {</span></span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["display_name"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  string(9) "Anonymous"</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["username"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  string(18) "_C3dha1kZAdeue8KM3"</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["user_id"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  string(4) "3aeQ"</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["is_anonymous"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  int(1)</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["key"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  string(4) "9428"</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["access_token"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  string(46) "bd8ac-b06202b3c51a27079b31c353176b69b06922ccf8"</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["scope"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  NULL</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["password_reset_token"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  string(18) "_qSqg71kZAdehDZTWK"</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  ["extra"]=&gt;</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  object(stdClass)#36 (0) {</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">  }</span></pre></div><div><pre><span style="font-family: Arial; font-size: small;">}</span></pre></div></blockquote><span style="font-family: Arial; font-size: small;"><span>To initialize my device, Im using:</span></span><div><span style="font-family: Arial; font-size: small;"><span><br /></span></span><div><span style="font-family: Arial; font-size: small;"><span><span class="Apple-tab-span">	</span>LQSharedPreferences.setClientId(context, Utils.GEOLOQUI_CLIENT_ID);</span></span></div><div><span class="Apple-tab-span">	</span>LQSharedPreferences.setClientSecret(context, Utils.GEOLOQUI_CLIENT_SECRET);</div><div><span class="Apple-tab-span">	</span>LQSharedPreferences.setSessionInitUserKey(context, userId)</div><div><span class="Apple-tab-span">	</span>Intent intent = new Intent(context, LQService.class);</div><div><span class="Apple-tab-span">	</span>context.startService(intent);</div></div><div><span style="font-family: Arial; font-size: small;"><span><br /></span></span></div><div><span style="font-family: Arial; font-size: small;"><span>Do you think there might be something wrong?</span></span></div><div><span style="font-family: Arial; font-size: small;"><span><br /></span></span></div><div><span style="font-family: Arial; font-size: small;"><span><br /></span></span></div><div><span style="font-family: Arial; font-size: small;"><span>Also, when I ask the api for the users in my app, it gives me an array with the following element:</span><br /><br /><span>{<br />            "user_id": "3agS",<br />            "username": "_B39DJ1kZC0vdThcvf",<br />            "name": "",<br />            "display_name": "Anonymous",<br />            "bio": "",<br />            "website": "",<br />            "timezone": "UTC",<br />            "twitter": false,<br />            "profile_image": "https:\/\/s3.amazonaws.com\/geoloqi\/blank-profile-image-blue.png",<br />            "is_anonymous": 1,<br />            "has_custom_username": 0,<br />            "has_push_token": 0,<br />            "public_location": 0,<br />            "public_geonotes": 1,<br />            "public_geonote_email": 1,<br />            "key": "9437",<br />            "timezone_offset": "+0000",<br />            "email": "",<br />            "extra": {},<br />            "phone": "",<br />            "devices": {<br />                "apns_dev": [],<br />                "apns_live": [],<br />                "c2dm": [],<br />                "gcm": []<br />            }<br /><br />which makes reference to my user.&nbsp;</span></span></div><div><span style="font-family: Arial; font-size: small;"><span>Is it ok that is doesnt have a gcm device?</span></span></div>]]></description>
+   </item>
+   <item>
+      <title>Android Geoloqi - Demo/flow for real-time location sharing/sending-receiving</title>
+      <link>http://community.geoloqi.com/discussion/198/android-geoloqi-demoflow-for-real-time-location-sharingsending-receiving</link>
+      <pubDate>Thu, 02 May 2013 04:04:29 -0700</pubDate>
+      <dc:creator>5ZC611kU8yyc5tcpb</dc:creator>
+      <guid isPermaLink="false">198@/discussions</guid>
+      <description><![CDATA[Hi,<br /><br />&nbsp;&nbsp; I am looking for some flow or<b> demo for real-time location sharing</b> and show it on receivers map. But not able to get any hint or flow. <br /><br />&nbsp;&nbsp; Any help is appreciated. <br />]]></description>
+   </item>
+   <item>
+      <title>Android Goeloqi - while creating link getting error - 400,missing_auth</title>
+      <link>http://community.geoloqi.com/discussion/197/android-goeloqi-while-creating-link-getting-error-400missing_auth</link>
+      <pubDate>Thu, 02 May 2013 03:44:41 -0700</pubDate>
+      <dc:creator>5ZC611kU8yyc5tcpb</dc:creator>
+      <guid isPermaLink="false">197@/discussions</guid>
+      <description><![CDATA[<br />Hi,<br />&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; I&nbsp; want to develop <b>android mbl app</b> that tracks continues location and send it to selected user. I have requested <b>createAnonymousUserAccount</b> and get it successfully.<br /><br />&nbsp;&nbsp; But request to<span style="text-decoration: underline;"><b> link/create</b></span> i an getting following error. And i am not able to find proper flow to use geoloqi in android development so any help for that are appreciated. <br /><br />&nbsp;&nbsp; <b>{"error_code":400,"error":"missing_auth","error_description":"No access token or client authentication was found"}</b><br /><br />&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; HttpClient httpclient = new DefaultHttpClient();<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; HttpPost httppost = new HttpPost(<span style="text-decoration: underline;"><b>"<a href="https://api.geoloqi.com/1/link/create" target="_blank" rel="nofollow">https://api.geoloqi.com/1/link/create</a></b></span>");<br /><br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; try {<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; httppost.setHeader("<b>Authorization</b>",pref.getString("token","1"));<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Log.v("-----pref.getStr----------", "pref.getString "+pref.getString("token","1"));<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; httppost.setHeader("Content-Type",&nbsp; "application/json");<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; HttpResponse response = httpclient.execute(httppost);<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; final int statusCode = response.getStatusLine().getStatusCode();<br /><br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (statusCode != HttpStatus.SC_OK) {<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Log.w(getClass().getSimpleName(), "Error " + statusCode + " for URL ");<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br /><br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; HttpEntity getResponseEntity = response.getEntity();<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (getResponseEntity != null) {<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Log.v("----respose----", EntityUtils.toString(getResponseEntity)+"--------------");<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; catch (IOException e) {<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Log.w(getClass().getSimpleName(), "Error for URL ", e);<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; });<br /><br />Thanks.<br />]]></description>
+   </item>
+   <item>
+      <title>batch/run for location/history, possible?</title>
+      <link>http://community.geoloqi.com/discussion/192/batchrun-for-locationhistory-possible</link>
+      <pubDate>Mon, 15 Apr 2013 16:18:15 -0700</pubDate>
+      <dc:creator>jeremytodter</dc:creator>
+      <guid isPermaLink="false">192@/discussions</guid>
+      <description><![CDATA[Hi<br /><br />I'm currently looping through a number of users and fetching their location/history (after a different timestamp for each user) in order to do some processing on the data.&nbsp; <br /><br />Using php/curl, first fetching the users access token via oauth/token, and then firing off the location/history as that user.<br /><br />Is there a more efficient way of doing it, either via batch/run (I can't seem to get it working, though due to different access token for each user is it possible?), or is there a way to get all users location/history in one call?<br /><br />Your help would be appreciated.<br /><br />Thanks<br />]]></description>
+   </item>
+   <item>
+      <title>Paging use</title>
+      <link>http://community.geoloqi.com/discussion/189/paging-use</link>
+      <pubDate>Tue, 09 Apr 2013 16:10:40 -0700</pubDate>
+      <dc:creator>jago86</dc:creator>
+      <guid isPermaLink="false">189@/discussions</guid>
+      <description><![CDATA[Hi,<div><br /></div><div>Some body can show me how can I paginate my places. I'm using place/list but I can't show the second page, just the first whit the 25 firts places.</div><div><br /></div><div>Thanks</div>]]></description>
+   </item>
+   <item>
+      <title>Titanium Android Module</title>
+      <link>http://community.geoloqi.com/discussion/188/titanium-android-module</link>
+      <pubDate>Mon, 08 Apr 2013 08:35:05 -0700</pubDate>
+      <dc:creator>axMu21kMLgdSi1vw9</dc:creator>
+      <guid isPermaLink="false">188@/discussions</guid>
+      <description><![CDATA[Hi I am using the titanium android module version 1.0. I am connecting to geoLoqi and subscribing the device to the layer i have for that app which contains two triggers. &nbsp;I have also enabled mock locations to test this out.<div>Now when i compile on the device, the init and subscribe work perfectly but i never recieve any push notification.</div><div>When using the DDMS it is giving me the follow error upon quiting the app</div><div><br /></div><div><div><b>04-08 17:33:21.360: E/ActivityThread(4197): Activity com.webitstudios.mobileapp.WebitMobileActivity has leaked ServiceConnection ti.geoloqi.GeoloqiModule$1@410da6d8 that was originally bound here</b></div></div><div><br /></div><div>when i use the debuging console on Geoloqi i see that it is connectig as well and that the subscribtions is shown as true.</div><div><br /></div><div>am i missing something?&nbsp;</div>]]></description>
+   </item>
+   <item>
+      <title>Get Other Near by User&#039;s Location</title>
+      <link>http://community.geoloqi.com/discussion/185/get-other-near-by-user039s-location</link>
+      <pubDate>Mon, 01 Apr 2013 07:11:45 -0700</pubDate>
+      <dc:creator>GJpMg1kGyURoZZpM</dc:creator>
+      <guid isPermaLink="false">185@/discussions</guid>
+      <description><![CDATA[<div><span>Hi, I just wanted to know whether we can find the location of users other then the current user from which I am logged in to&nbsp;<br /></span><span class="s1">[</span><span class="s2">LQSession</span><span class="s1"> </span><span>savedSession</span><span class="s1">]</span><span>.</span></div><div><div>I want to fetch the location of all users who are using my app <span>and after fetching the location i have to show it on map.</span></div></div><div><span><br /></span></div><div><span>Kindly add you feedback.</span></div><div><span><br /></span></div><div><span>Thanks</span></div>]]></description>
+   </item>
+   <item>
+      <title>No Location Updates When App is Closed</title>
+      <link>http://community.geoloqi.com/discussion/178/no-location-updates-when-app-is-closed</link>
+      <pubDate>Sun, 17 Mar 2013 16:49:34 -0700</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">178@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">All,</span><div><br /></div><div><div>App Name: BairFinder</div><div>Platform: iOS</div><div>Geoloqi Titanium Module: Tested both 1.1 and 1.2</div></div><div>Devices: iPhone 4, iPhone 4S, iOS 6.12</div><div><br /></div><div>This week I get no location updates when the application is closed. I have tried setting my profile to both REALTIME (which worked last week) and ADAPTIVE. In each case now I see in my logs that the reported profile (using getProfile) is correct. When I check the status using getStatus, I see NOTTRACKING.</div><div><br /></div><div>My geoloqi.init() code is in a gist at the link below.</div><div><span style="font-family: Arial, Verdana; font-size: small;"><a href="https://gist.github.com/bp4151/47514a9a608de61db57f" target="_blank" rel="nofollow">https://gist.github.com/bp4151/47514a9a608de61db57f</a></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Any suggestions?</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Thanks,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Bruce</span></div>]]></description>
+   </item>
+   <item>
+      <title>Place Creation Suddenly Failing with 403</title>
+      <link>http://community.geoloqi.com/discussion/177/place-creation-suddenly-failing-with-403</link>
+      <pubDate>Fri, 15 Mar 2013 04:15:36 -0700</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">177@/discussions</guid>
+      <description><![CDATA[<div>All,</div><div><br /></div><div>I know you are all incredibly busy, but I am in a real bind and need some quick help. We have a presentation Monday and our app is the centerpiece.&nbsp;</div><div><br /></div><div>I was testing this morning and suddenly I am getting an access denied 403 error when creating places, which means I have no ability to create alerts. I see the init, location updates, successful layer subscription, and then when the user tries to create the place, I get the 403. &nbsp;</div><div><br /></div><div>There have been no changes to my geoloqi code in several weeks, and everything was working as late as a few days ago. In fact, I just tested the same functionality on my wife's phone using a much older version of the app which I know worked, and no place was created.</div><div><br /></div><div>If I could please get some kind of assistance over the weekend from someone at Geoloqi, I would really appreciate it. I just need the places to get created and alerts and triggers to work again.&nbsp;</div><div><br /></div><div>App Name: BairFinder</div><div>Platform: iOS</div><div>Geoloqi Titanium Module: Tested both 1.1 and 1.2</div><div>LayerID:&nbsp;<span>3w6d</span></div><div><span><br /></span></div><div><span>account/profile (I assume this is from geoloqi.init)</span></div><div><span>{<br />  "user_id": "2XE7",<br />  "username": "_2SgbP1kA02xEYY_XG",<br />  "name": "",<br />  "display_name": "Anonymous",<br />  "bio": "",<br />  "website": "",<br />  "timezone": "UTC",<br />  "twitter": false,<br />  "profile_image": "<a href="https://s3.amazonaws.com/geoloqi/blank-profile-image-orange.png" target="_blank" rel="nofollow">https://s3.amazonaws.com/geoloqi/blank-profile-image-orange.png</a>",<br />  "is_anonymous": 1,<br />  "has_custom_username": 0,<br />  "has_push_token": 1,<br />  "public_location": 0,<br />  "public_geonotes": 1,<br />  "public_geonote_email": 1,<br />  "timezone_offset": "+0000",<br />  "email": "",<br />  "extra": {},<br />  "phone": ""<br />}</span></div><div><br /></div><div>account/set_apn_token response</div><div><span>{<br />  "push_badge": true,<br />  "device_id": "ad09e1856d4b82a6c339d38696bae529",<br />  "dev": "1",<br />  "push_alert": true,<br />  "push_sound": true,<br />  "token": "454180c04996bb896a97334f6816a502ed9e813b302add8becb5bf9d137f2c21"<br />}</span></div><div><span><br /></span></div><div><span>layer subscription response</span></div><div><span>{<br />  "layer_id": "3w6d",<br />  "subscribed": 1<br />}</span></div><div><span><br /></span></div><div><span>place/create request</span></div><div><span>{<br />  "name": "Lilac Street, Pittsburgh, Allegheny, Pennsylvania, 15217, United States of America",<br />  "longitude": -79.92926025390625,<br />  "latitude": 40.42350769042969,<br />  "description": "Bob Bigboy has been reported missing as of Fri Mar 15 2013 07:09:20 GMT-0400 (EDT)",<br />  "layer_id": "3w6d",<br />  "radius": 500<br />}</span></div><div><span><span style="font-size: small;"><br /></span></span></div><div><span style="font-family: Arial; font-size: small;">EDIT---</span></div><div><span style="font-family: Arial; font-size: small;">I Uploaded a success log and failure log from TestFlight in case you needed more data</span></div><br /><br /><br /><br /><br /><br /><br /><br />]]></description>
+   </item>
+   <item>
+      <title>Filtering objects by key/value in &quot;extra&quot; property</title>
+      <link>http://community.geoloqi.com/discussion/173/filtering-objects-by-keyvalue-in-extra-property</link>
+      <pubDate>Wed, 06 Mar 2013 00:49:55 -0800</pubDate>
+      <dc:creator>googlyeyes</dc:creator>
+      <guid isPermaLink="false">173@/discussions</guid>
+      <description><![CDATA[<div class="linestyle1 colourline"><span>&nbsp;I'm having some trouble with the "extra" property</span></div><div class="linestyle1 colourline">&nbsp;I'm unable to filter objects using the key/values within "extra"</div><div class="linestyle1 colourline"><br /></div><div class="linestyle2 colourline">For example filtering out the places within a specific category<span class="hyperlink-channel">&nbsp; ==&gt;</span>&nbsp;&nbsp;extra: {&nbsp;category: "traffic"&nbsp;&nbsp;&nbsp;}</div><div class="linestyle1 colourline"><br /></div><div class="linestyle1 colourline">This is not working for me:</div><div class="linestyle1 colourline">layer_id=43fu&amp;limit=10000&amp;offset=0&amp;latitude=25.033611&amp;longitude=121.565000&amp;distance=500.000000&amp;category="traffic"&nbsp;</div><div class="linestyle2 colourline"><br /></div><div class="linestyle2 colourline">Any ideas?</div>]]></description>
+   </item>
+   <item>
+      <title>message/send works, trigger/run/:id doesn&#039;t (only on android)... and then it does again!</title>
+      <link>http://community.geoloqi.com/discussion/172/messagesend-works-triggerrunid-doesn039t-only-on-android...-and-then-it-does-again</link>
+      <pubDate>Mon, 04 Mar 2013 00:43:51 -0800</pubDate>
+      <dc:creator>rX3K41k32TpjQZsXi</dc:creator>
+      <guid isPermaLink="false">172@/discussions</guid>
+      <description><![CDATA[<div>I'm having problems with receiving triggers on android. It worked a day ago, and then it stopped, and now it works again.</div><div><br /></div>Sanity checks:<div>1. everything works fine on iOS</div><div>2. the user is verified to be subscribed to the layer</div><div>3. the trigger is verified to be subscribed to the layer</div><div>4. the trigger is not one_time</div><div>5. message/send works with the android client</div><div>6. trigger/run/id does not fire on android client.</div><div><br /></div><div>(update: and then it works again!)</div><div><br /></div><div>What causes this? could it be something I did without noticing? Are there problems somewhere at Geoloqi?</div><div><br /></div><div>Thanks.</div><div><br /></div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>Message/Send works, Message/Broadcast does not</title>
+      <link>http://community.geoloqi.com/discussion/140/messagesend-works-messagebroadcast-does-not</link>
+      <pubDate>Fri, 26 Oct 2012 08:24:50 -0700</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">140@/discussions</guid>
+      <description><![CDATA[All,<div><br /></div><div>After months of trying to get broadcast messages to work, I finally ran a test. When I open my app, I create a default layer and immediately subscribe the anonymous user to the layer. For my test, I added a Message/Send call to the logged in anonymous user to see if there were any issues with my certificates. There are not. The message showed up on my phone. Triggers work as well. The Message/Broadcast does not work, even though I am inside the radius created for the message. I get a 200 response back that tells me 1 subscriber was sent a message, but nothing arrives on my phone.&nbsp;</div><div><br /></div><div>1) Since the triggers work and the message to the logged in user works, I would assume there is nothing wrong with the certificates or the code.&nbsp;</div><div>2) Since the broadcast message status indicates 200 and shows me subscribed users that are included, I would imagine there is nothing wrong with the code. The problem must lie elsewhere.&nbsp;</div><div>3) I thought initially that the message/broadcast function might exclude sending to the sender, but when I sent the broadcast message while both my wife and I had the app open, she received no message either.</div><div><br /></div><div>Thanks in advance for the help,&nbsp;</div><div>Bruce</div>]]></description>
+   </item>
+   <item>
+      <title>TrackerSampleViewController returns 404 on &quot;/location/context&quot;</title>
+      <link>http://community.geoloqi.com/discussion/167/trackersampleviewcontroller-returns-404-on-locationcontext</link>
+      <pubDate>Sat, 23 Feb 2013 22:40:55 -0800</pubDate>
+      <dc:creator>rX3K41k32TpjQZsXi</dc:creator>
+      <guid isPermaLink="false">167@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Courier New; font-size: small;">I'm trying to run the Sample project. Pretty sure I didn't change anything but setting my API Key, and changing some basic project parameters so I can code sign it for my device (bundle identifier, signing identities).</span><div><span style="font-family: Courier New;"><br /></span></div><div><span style="font-family: Courier New;">The project compiles and runs, and I can also see the console messages stating that something is working (anonymous user is created, location is updated, etc.)</span></div><div><span style="font-family: Courier New;"><br /></span></div><div><span style="font-family: Courier New;">However, when I try to get a location ("Get Location" button), I get this response:</span></div><div><span style="font-family: Courier New;"><br /></span></div><div><br /><br /><br /><br /><br /><br /><br /><br /><p class="p1"><b>2013-02-24 08:30:44:660 test[5000:707] (LQSession.m:630) API Request: <a href="https://api.geoloqi.com/1/location/context" target="_blank" rel="nofollow">https://api.geoloqi.com/1/location/context</a></b></p><br /><p class="p2"><b></b><br /></p><br /><p class="p1"><b>2013-02-24 08:30:44:661 test[5000:707] (LQSession.m:641) Error: Error Domain=api.geoloqi.com Code=404 "Not Found" UserInfo=0x1726f0 {NSUnderlyingError=0x17ed80 "The operation couldn‚Äôt be completed. (api.geoloqi.com error 404.)", NSLocalizedDescription=Not Found}</b></p><br /><p class="p2"><b></b><br /></p><br /><p class="p1"><b>2013-02-24 08:30:44.662 test[5000:707] Response: {</b></p><br /><p class="p1"><b>&nbsp; &nbsp; error = "not_found";</b></p><br /><p class="p1"><b>&nbsp; &nbsp; "error_code" = 404;</b></p><br /><p class="p1"><b>&nbsp; &nbsp; "error_description" = "Not Found";</b></p><br /><p class="p1"><b>} error:Error Domain=api.geoloqi.com Code=404 "Not Found" UserInfo=0x1726f0 {NSUnderlyingError=0x17ed80 "The operation couldn’t be completed. (api.geoloqi.com error 404.)", NSLocalizedDescription=Not Found}</b></p></div><div><span style="font-family: Courier New;"><br /></span></div><p><span>What might have cause this? Am I changing something in the project configuration that I shouldn't have?</span></p><div><p class="p1"><span><span style="font-family: Courier New;">Thanks!</span></span></p></div>]]></description>
+   </item>
+   <item>
+      <title>Geoloqi Titanium Module - Android Callback?</title>
+      <link>http://community.geoloqi.com/discussion/165/geoloqi-titanium-module-android-callback</link>
+      <pubDate>Sat, 16 Feb 2013 13:13:20 -0800</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">165@/discussions</guid>
+      <description><![CDATA[Hi Support<div><br /></div><div>I am testing out the Android GCM Push capabilities and believe I have everything hooked up. I am using the Geoloqi Titanium module 1.1 with Titanium SDK 3.0. I have followed all the sample code and tutorials to the letter, and was able to see my layer subscription in the debug screen, and sent from the Geoloqi console successfully. The result showed one device registered when I sent, but I did not see anything come through on my phone.&nbsp;</div><div><br /></div><div>All I have is the geoloqi.init call. I am assuming I am missing a callback beyond the onSuccess and onFailure callbacks, but I can't seem to find any additional documentation or samples for Titanium. Did I miss something?</div><div><br /></div><div>Thanks,</div><div>Bruce</div><div><br /></div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>No Messages or Triggers on Other Devices</title>
+      <link>http://community.geoloqi.com/discussion/162/no-messages-or-triggers-on-other-devices</link>
+      <pubDate>Tue, 29 Jan 2013 17:16:31 -0800</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">162@/discussions</guid>
+      <description><![CDATA[All,<div><br /></div><div>I am able to send and receive on my own device, but when I test other devices, the messages and triggers don't appear. Here is what I am noticing</div><div><br /></div><div>On my device, I register successfully, then I create my default layer using a key, so I see the 409 status, Then I subscribe to the default layer. No problem</div><div>On my other device, I do the exact same thing, but the layer ID comes back as a different ID. When I send the message, I see a response that only one device is in the area, and the message shows up on my phone, despite my other device sitting right next to me. I would think the message would go to both devices considering they are in the same area.&nbsp;</div><div><br /></div><div>This is happening with all my testers with iOS 5.1.1 (same as mine) iOS 6, and iOS 6.0.1.</div><div><br /></div><div>Any suggestions?</div><div><br /></div><div>Thanks,</div><div>Bruce</div>]]></description>
+   </item>
+   <item>
+      <title>Update Trigger or Place Radius</title>
+      <link>http://community.geoloqi.com/discussion/161/update-trigger-or-place-radius</link>
+      <pubDate>Mon, 28 Jan 2013 18:26:58 -0800</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">161@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Hi Support,</span><div><br /></div><div>Now that I am able to set up triggers and messages, I want my users to be able to change the alert radius after my place and trigger have been created.&nbsp;</div><div>1) Do I need to change the radius on both the trigger and place?&nbsp;</div><div>2) Since trigger does not appear to have an update API call, do I need to kill the trigger and recreate it?</div><div>3) What parameters are required to update the place? I am using Titanium and my geoloqi update call never seems to make it to the server, All other calls do. I am not even seeing this hit the debugger, so I am wondering if this is failing in the plugin. &nbsp;</div><div><span><br /></span></div><div><span>Any and all suggestions greatly appreciated!</span></div><div><p class="p1">geoloqi.session.postRequest("place/update/" + placeID, {<br />		radius : radius<br />	},<br />	{<br />		onSucess : function(data){<br />			alert('Alert update was successful!');<br />		},<br />		onFailure : function(data){<br />			alert('There was a problem updating the area of your alert.')<br />		}<br />	});</p></div>]]></description>
+   </item>
+   </channel>
+</rss>

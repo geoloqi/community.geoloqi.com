@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>No Location Updates When App is Closed - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/178/no-location-updates-when-app-is-closed/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_index" class="Vanilla Discussion Index ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">No Location Updates When App is Closed</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_178">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/372/bp4151">bp4151</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/178/no-location-updates-when-app-is-closed/p1" class="Permalink" name="Item_1" rel="nofollow">March 2013</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">All,</span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 10pt; vertical-align: baseline; background-color: rgb(255, 255, 255);">App Name: BairFinder</div><div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 10pt; vertical-align: baseline; background-color: rgb(255, 255, 255);">Platform: iOS</div><div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 10pt; vertical-align: baseline; background-color: rgb(255, 255, 255);">Geoloqi Titanium Module: Tested both 1.1 and 1.2</div></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: rgb(255, 255, 255);">Devices: iPhone 4, iPhone 4S, iOS 6.12</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">This week I get no location updates when the application is closed. I have tried setting my profile to both REALTIME (which worked last week) and ADAPTIVE. In each case now I see in my logs that the reported profile (using getProfile) is correct. When I check the status using getStatus, I see NOTTRACKING.</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">My geoloqi.init() code is in a gist at the link below.</div><div><span style="font-family: Arial, Verdana; font-size: small;"><a href="https://gist.github.com/bp4151/47514a9a608de61db57f" target="_blank" rel="nofollow">https://gist.github.com/bp4151/47514a9a608de61db57f</a></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Any suggestions?</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Thanks,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Bruce</span></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>1 Comment</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/178/no-location-updates-when-app-is-closed?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/178/no-location-updates-when-app-is-closed?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_490">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/372/bp4151">bp4151</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/490#Comment_490" class="Permalink" name="Item_2" rel="nofollow">March 2013</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">Looks like I am waiting for the next Appcelerator Titanium release...</span><div><span style="font-family: Arial, Verdana; font-size: small;">For anyone having this problem using Appcelerator Titanium, I found this on their site:</span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div><div><span style="font-family: Arial, Verdana; font-size: small;"><a rel="nofollow" href="https://jira.appcelerator.org/browse/TIMOB-11178?focusedCommentId=222599&amp;page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-222599">Titanium Issue 11178</a></span></div></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><p style="margin: 0px; padding: 0px; font-family: Arial, FreeSans, Helvetica, sans-serif; font-size: 13px; line-height: 17px;">"In iOS 6 Apple has made breaking changes to Core Location by implementing the AutoPause API. The AutoPause API pauses the location updates when an application goes into the background and applies to a couple of criteria (i.e. user not moving, no location fix, user discontinues activity). To accurately handle pause events Apple requests to help better predicting whether or not to pause location updates setting an activity type (i.e. navigation, fitness, other).</p><p style="margin: 0px; padding: 0px; font-family: Arial, FreeSans, Helvetica, sans-serif; font-size: 13px; line-height: 17px;">The AutoPause API is enabled by default when an application is compiled against iOS 6.</p><p style="margin: 0px; padding: 0px; font-family: Arial, FreeSans, Helvetica, sans-serif; font-size: 13px; line-height: 17px;">The problem is that at this moment we, Appcelerator Mobile developers, are not able to configure the AutoPause API and updates are always paused when going into the background, even when UIBackgroundModes is set to location and the application is allowed to keep running in the background for longer then 10 minutes. This breaks the working of any tracking or navigation app and renders it useless.</p><p style="margin: 0px; padding: 0px; font-family: Arial, FreeSans, Helvetica, sans-serif; font-size: 13px; line-height: 17px;">The easy fix is to disable the AutoPause API for now by always setting 'pausesLocationUpdatesAutomatically' to NO. Location updates will be send even when the app goes in the background, like it used to work in &lt; iOS 6. Hopefully this could be implemented in the 2.1.3 GA release, so we can resubmit our app to the App Store.</p><p style="margin: 0px; padding: 0px; font-family: Arial, FreeSans, Helvetica, sans-serif; font-size: 13px; line-height: 17px;">The best case scenario is to implement the AutoPause API by adding pausesLocationUpdatesAutomatically and activityType properties (CLLocationManager.h), the CLActivityType constants (CLLocationManager.h) and the pause event listeners (CLLocationManagerDelegate.h) to Ti.Geolocation(.iPhone)"</p></div></div>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2F178%2Fno-location-updates-when-app-is-closed" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/372/bp4151" class="UserLink">bp4151</a></strong>
+               March 2013            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="178" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f23fad1e16f" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="490" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="SNHDBP1RO63H" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/178/no-location-updates-when-app-is-closed" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

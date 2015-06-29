@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>onPushMessageReceived() not called in Android app. - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/59/onpushmessagereceived-not-called-in-android-app./p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F185">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/bug-reports" class="TabLink">Bug Reports</a></li>
+   </ul>
+   <div class="SubTab">onPushMessageReceived() not called in Android app.</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_59">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/274/6cTdc1i7gGPpPqk7y">6cTdc1i7gGPpPqk7y</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/59/onpushmessagereceived-not-called-in-android-app./p1" class="Permalink" name="Item_1" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div>I used Geoloqi API in android app. I created trigger by sending lat,long,radius.To notify user i used C2DM Push Notification.I created a class implementing&nbsp;</div><div>LQBroadcastReceiver.Three methods are calling but onPushMessageReceived() method is not called.please help.i given all permissions in manifest file</div><div><br></div><div>Main Activity class:</div><div>GeoloqiExampleActivity.java</div><div><div>public class GeoloqiExampleActivity extends Activity{</div><div><span class="Apple-tab-span" style="white-space:pre">	</span>String TAG = "Geoloqi Example";</div><div><span class="Apple-tab-span" style="white-space:pre">	</span></div><div><span class="Apple-tab-span" style="white-space:pre">	</span> private LQService mService;</div><div><span class="Apple-tab-span" style="white-space:pre">	</span> private boolean mBound;</div><div><span class="Apple-tab-span" style="white-space:pre">	</span> GeoReceiver geoReceiver = new GeoReceiver();</div><div><span class="Apple-tab-span" style="white-space:pre">	</span></div><div>&nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; public void onCreate(Bundle savedInstanceState) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; super.onCreate(savedInstanceState);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; setContentView(R.layout.main);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; Intent intent = new Intent(this, LQService.class);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; intent.setAction(LQService.ACTION_DEFAULT);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; intent.putExtra(LQService.EXTRA_SDK_ID, Constants.LQ_SDK_ID);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; intent.putExtra(LQService.EXTRA_SDK_SECRET, Constants.LQ_SDK_SECRET);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; intent.putExtra(LQService.EXTRA_C2DM_SENDER, Constants.LQ_C2DM_SENDER);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; startService(intent);</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; public void onResume() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; super.onResume();</div><div>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // Bind to the tracking service so we can call public methods on it</div><div>&nbsp; &nbsp; &nbsp; &nbsp; Intent intent = new Intent(this, LQService.class);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; bindService(intent, mConnection, 0);</div><div>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // Wire up the sample location receiver</div><div>&nbsp; &nbsp; &nbsp; &nbsp; final IntentFilter filter = new IntentFilter();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; filter.addAction(GeoReceiver.ACTION_LOCATION_CHANGED);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; filter.addAction(GeoReceiver.ACTION_TRACKER_PROFILE_CHANGED);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; filter.addAction(GeoReceiver.ACTION_LOCATION_UPLOADED);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; filter.addAction(GeoReceiver.ACTION_PUSH_MESSAGE_RECEIVED);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; registerReceiver(geoReceiver, filter);</div><div>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; public void onPause() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; super.onPause();</div><div>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // Unbind from LQService</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if (mBound) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; unbindService(mConnection);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mBound = false;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // Unregister our location receiver</div><div>&nbsp; &nbsp; &nbsp; &nbsp; unregisterReceiver(geoReceiver);</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp; public void sendRequest() {</div><div>&nbsp; &nbsp; <span class="Apple-tab-span" style="white-space:pre">	</span></div><div>&nbsp; &nbsp; <span class="Apple-tab-span" style="white-space:pre">	</span> // Performing a Trigger POST request</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if (mService != null) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span class="Apple-tab-span" style="white-space:pre">	</span>//Toast.makeText(this, "Service Avaialble", Toast.LENGTH_LONG).show();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LQSession session = mService.getSession();</div><div>&nbsp; &nbsp; &nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Build your request</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; JSONObject trigger = new JSONObject();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trigger.put("text", "Popcornapps");</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trigger.put("type", "message");</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trigger.put("latitude", 17.42557068);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trigger.put("longitude", &nbsp;78.42022822);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trigger.put("radius", 1000);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trigger.put("place_name", "Banjara Hills");</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } catch (JSONException e) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Log.d(TAG, e.getMessage());</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Send the request</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; session.runPostRequest("trigger/create", trigger, new OnRunApiRequestListener() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; public void onSuccess(LQSession session, HttpResponse response) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Toast.makeText(GeoloqiExampleActivity.this, "Success", Toast.LENGTH_LONG).show();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try {</div><div><span class="Apple-tab-span" style="white-space:pre">						</span>BufferedReader reader=new BufferedReader(new InputStreamReader(response.getEntity().getContent(), "UTF-8"));</div><div><span class="Apple-tab-span" style="white-space:pre">					</span> &nbsp; &nbsp;StringBuilder s = new StringBuilder();</div><div><span class="Apple-tab-span" style="white-space:pre">					</span> &nbsp; &nbsp;String sResponse;</div><div><span class="Apple-tab-span" style="white-space:pre">						</span>while ((sResponse = reader.readLine()) != null) {</div><div><span class="Apple-tab-span" style="white-space:pre">							</span>s = s.append(sResponse);</div><div><span class="Apple-tab-span" style="white-space:pre">						</span>}</div><div><span class="Apple-tab-span" style="white-space:pre">					</span>String result = s.toString().trim();</div><div><span class="Apple-tab-span" style="white-space:pre">					</span>Log.d("On success Result", result);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } catch (UnsupportedEncodingException e) {</div><div><span class="Apple-tab-span" style="white-space:pre">						</span>e.printStackTrace();</div><div><span class="Apple-tab-span" style="white-space:pre">					</span>} catch (IllegalStateException e) {</div><div><span class="Apple-tab-span" style="white-space:pre">						</span>e.printStackTrace();</div><div><span class="Apple-tab-span" style="white-space:pre">					</span>} catch (IOException e) {</div><div><span class="Apple-tab-span" style="white-space:pre">						</span>e.printStackTrace();</div><div><span class="Apple-tab-span" style="white-space:pre">					</span>}</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; public void onFailure(LQSession session, LQException e) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Log.e(TAG, e.getMessage());</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Toast.makeText(GeoloqiExampleActivity.this, "Fail", Toast.LENGTH_LONG).show();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; public void onComplete(LQSession session, HttpResponse response, StatusLine status) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="Apple-tab-span" style="white-space:pre">	</span>Toast.makeText(GeoloqiExampleActivity.this, "Complete", Toast.LENGTH_LONG).show();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</div><div>&nbsp; &nbsp; &nbsp; &nbsp; } else{</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="Apple-tab-span" style="white-space:pre">	</span>Toast.makeText(this, "service null", Toast.LENGTH_LONG).show();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div><span class="Apple-tab-span" style="white-space:pre">	</span>}</div><div><br></div><div><br></div><div><span class="Apple-tab-span" style="white-space:pre">	</span> /** Defines callbacks for service binding, passed to bindService() */</div><div>&nbsp; &nbsp; private ServiceConnection mConnection = new ServiceConnection() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; &nbsp; &nbsp; public void onServiceConnected(ComponentName name, IBinder service) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // We've bound to LocalService, cast the IBinder and get LocalService instance.</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LQBinder binder = (LQBinder) service;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mService = binder.getService();</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mBound = true;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sendRequest();//Sending API Request</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } catch (ClassCastException e) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div><br></div><div>&nbsp; &nbsp; &nbsp; &nbsp; <a rel="nofollow" href="/profile/Override">@Override</a></div><div>&nbsp; &nbsp; &nbsp; &nbsp; public void onServiceDisconnected(ComponentName name) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mBound = false;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; };</div><div>}</div></div><div><br></div><div><br></div><div><br></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>13 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/185?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/185?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_163">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/163#Comment_163" class="Permalink" name="Item_2" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hey, there's a bug in the currently posted version of the Android SDK that causes onPushMessageReceived to not be called. I have a fix for it in the upstream version of the SDK. I should be pushing that out today or tomorrow with some additional changes. Hold tight!<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_169">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/169#Comment_169" class="Permalink" name="Item_3" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hey thanks for your patience! We've updated the SDK and the sample app! You can check out the changes here:<br><br><br><br><a href="https://github.com/geoloqi/Geoloqi-Android-SDK" target="_blank" rel="nofollow">https://github.com/geoloqi/Geoloqi-Android-SDK</a><br><br><a href="https://github.com/geoloqi/Geoloqi-Android-SDK/downloads" target="_blank" rel="nofollow">https://github.com/geoloqi/Geoloqi-Android-SDK/downloads</a><br><br><br><br>Let us know if you have any questions.<br><br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_170">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/274/6cTdc1i7gGPpPqk7y">6cTdc1i7gGPpPqk7y</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/170#Comment_170" class="Permalink" name="Item_4" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thanks Tristan,<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;I tried new SDk but its saying Unable resolve this variables&nbsp;</div><div>1.EXTRA_SDK_ID</div><div>2.EXTRA_SDK_SECRET</div><div>3.EXTRA_C2DM_SENDER in&nbsp;LQService class(Added to Build Path also).</div><div>please check it...</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_171">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/171#Comment_171" class="Permalink" name="Item_5" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			We made some changes to how the service is initialized, hopefully to make it easier. Please read the new credentials section of the readme and let me know if you have any more questions:<br><br><a href="https://github.com/geoloqi/Geoloqi-Android-SDK#credentials" target="_blank" rel="nofollow">https://github.com/geoloqi/Geoloqi-Android-SDK#credentials</a><br><br>Essentially you need to copy the geoloqi.properties.sample file into /assets/geoloqi.properties and update it with your API key and secret. You can then remove the extras you were passing to the service.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_174">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/274/6cTdc1i7gGPpPqk7y">6cTdc1i7gGPpPqk7y</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/174#Comment_174" class="Permalink" name="Item_6" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi Triston,&nbsp;<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I ve used latest Geoloqi APi still&nbsp;onPushMessageReceived() method is not called. To view my code please refer following URL:<div><a rel="nofollow" href="http://stackoverflow.com/questions/10780080/why-onpushmessagereceived-is-not-called-in-geoloqi-api-in-android">http://stackoverflow.com/questions/10780080/why-onpushmessagereceived-is-not-called-in-geoloqi-api-in-android</a></div><div>Even i ve configured Android push notifications in my account.</div><div>I am creating trigger with current location is it required to enter into region manually or since i am already in the location its not calling?</div></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_175">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/175#Comment_175" class="Permalink" name="Item_7" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			If you're already in the region the trigger will most likely not fire. You'd have to exit the trigger region and re-enter. You can test push messaging directly by using the ID of the user authenticated on the device and the send/message API endpoint:<br><br><a href="https://developers.geoloqi.com/api/message/send" target="_blank" rel="nofollow">https://developers.geoloqi.com/api/message/send</a><br><br>Here is an example using curl from the command-line:<br><br><a href="https://gist.github.com/deffc3c3a09448248396" target="_blank" rel="nofollow">https://gist.github.com/deffc3c3a09448248396</a><br><br>The easiest way to get the current user_id is by calling this in your Android code:<br><br>LQSharedPreferences.getSessionUserId(this);<br><br>-Tristan<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_176">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/176#Comment_176" class="Permalink" name="Item_8" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Also, what sender account are you using? You should have specified one in your geoloqi.properties file. You need to make sure you've followed the Google sign-up process for C2DM:<br><br><a href="https://developers.google.com/android/c2dm/signup" target="_blank" rel="nofollow">https://developers.google.com/android/c2dm/signup</a><br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_177">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/274/6cTdc1i7gGPpPqk7y">6cTdc1i7gGPpPqk7y</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/177#Comment_177" class="Permalink" name="Item_9" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I ve tested with&nbsp;<a href="https://developers.geoloqi.com/api/message/send" target="_blank" rel="nofollow" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; vertical-align: baseline; text-decoration: none; color: rgb(4, 156, 219); line-height: 18px; text-align: left; background-color: rgb(255, 255, 255);">https://developers.geoloqi.com/api/message/send</a>&nbsp;then its working but i ve to test with trigger/create..		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_180">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/180#Comment_180" class="Permalink" name="Item_10" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Great! The way we test triggers in the office is to set up a route of two or three triggers. Then we go for a walk or a bike ride.<br><br>Let us know if you continue to have trouble getting the trigger to fire.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_181">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/274/6cTdc1i7gGPpPqk7y">6cTdc1i7gGPpPqk7y</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/181#Comment_181" class="Permalink" name="Item_11" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Ok,one request: current documentation is very&nbsp;brief even given example(in github) also.please&nbsp;provide detail documentation with examples so&nbsp;understanding, developing with geoloqi API will be easier...thanks&nbsp;...<div>-Srinivas</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_183">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/183#Comment_183" class="Permalink" name="Item_12" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			We're working hard to improve our documentation and definitely value your feedback! Can you list the pages of documentation you consulted before posting here? A list of URLs would be helpful.<br><br><b>EDIT:</b> I've updated our Android push messaging documentation. Hopefully it's easier to understand now! Let us know if you have any more feedback:<br><br><a href="https://developers.geoloqi.com/android/push-notifications" target="_blank" rel="nofollow">https://developers.geoloqi.com/android/push-notifications</a><br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_185">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/274/6cTdc1i7gGPpPqk7y">6cTdc1i7gGPpPqk7y</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/185#Comment_185" class="Permalink" name="Item_13" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I found difficulty in &nbsp;<a rel="nofollow" href="https://developers.geoloqi.com/android/getting-started">https://developers.geoloqi.com/android/getting-started</a>&nbsp;entire document because only small snippets are there but where to place not given means code flow is missing.for example in page&nbsp;<a rel="nofollow" href="https://developers.geoloqi.com/android/making-api-requests">https://developers.geoloqi.com/android/making-api-requests</a>&nbsp;how to make requests is given but when activity is launched session object is null since object is creating in onResume() method. even in sample project also(github) if you want u can check it...so please provide documentation with proper examples.....thanks..		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_186">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/186#Comment_186" class="Permalink" name="Item_14" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Great feedback. We'll take that into account when we're revising those tutorials. Thanks!<br>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F185%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F185" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F185" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1 Active"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/274/6cTdc1i7gGPpPqk7y" class="UserLink">6cTdc1i7gGPpPqk7y</a></strong>
+               May 2012            </li>
+                        <li>
+               <strong><a href="/profile/13/twaddington" class="UserLink">twaddington</a></strong>
+               May 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="59" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f249d02d80e" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="186" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="Q06NL20HJDQJ" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/185" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

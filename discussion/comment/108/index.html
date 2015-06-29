@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Geoloqi SDK - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/5/geoloqi-sdk/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F108">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">Geoloqi SDK</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_5">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="caseorganic" href="/profile/3/caseorganic" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/908/nQM7ELXNZQT8J.png" alt="caseorganic" class="ProfilePhotoMedium" /></a><a href="/profile/3/caseorganic">caseorganic</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/5/geoloqi-sdk/p1" class="Permalink" name="Item_1" rel="nofollow">November 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Using the SDK? Ask questions and share info here.		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>16 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/108?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/108?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_119">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/195/BECiN1hrfygj6pbGL">BECiN1hrfygj6pbGL</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/119#Comment_119" class="Permalink" name="Item_2" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I was able to figure it out. &nbsp;1) add the library to your project 2) copy JSON files to your project 3) set the Library and Header search paths (see the sample) in build settings 4) set other linker flags (see the sample) 5) under build phases and compile sources add JSONKit.m and add the following compiler flag:&nbsp;-fno-objc-arc 6) make sure the Geoloqui libraries are not listed in Link Binary with Libraries.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_507">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/772/s3techummi">s3techummi</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/507#Comment_507" class="Permalink" name="Item_3" rel="nofollow">July 2013</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			i have downloaded the project from here&nbsp;<a rel="nofollow" href="https://github.com/geoloqi/Geoloqi-Android-SDK">https://github.com/geoloqi/Geoloqi-Android-SDK</a>? but i cannot successfully setup it in my Eclipse, please any help		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_42">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/76/qQoP01hTE4AwtY86">qQoP01hTE4AwtY86</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/42#Comment_42" class="Permalink" name="Item_4" rel="nofollow">February 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			"<span style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px; background-color: rgb(255, 255, 255);">After pulling down the source you can easily reference an Android Library project&nbsp;</span><a href="http://developer.android.com/guide/developing/projects/projects-eclipse.html#ReferencingLibraryProject" class="external text" title="http://developer.android.com/guide/developing/projects/projects-eclipse.html#ReferencingLibraryProject" rel="nofollow" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; line-height: 21px; font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; color: rgb(4, 156, 219); text-decoration: none; outline-width: 0px; outline-style: initial; outline-color: initial; background-color: rgb(255, 255, 255);">from Eclipse</a>"<div>=&gt; But how can I pull down the source?</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_52">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/52#Comment_52" class="Permalink" name="Item_5" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Good question! The Android SDK used to be an Android Library Project, but now it's just a .jar library that you can include in your project! We've updated the Sample-Android-App documentation to reflect these changes and walk you through the process a little more:<br><br><a href="https://github.com/geoloqi/Sample-Android-App" target="_blank" rel="nofollow">https://github.com/geoloqi/Sample-Android-App</a><br><br>Let us know if that does not resolve your question!<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_106">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/192/YTJQx1hrDSe76rwwJ">YTJQx1hrDSe76rwwJ</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/106#Comment_106" class="Permalink" name="Item_6" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			To use service, I need to define 2 constants:&nbsp;LQ_SDK_ID and&nbsp;LQ_SDK_SECRET.<div>I can define any value I want, right?</div><div>If not, how can I get those values?</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_107">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/178/xBTJj1ho69u2KqLpY">xBTJj1ho69u2KqLpY</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/107#Comment_107" class="Permalink" name="Item_7" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div style="text-align: -webkit-auto;"><span style="font-size: 10pt; font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px; text-align: left; background-color: rgb(255, 255, 255);">Not just any random value but replace LQ_SDK_ID&nbsp;and&nbsp;</span><br><span style="font-size: 10pt; font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px; text-align: left; background-color: rgb(255, 255, 255);">LQ_SDK_SECRET with&nbsp;</span><span style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; font-size: small;"><span style="line-height: 18px;">the value of API Key and API Secret of "your" application. If you haven't yet created any application then you can create one from this page:&nbsp;<a href="https://developers.geoloqi.com/account/applications/new" target="_blank" rel="nofollow">https://developers.geoloqi.com/account/applications/new</a> otherwise click on 'Your Account' text on the top right corner and click on 'Applications'.&nbsp;</span></span></div><div style="text-align: -webkit-auto;"><span style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; font-size: small;"><span style="line-height: 18px;"><br></span></span></div><div style="text-align: -webkit-auto;"><span style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; font-size: small;"><span style="line-height: 18px;">Once you have SDK ID and SECRET, open the sample android application locate ConstantSample.java under&nbsp;com.geoloqi.android.sample package, update it with your ID and Secret and rename this file to Constant.java</span></span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_108">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/108#Comment_108" class="Permalink" name="Item_8" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			That's correct! You need to create a new "Application" which will grant you the Application ID and Secret tokens. You'll use those to authenticate your application.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_112">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/192/YTJQx1hrDSe76rwwJ">YTJQx1hrDSe76rwwJ</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/112#Comment_112" class="Permalink" name="Item_9" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi,<div><br></div><div>I want to create an android application which has function to store user location and update his/her location when it changes.</div><div><br class="Apple-interchange-newline">1. Do I need to create account for each user who uses my application?<br></div><div>2. How can I get user location?</div><div>3. I register a LQBroadcastReceiver to handle action "com.geoloqi.android.sdk.action.LOCATION_CHANGED". It means that everytime when user location changes, my receiver method will be called, right?</div><div><br></div><div>Thanks,</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_114">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/114#Comment_114" class="Permalink" name="Item_10" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			1. Yes, you'll need to create a new account for each individual. The location service will automatically create a new Anonymous user account when it starts up on a device.<br><br>2. If you start the location service with the default action it will automatically start receiving location updates and pushing them to the server. You can call the <a rel="nofollow" href="https://developers.geoloqi.com/api/location/history">location/history</a> API endpoint to get a user's past location details. See the <a rel="nofollow" href="https://developers.geoloqi.com/android/making-api-requests">making-api-requests</a> documentation for more info.<br><br>3. Correct. If you extend LQBroadcastReceiver and register an IntentReceiver with the location changed action, then the OnLocationChanged abstract method will be called whenever the user's location changes.<br><br>Please see the Android sample application for some good example code: <a href="https://github.com/geoloqi/Geoloqi-Android-SDK" target="_blank" rel="nofollow">https://github.com/geoloqi/Geoloqi-Android-SDK</a><br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_115">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/115#Comment_115" class="Permalink" name="Item_11" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			iOS SDK.<div><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span>I need a quick help</span></span></div><div class="linestyle1 colourline" style="font-family: Consolas, 'Lucida Console', monospace; text-indent: -7px; padding-left: 7px; word-wrap: break-word;"><span>LQSession LQTracker undeclared are undeclared even though I follow the instuctions</span></div><div class="linestyle2 colourline" style="font-family: Consolas, 'Lucida Console', monospace; text-indent: -7px; padding-left: 7px; word-wrap: break-word;"><span>the linker flags are set as on the screenshot or the sample app...any ideas?</span></div><div class="linestyle1 colourline" style="font-family: Consolas, 'Lucida Console', monospace; text-indent: -7px; padding-left: 7px; word-wrap: break-word;"><span>I also had to add JSONKit to my project just to make it compile with the libraries.. the description did not mention anything about that.. am I missing anything?</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_118">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/118#Comment_118" class="Permalink" name="Item_12" rel="nofollow">March 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Try adding the folder where you put the *.h files into the "Library Search Paths" config item. It might need to be something like "../GeoloqiSDK" depending on where you put the header files in your project.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_124">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/192/YTJQx1hrDSe76rwwJ">YTJQx1hrDSe76rwwJ</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/124#Comment_124" class="Permalink" name="Item_13" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div>Hi,</div><div><br></div><div>When I develop android application using Geoloqi, I create 1 Geoloqi account<span style="font-size: 10pt;">&nbsp;</span><span style="font-size: 10pt;">for each user who uses my application.</span></div><div><span style="font-size: 10pt;">When creating, it doesn't require password.</span></div><div><span style="font-size: 10pt;">But if I create Geoloqi user successful, how can I login new account without password?</span></div><div><span style="font-size: 10pt;"><br></span></div><div><span style="font-size: 10pt;">If the password is required, please tell me how I can create password for the Geoloqi account by Android application?</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_125">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/125#Comment_125" class="Permalink" name="Item_14" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			There are two ways you can create user accounts.<div><br></div><div><a rel="nofollow" href="https://developers.geoloqi.com/api/user/create_anon">user/create_anon</a> will create an anonymous account and return an OAuth token that the app can store to automatically log the user back in. This method exists in case you don't expect the user to log in on a website, or if you are tying the Geoloqi user accounts to your own user database.</div><div><br></div><div><a rel="nofollow" href="http://https://developers.geoloqi.com/api/user/create">user/create</a> will allow you to specify an email address and password when creating an account. This method is for when you want to let Geoloqi handle your user management. If you don't specify a password, your users can visit geoloqi.com and click "reset password" to choose their own password.</div><div><br></div><div>Hopefully this helps answer your questions! Thanks!</div><div><br></div><div><br></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_145">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/145#Comment_145" class="Permalink" name="Item_15" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			can you safely turn on and off the LQTracker?<div><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span style="color: #000000">[</span><span style="color: #538187">LQTracker</span><span style="color: #000000"> </span>configureAnonymousUserAccountWithUserInfo<span style="color: #000000">:</span><span style="color: #b808a1">nil</span><span style="color: #000000"> </span>profile<span style="color: #000000">:</span>LQTrackerProfileOff<span style="color: #000000">]; to stop</span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span style="color: #000000">and&nbsp;</span></p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 14px/normal Monaco;"></p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 14px/normal Monaco;"><span class="Apple-style-span" style="color: rgb(53, 89, 93);"><span style="color: #000000">[</span><span style="color: #538187">LQTracker</span><span style="color: #000000"> </span>configureAnonymousUserAccountWithUserInfo<span style="color: #000000">:gDict </span>profile<span style="color: #000000">:</span>LQTrackerProfileRealtime<span style="color: #000000">];</span></span>&nbsp;to start would make it work right?</p></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_147">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/147#Comment_147" class="Permalink" name="Item_16" rel="nofollow">April 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: Arial, Verdana;">That should work, although a slightly cleaner way of doing it is this:</span><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: Arial, Verdana;"><br></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><span style="font-family: 'Courier New';">[[LQTracker sharedTracker] setProfile:<span style="font-size: 10pt;">LQTrackerProfileOff]</span></span></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: Arial, Verdana;"><span style="font-size: 10pt;"><br></span></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: Arial, Verdana;"><span style="font-size: 10pt;">&nbsp; &nbsp;and</span></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><div style="font-family: Arial, Verdana;"><br></div><div><span style="font-family: 'Courier New';">[[LQTracker sharedTracker] setProfile:<span style="font-size: 10pt;">LQTrackerProfileRealtime]</span></span></div></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: Arial, Verdana;"><span style="font-size: 10pt;"><br></span></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: Arial, Verdana;"><span style="font-size: 10pt;">You can create an anonymous user account in your app delegate before-hand like this:</span></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: Arial, Verdana;"><span style="font-size: 10pt;"><br></span></div><div style="font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><span style="font-family: 'Courier New';"><span style="font-size: 10pt;">if(</span><span class="s1">![</span><span class="s2">LQSession</span><span class="s1"> </span>savedSession<span class="s1">]) {</span></span></div><br><br><br><br><br><br><br><br><div><span style="font-family: 'Courier New';"><span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-size: 10pt;">&nbsp; &nbsp; [LQSession&nbsp;</span><span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-size: 10pt;">createAnonymousUserAccountWithUserInfo:nil&nbsp;</span><span style="font-size: small;">completion:^(LQSession *session, NSError *error){</span></span></div><div><span style="font-family: 'Courier New';"><span style="font-size: small;">&nbsp; &nbsp; &nbsp;&nbsp;</span></span><span style="font-family: 'Courier New'; font-size: small;">&nbsp;</span><span style="font-family: 'Courier New'; font-size: small;">&nbsp;// Save the session so it can be restored next time</span></div><div><span style="font-family: 'Courier New'; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;[LQSession setSavedSession:session];</span></div><div><span style="font-family: 'Courier New'; font-size: small;">&nbsp; &nbsp; }];</span></div><div><span style="font-family: 'Courier New'; font-size: small;">}</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_244">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/310/miNiN1iDFKospmHJ">miNiN1iDFKospmHJ</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/244#Comment_244" class="Permalink" name="Item_17" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Does this page <br>(<a href="https://developers.geoloqi.com/ios/getting-started" target="_blank" rel="nofollow">https://developers.geoloqi.com/ios/getting-started</a>) describe all the <br>adjustment we need to make in order to fully integrate the SDK with our <br>app? <br><br><br><br>I'm asking this because I figured it was necessary to add<br> the location as the "required device capability" in order for sdk to <br>run smoothly, which is not described in the above link... are there other key parameters we need to adjust? Right now when I use our demo app (integrated with Geoloqi SDK, running in our office) it seems like the SDK is continuously pulling the location while the tracker only uses the Geofences... both of them are set on passive mode and subscribed to the same set of layers...<br>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F108%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F108" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F108" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/198/6cu3U1hs8JsjCM3Ln" class="UserLink">6cu3U1hs8JsjCM3Ln</a></strong>
+               April 2012            </li>
+                        <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               April 2012            </li>
+                        <li>
+               <strong><a href="/profile/195/BECiN1hrfygj6pbGL" class="UserLink">BECiN1hrfygj6pbGL</a></strong>
+               April 2012            </li>
+                        <li>
+               <strong><a href="/profile/310/miNiN1iDFKospmHJ" class="UserLink">miNiN1iDFKospmHJ</a></strong>
+               June 2012            </li>
+                        <li>
+               <strong><a href="/profile/76/qQoP01hTE4AwtY86" class="UserLink">qQoP01hTE4AwtY86</a></strong>
+               February 2012            </li>
+                        <li>
+               <strong><a href="/profile/772/s3techummi" class="UserLink">s3techummi</a></strong>
+               July 2013            </li>
+                        <li>
+               <strong><a href="/profile/13/twaddington" class="UserLink">twaddington</a></strong>
+               March 2012            </li>
+                        <li>
+               <strong><a href="/profile/178/xBTJj1ho69u2KqLpY" class="UserLink">xBTJj1ho69u2KqLpY</a></strong>
+               March 2012            </li>
+                        <li>
+               <strong><a href="/profile/192/YTJQx1hrDSe76rwwJ" class="UserLink">YTJQx1hrDSe76rwwJ</a></strong>
+               April 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="5" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f23ff579cd4" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="507" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="4KIMUG3HECLY" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/108" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>More: Group API calls from the iOS SDK? Authorization: the sequel - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/124/more-group-api-calls-from-the-ios-sdk-authorization-the-sequel/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_index" class="Vanilla Discussion Index ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">More: Group API calls from the iOS SDK? Authorization: the sequel</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_124">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/379/20sKL1icp2vPSqxnX">20sKL1icp2vPSqxnX</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/124/more-group-api-calls-from-the-ios-sdk-authorization-the-sequel/p1" class="Permalink" name="Item_1" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">Given that a group has been created (by me) and now other users can join the group [<i>thank you for your clarification on the token usage, aaronpk**</i>], how do I authorize myself to send messages to the group?</span><div style="font-style: normal; font-family: Arial, Verdana; font-size: 10pt;">I see the example in the docs using an OAuth token, which I'm familiar with from other APIs, but I thought that the OAuth was effectively built in to the saved session when using the iOS SDK.&nbsp;</div><div style="font-style: normal; font-family: Arial, Verdana; font-size: 10pt;"><br></div><div style="font-style: normal; font-family: Arial, Verdana; font-size: 10pt;">Here's my code and response:</div><div style="font-style: normal; font-family: Arial, Verdana; font-size: 10pt;"><p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(0, 140, 8);">// send a message to all the users in the group</p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(127, 27, 171);"><span style="color: #000000">&nbsp; &nbsp; </span>NSMutableDictionary<span style="color: #000000"> *params = [[</span>NSMutableDictionary<span style="color: #000000"> </span><span style="color: #4a0083">alloc</span><span style="color: #000000">] </span><span style="color: #4a0083">init</span><span style="color: #000000">];</span></p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(74, 0, 131);"><span style="color: #000000">&nbsp; &nbsp; [params </span>setObject<span style="color: #000000">:[</span><span style="color: #7f1bab">NSNumber</span><span style="color: #000000"> </span>numberWithBool<span style="color: #000000">:</span><span style="color: #cf00a0">true</span><span style="color: #000000">] </span>forKey<span style="color: #000000">:</span><span style="color: #e50000">@"push"</span><span style="color: #000000">];</span></p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(229, 0, 0);"><span style="color: #000000">&nbsp; &nbsp; [params </span><span style="color: #4a0083">setObject</span><span style="color: #000000">:</span>@"Hello everyone!"<span style="color: #000000"> </span><span style="color: #4a0083">forKey</span><span style="color: #000000">:</span>@"text"<span style="color: #000000">];</span></p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;&nbsp; &nbsp;</p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(33, 90, 95);"><span style="color: #000000">&nbsp; &nbsp; </span><span style="color: #7f1bab">NSURLRequest</span><span style="color: #000000"> *r = [[</span><span style="color: #3c8389">LQSession</span><span style="color: #000000"> </span>savedSession<span style="color: #000000">] </span>requestWithMethod<span style="color: #000000">:</span><span style="color: #e50000">@"POST"</span><span style="color: #000000"> </span>path<span style="color: #000000">:</span><span style="color: #e50000">@"/group/message/ab4NEKC0p</span><span style="color: #e50000">"</span><span style="color: #000000"> </span>payload<span style="color: #000000">:params];</span></p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; [[<span style="color: #3c8389">LQSession</span> <span style="color: #215a5f">savedSession</span>] <span style="color: #215a5f">runAPIRequest</span>:r <span style="color: #215a5f">completion</span>:^(<span style="color: #7f1bab">NSHTTPURLResponse</span> *response, <span style="color: #7f1bab">NSDictionary</span> *responseDictionary, <span style="color: #7f1bab">NSError</span> *error) {</p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo; color: rgb(229, 0, 0);"><span style="color: #000000">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #804623">NSLog</span><span style="color: #000000">(</span>@"Response for sending message to National Fraternity Tappa Kegga Day: %@ error:%@"<span style="color: #000000">, responseDictionary, error);</span></p><br><p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; }];</p></div><div style="font-style: normal; font-family: Arial, Verdana; font-size: 10pt;"><br></div><div style="font-style: normal; font-family: Arial, Verdana; font-size: 10pt;">Response:&nbsp;</div><div style="font-style: normal;"><p style="font-family: Menlo; font-size: 11px; margin: 0px;"><b>&nbsp; error = "access_denied";</b></p><br><p style="font-family: Menlo; font-size: 11px; margin: 0px;"><b>&nbsp; &nbsp; "error_code" = 403;</b></p><br><p style="font-family: Menlo; font-size: 11px; margin: 0px;"><b>&nbsp; &nbsp; "error_description" = "You are not authorized to send messages to this group";</b></p><p style="font-family: Menlo; font-size: 11px; margin: 0px;"><b><br></b></p><p style="font-family: Menlo; font-size: 11px; margin: 0px;"><br></p><p style="font-family: Menlo; font-size: 11px; margin: 0px;"><br></p><p style="margin: 0px;"><span style="font-family: Arial, Verdana; font-size: small;">Is my call malformed again?</span></p><p style="margin: 0px;"><span style="font-family: Arial, Verdana; font-size: small;">thx</span></p><p style="font-family: Menlo; font-size: 11px; margin: 0px;"><br></p><p style="font-family: Menlo; font-size: 11px; margin: 0px;">**see&nbsp;<a href="https://community.geoloqi.com/discussion/123/group-api-calls-from-the-ios-sdk-token#Item_4" target="_blank" rel="nofollow">https://community.geoloqi.com/discussion/123/group-api-calls-from-the-ios-sdk-token#Item_4</a></p></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>2 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/124/more-group-api-calls-from-the-ios-sdk-authorization-the-sequel?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/124/more-group-api-calls-from-the-ios-sdk-authorization-the-sequel?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_375">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/375#Comment_375" class="Permalink" name="Item_2" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana;">You'll see this error if the user trying to send the message is not part of the group or didn't create it. Only the creator of the group or anyone who's joined the group as "publishing" can do this. If you made the group with "open" for visibility and publish_access, then all you'll need to do is run </span><span style="font-family: Courier New;">group/join/:token</span><span style="font-family: Arial, Verdana;"> as this user first, and then the </span><span style="font-family: Courier New;">group/message/:token</span><span style="font-family: Arial, Verdana;"> calls will work.</span>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_377">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/379/20sKL1icp2vPSqxnX">20sKL1icp2vPSqxnX</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/377#Comment_377" class="Permalink" name="Item_3" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Yes! It works!<div><br></div><div>It seems I had created the group before with an anonymous account, but then was likely disassociated from that initial account since I'd reset the simulator for a fresh run. So it probably deleted my account information. Or something.&nbsp;<div><br><div>So from now on, I'll just make sure the user attempting to send the message has joined the group first.&nbsp;</div></div></div><div><br></div><div>Thanks for keeping me from going too far down the OAuth "hole". The SDK really makes that part so easy.</div>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2F124%2Fmore-group-api-calls-from-the-ios-sdk-authorization-the-sequel" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/379/20sKL1icp2vPSqxnX" class="UserLink">20sKL1icp2vPSqxnX</a></strong>
+               September 2012            </li>
+                        <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               September 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="124" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f240237c270" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="377" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="8TDAWDF4HPL2" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/124/more-group-api-calls-from-the-ios-sdk-authorization-the-sequel" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

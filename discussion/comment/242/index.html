@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Device cannot receive push notification - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/71/device-cannot-receive-push-notification/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F242">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">Device cannot receive push notification</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_71">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/313/digitalscientists">digitalscientists</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/71/device-cannot-receive-push-notification/p1" class="Permalink" name="Item_1" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Here are the basic steps that we are doing:<div><br></div><div>1. Init geoloqi</div><div>2. Register device for push notification service</div><div>3. Create trigger using trigger/create (without specifying places or layer) but geoloqi automatically generates a places_id</div><div>4. Run trigger using trigger/run/:id where :id is the generated trigger_id from create api call</div><div>5. Close app and wait for device to get the notification but no notification arrives.</div><div><br></div><div>Based on console debugging tool on geoloqi, everything seems to be running well from steps 1-4 and no error appears but we are confused why notification won't arrive on our device.</div><div><br></div><div>We also tried calling message/send api that returned response that looks to be right but device didn't receive the message.</div><div><br></div><div>A little clarification would definitely help here because we not sure if we are properly using geoloqi or not.</div><div><br></div><div>Thanks</div><div><br></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>8 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/242?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/242?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_210">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/210#Comment_210" class="Permalink" name="Item_2" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Are you trying to get push notifications working on an Apple or an Android device?<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_211">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/313/digitalscientists">digitalscientists</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/211#Comment_211" class="Permalink" name="Item_3" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Sorry, forgot to include that I'm trying to get notifications to work on Apple device.<div><br></div><div>Thanks</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_212">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/212#Comment_212" class="Permalink" name="Item_4" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			It looks like we're getting SSL errors when trying to connect to Apple using your certificate. Can you verify you uploaded the correct certificates for development and production mode?&nbsp;		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_213">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/313/digitalscientists">digitalscientists</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/213#Comment_213" class="Permalink" name="Item_5" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I cannot tell if certificates are correct but we basically re generated the certificates from Apple Developer about an hour ago and again re-generated and uploaded it about 1 minute ago.<div><br></div><div>This applies to both development and production certificates.</div><div><br></div><div>We will run more tests on certificate that we uploaded using Urban Airship and will let you know probably next week but this was previously working before we decided to try and implement Geoloqi.</div><div><br></div><div>Thanks</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_223">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/313/digitalscientists">digitalscientists</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/223#Comment_223" class="Permalink" name="Item_6" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hello Aaron,<div><br></div><div>We can confirm that both production and development push certificates are working properly. We are getting notifications when sending it from Urban Airship.</div><div><br></div><div>We were able to receive a notification after calling trigger/run/:id but only when using the development build (app installed by connecting device to mac and install) not when using AdHoc build (app installed via TestFlight)</div><div><br></div><div>One performance issue we noticed is notification arrived 1 hour after invoking trigger/run/:id and it might be a problem for us if notifications do not arrive less than 1 minute after user enters certain region/area</div><div><br></div><div>Thanks</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_240">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/18/kyledrake">kyledrake</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/240#Comment_240" class="Permalink" name="Item_7" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hello,<br><br>I have been working on our push notifications over the last few days, which may have caused a temporary error with new certificates. Messages are usually sent within a few seconds, so what you are seeing is very unusual behavior.<br><br>I have just pushed up some new code that deals with some unexpected Apple bugs, could you try sending a message again using the message/send api call?<br><br>Apologies for the inconvenience, this update was prompted by a change in how Apple was using their protocol. If it's still giving you trouble, send me an email at kyle@geoloqi.com and I will work with you to get this sorted out. Thanks!<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_241">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/313/digitalscientists">digitalscientists</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/241#Comment_241" class="Permalink" name="Item_8" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hello,<div><br></div><div>We tried creating a trigger and calling trigger/run/:id twice and after 1-2 hours of waiting, notifications haven't arrived yet.</div><div><br></div><div>We are using TestFlight AdHoc release so I think it was suppose to be using production push certificate. We also tested and push notification using production certificate are working via Urban Airship.</div><div><br></div><div>Will connect with you via email probably tomorrow.</div><div><br></div><div>Thanks</div><div><br></div><div><br></div><div><br></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_242">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/18/kyledrake">kyledrake</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/242#Comment_242" class="Permalink" name="Item_9" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I have confirmed just now that there was an issue with development push notifications. I have corrected this problem just now, and development push notifications should be working again. This did not affect live push notifications.<br><br>Again, I wanted to stress that this is not a frequent occurrence. This is a recent upgrade to our APNS service that will improve the reliability of our push notifications, and I don't expect this problem to happen again. I will integrate testing to prevent this problem from happening again in the future.<br><br>If you are still having problems, please feel free to contact me and I will get back to you ASAP.<br>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F242%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F242" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F242" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               June 2012            </li>
+                        <li>
+               <strong><a href="/profile/313/digitalscientists" class="UserLink">digitalscientists</a></strong>
+               June 2012            </li>
+                        <li>
+               <strong><a href="/profile/18/kyledrake" class="UserLink">kyledrake</a></strong>
+               June 2012            </li>
+                        <li>
+               <strong><a href="/profile/13/twaddington" class="UserLink">twaddington</a></strong>
+               June 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="71" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f249a22a12d" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="242" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="P7M2HHPXIN6P" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/242" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

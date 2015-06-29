@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>layer/place not triggering - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/105/layerplace-not-triggering/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F349">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">layer/place not triggering</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_105">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/105/layerplace-not-triggering/p1" class="Permalink" name="Item_1" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I need some help since I am not able to make the layer place trigger<div><br></div><div><span class="Apple-style-span" style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px;">Input Headers<code style="margin-top: 0.25em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-style: initial; border-color: initial; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1; font-family: Monaco, 'Courier New', monospace; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; color: rgba(0, 0, 0, 0.746094); overflow-x: hidden; overflow-y: hidden; width: 900px; display: block; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); clear: both;">X-Forwarded-Ssl: on<br>X-Real-Ip: 92.85.219.100<br>X-Forwarded-For: 92.85.219.100<br>Host: api.geoloqi.com<br>Connection: close<br>User-Agent: GrabioDev/3.4 CFNetwork/548.1.4 Darwin/11.0.0<br>Content-Length: 55<br>Accept: */*<br>Content-Type: application/json<br>X-Lq-Device-Manufacturer: Apple<br>X-Lq-Device-Hardware: iPod4,1<br>X-Lq-Device-Os: iPhone OS<br>X-Lq-Device-Version: 5.1.1<br>X-Lq-Package-Name: com.xxx.yyy<br>X-Lq-Package-Version: 3.4<br>X-Lq-Sdk-Version: 12.060<br>X-Lq-Sdk-Build: 748712f769b90ac7293ba74f8f18a848729f4e89<br>X-Lq-Provide-Hints: location<br>Authorization: OAuth 18409-cf24fbe396428fcc75e8f2d80723aebecc8ad460<br>Accept-Language: en-us<br>Accept-Encoding: gzip, deflate<br></code>Input Body<code style="margin-top: 0.25em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-style: initial; border-color: initial; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1; font-family: Monaco, 'Courier New', monospace; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; color: rgba(0, 0, 0, 0.746094); overflow-x: hidden; overflow-y: hidden; width: 900px; display: block; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); clear: both;">{<br>  &quot;longitude&quot;: -87.6448,<br>  &quot;latitude&quot;: 41.93229,<br>  &quot;distance&quot;: 5<br>}</code>Response Body<code style="margin-top: 0.25em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-style: initial; border-color: initial; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1; font-family: Monaco, 'Courier New', monospace; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; color: rgba(0, 0, 0, 0.746094); overflow-x: hidden; overflow-y: hidden; width: 900px; display: block; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); clear: both;">{<br>  &quot;triggers&quot;: [],<br>  &quot;refresh_bounds&quot;: false,<br>  &quot;refresh_timestamp&quot;: 1344675320<br>}</code></span></div><div><span class="Apple-style-span" style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px;">The trigger array is empty even though I have set up a layer and added a place to it. Any idea why?</span></div><div><span class="Apple-style-span" style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px;">Immediately after I arrive at BB_Chicago_Clark notify <a href="http://xxx.com/v3/geoloQICallBack.php" target="_blank" rel="nofollow">http://xxx.com/v3/geoloQICallBack.php</a>". This should happen every time I arrive at BB_Chicago_Clark…</span></div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; color: #444444;"><span class="Apple-style-span" style="line-height: 21px;"><br></span></span></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>9 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/349?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/349?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_341">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/341#Comment_341" class="Permalink" name="Item_2" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div><span class="Apple-style-span" style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px;">Also, how can I pass in some details about the user?</span></div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px;">[LQSession setAPIKey:_GEOLOQI_API_KEY secret:_GEOLOQI_API_SECRET];NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];</span><span class="Apple-style-span" style="color: rgb(68, 68, 68); font-family: Monaco; font-size: 14px;">NSDictionary* gDict = [NSDictionary dictionaryWithObject:[OpenUDID value] forKey:<span style="color: rgb(204, 36, 37);">@"device_id"</span>];</span></div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px;"></span><span class="Apple-style-span" style="color: rgb(68, 68, 68); font-family: Monaco; font-size: 14px;">[LQTracker configureAnonymousUserAccountWithUserInfo:gDict profile:LQTrackerProfileRealtime];</span><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Segoe UI', Arial, Verdana, sans-serif; line-height: 21px;">Should I be able to capture the device_id somewhere?</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_342">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/342#Comment_342" class="Permalink" name="Item_3" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			if I look for&nbsp;41.93229, -87.6448 on google maps, I can see that it falls within the radius of my trigger centered in&nbsp;41.929749,-87.643272		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_343">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/343#Comment_343" class="Permalink" name="Item_4" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			the log from the device shows the same empty trigger list<div><br><div><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">/__38-[LQSession runAPIRequest:completion:]_block_invoke_0 (LQSession.m:322) API Request: <a href="https://api.geoloqi.com/1/trigger/nearby" target="_blank" rel="nofollow">https://api.geoloqi.com/1/trigger/nearby</a></p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">/__38-[LQSession runAPIRequest:completion:]_block_invoke_0 (LQSession.m:335) Response: {</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; "refresh_bounds" = 0;</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; "refresh_timestamp" = 1344675901;</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; triggers = &nbsp; &nbsp; (</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; );</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">}</p></div></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_344">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/344#Comment_344" class="Permalink" name="Item_5" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Make sure the user has subscribed to the layer you created. If you're not seeing anything in the trigger/nearby call it could be because the user isn't subscribed. Also, "distance=5" is very small, try something larger like 150 meters or 500 meters.&nbsp;		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_345">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/345#Comment_345" class="Permalink" name="Item_6" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Your example of setting the device_id for a user is correct. If you look at account/profile you will see "device_id" in the "extra" object.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_347">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/347#Comment_347" class="Permalink" name="Item_7" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thanks Aaron. so should I use&nbsp;<span class="Apple-style-span" style="font-family: 'Lucida Grande', Geneva, Helvetica, Arial, sans-serif;">createAccountWithUsername:password:extra:completion:instead of anonymous? For each user create an account?<br>not sure where that 5m distance is coming from.</span>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_348">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/348#Comment_348" class="Permalink" name="Item_8" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana;">Either way you create the account is fine, it just depends on whether you want the users to be able to log back in to an account with a password. We see a lot of people just use the createAnonymous method because their users don't even necessarily have an account, they're just opening the app.</span><div style="font-family: Arial, Verdana;"><br></div><div style="font-family: Arial, Verdana;">The 5m distance came from the input body example you gave at the top,&nbsp;</div><div><span style="font-size: 10pt;"><span style="font-family: Courier New;">{</span></span></div><div><span style="font-family: Courier New;">&nbsp; "longitude": -87.6448,</span></div><div><span style="font-family: Courier New;">&nbsp; "latitude": 41.93229,</span></div><div><span style="font-family: Courier New;">&nbsp; "distance": 5</span></div><div><span style="font-family: Courier New;">}</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_349">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/349#Comment_349" class="Permalink" name="Item_9" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span style="color: #000000">I am using&nbsp;</span><span class="Apple-style-span" style="font-family: Arial, Verdana; font-size: 13px; color: rgb(0, 0, 0);"><a href="https://developers.geoloqi.com/ios/making-api-requests" target="_blank" rel="nofollow">https://developers.geoloqi.com/ios/making-api-requests</a> .. I missed this section previously. but</span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span style="color: #000000">sessionLocal.<span style="color: rgb(83, 129, 135);">userID&nbsp;</span></span><span class="Apple-style-span" style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">unrecognized selector sent to instance - any ideas why?</span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span class="Apple-style-span" style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);">I will need the user_id in order to subscribe to a layer.</span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span class="Apple-style-span" style="font-family: Menlo; font-size: 11px; color: rgb(0, 0, 0);"></span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco">sessionLocal.<span style="color: #538187">accessToken - works fine</span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco"><span style="color: #538187"></span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco">sessionLocal.username - fails like userID does</p><p></p><p></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span style="color: #000000"><br></span></p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #35595d"><span style="color: #000000">[</span><span style="color: #538187">LQSession</span><span style="color: #000000"> </span>createAnonymousUserAccountWithUserInfo<span style="color: #000000">:gDict </span>completion<span style="color: #000000">:^(</span><span style="color: #538187">LQSession</span><span style="color: #000000"> *sessionLocal, </span><span style="color: #7230a8">NSError</span><span style="color: #000000">* error)</span></p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco">{</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #b808a1">if</span>(sessionLocal.<span style="color: #538187">accessToken</span>) {</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #410a80">NSLog</span>(<span style="color: #cc2425">@"Logged in successfully! %@ user %@"</span>, sessionLocal.<span style="color: #538187">accessToken</span>, sessionLocal.<span style="color: #538187">username</span>);</p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco"><span class="Apple-tab-span" style="white-space:pre">	</span>..</p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco">&nbsp; &nbsp; &nbsp; &nbsp; }</p><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco">}</p><div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px;"><br></span></div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px;">Note: I see in the logs that I get all the details from the server</span></div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px;">/__38-[LQSession runAPIRequest:completion:]_block_invoke_0 (LQSession.m:335) Response: {<br>&nbsp; &nbsp; "access_token" = "18653-407d5fb6767424773f2a3bbf15a023a2f223f485";<br>&nbsp; &nbsp; "display_name" = Anonymous;<br>&nbsp; &nbsp; extra = &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; "device_id" = 415348825ce800db8731da526d65596eea48af2f;<br>&nbsp; &nbsp; };<br>&nbsp; &nbsp; "is_anonymous" = 1;<br>&nbsp; &nbsp; "password_reset_token" = "_zTje21iknxVhed_3D";<br>&nbsp; &nbsp; scope = "&lt;null&gt;";<br>&nbsp; &nbsp; "user_id" = TkP;<br>&nbsp; &nbsp; username = "_5YG7g1iknxVjep5jr";<br>}</span></div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px;"><br></span></div><div><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px;">"</span><span class="Apple-style-span" style="line-height: 18px;">The 5m distance came from the input body example you gave at the top, "</span></div><div><span class="Apple-style-span" style="line-height: 18px;">yes, but I never specified to be 5m, so that's why I was saying that I have no idea where the value 5 is coming from. I just see that 5 showing up when I debug my app.</span></div></div><div><span class="Apple-style-span" style="line-height: 18px;"><br>Thanks for your help Aaron.</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_350">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/350#Comment_350" class="Permalink" name="Item_10" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			so basically why&nbsp;<span class="Apple-style-span" style="font-family: Monaco; font-size: 14px;">sessionLocal.username - fails</span>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F349%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F349" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F349" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/198/6cu3U1hs8JsjCM3Ln" class="UserLink">6cu3U1hs8JsjCM3Ln</a></strong>
+               August 2012            </li>
+                        <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               August 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="105" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f24ab61287a" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="350" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="XOYTY3K1MU6M" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/349" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

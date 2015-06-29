@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Push Notification Setup on Android using Titanium module - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/108/push-notification-setup-on-android-using-titanium-module/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F363">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">Push Notification Setup on Android using Titanium module</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_108">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/407/ytwater">ytwater</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/108/push-notification-setup-on-android-using-titanium-module/p1" class="Permalink" name="Item_1" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">I'm having trouble getting push&nbsp;notifications&nbsp;working with the Geoloqi module in&nbsp;titanium.</span><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've followed the guide here:&nbsp;<a rel="nofollow" href="https://developers.geoloqi.com/android/push-notifications">https://developers.geoloqi.com/android/push-notifications</a></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've edited my application and pasted my Google API Key, but I don't know if it gets saved. &nbsp;When I re-edit the application, the field is blanked out again.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've tried creating a user with the "device_id" and "mac", but those never get saved to the user.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I've tried the example app.js under \modules\android\ti.geoloqi\1.0\example\app.js</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Here's my modified app. &nbsp;I'm trying to create a user that registers a device, which I assume is required to get push&nbsp;notifications.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Pasted here:&nbsp;<a rel="nofollow" href="http://pastebin.com/YnhqCHw7">http://pastebin.com/YnhqCHw7</a></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>8 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/363?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/363?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_369">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/401/FBFFX1ihF1M3F6K3i">FBFFX1ihF1M3F6K3i</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/369#Comment_369" class="Permalink" name="Item_2" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			We have same problem here. We tried every possible settings. If we use PushAccount in config we get c2dm token, and we can get device id on api console but the push notification dont arrive, if we use PushSender in config we get a gcm access token, but when we try to send a push on API console we get back no device registered. We try the 1.0 and 1.1 version. Our iOS version is working fine and it is under review in App Store.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_361">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/420/498973e5-a5fe-426a-877c-884e7c4b0ec8">498973e5-a5fe-426a-877c-884e7c4b0ec8</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/361#Comment_361" class="Permalink" name="Item_3" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Is there any updated SDK documentation for the titanium module?&nbsp; Currently there is just a placeholder file in the documentation folder.<br><br>If I had all of the available methods and properties (similar to the <a rel="nofollow" href="https://developers.geoloqi.com/android/docs/overview-summary.html">android sdk generated docs</a>) I could probably figure it out.<br><br>[Update from above]: my Google API key was saved even though the the web field gets blanked out.&nbsp; I was able to implement push notification fairly easily using the native android sdk.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_362">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/407/ytwater">ytwater</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/362#Comment_362" class="Permalink" name="Item_4" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Oops, the above comment is me posting on a tester account :)		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_363">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/407/ytwater">ytwater</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/363#Comment_363" class="Permalink" name="Item_5" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">Update 2: I've gotten a geoloqi user to associate with a device, but it associates with [c2dm] rather than [gcm]. &nbsp;Since c2dm is depreciated and you can no longer get accounts, how do I associate geoloqi users with the newer gcm (Google Cloud Messaging) account?</span><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">As a note, the geoloqi a</span><span style="font-family: Arial, Verdana; font-size: small;">ndroid sdk does link with gcm accounts.</span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_382">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/382#Comment_382" class="Permalink" name="Item_6" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			If you have specified both a pushSender and pushAccount, it will only register the C2DM token. If you have specified only the pushSender for GCM and are still having trouble, I can investigate your account if you send an email to support@geoloqi.com. Thanks!		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_485">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/601/multaply">multaply</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/485#Comment_485" class="Permalink" name="Item_7" rel="nofollow">March 2013</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Has there been any development in this issue? I am using version 1.3. The app exits every time geology.init is called on Android. iOS is working fine.		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_501">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/592/TQwr1jszr5NZUxMT">TQwr1jszr5NZUxMT</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/501#Comment_501" class="Permalink" name="Item_8" rel="nofollow">May 2013</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I am in the same boat!		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_502">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/592/TQwr1jszr5NZUxMT">TQwr1jszr5NZUxMT</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/502#Comment_502" class="Permalink" name="Item_9" rel="nofollow">May 2013</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			IF you make sure you are using Google API 2.2 and use version 1.1 of the module it will work.<div><br></div>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F363%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F363" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F363" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/420/498973e5-a5fe-426a-877c-884e7c4b0ec8" class="UserLink">498973e5-a5fe-426a-877c-884e7c4b0ec8</a></strong>
+               August 2012            </li>
+                        <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               September 2012            </li>
+                        <li>
+               <strong><a href="/profile/401/FBFFX1ihF1M3F6K3i" class="UserLink">FBFFX1ihF1M3F6K3i</a></strong>
+               September 2012            </li>
+                        <li>
+               <strong><a href="/profile/601/multaply" class="UserLink">multaply</a></strong>
+               March 2013            </li>
+                        <li>
+               <strong><a href="/profile/592/TQwr1jszr5NZUxMT" class="UserLink">TQwr1jszr5NZUxMT</a></strong>
+               May 2013            </li>
+                        <li>
+               <strong><a href="/profile/407/ytwater" class="UserLink">ytwater</a></strong>
+               August 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="108" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f24011dcf5b" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="502" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="RUOP26UKZJF8" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/363" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+      <title>Layers - Geoloqi Community</title>
+      <link>http://community.geoloqi.com/categories/layers/feed.rss</link>
+      <pubDate>Sat, 28 Feb 15 14:25:11 -0800</pubDate>
+         <description>Layers - Geoloqi Community</description>
+   <language>en-CA</language>
+   <atom:link href="/discussions/feed.rss" rel="self" type="application/rss+xml" />
+   <item>
+      <title>Does one_time apply per user or per app?</title>
+      <link>http://community.geoloqi.com/discussion/137/does-one_time-apply-per-user-or-per-app</link>
+      <pubDate>Sat, 20 Oct 2012 21:16:40 -0700</pubDate>
+      <dc:creator>eEUVu1jDUQQhRVPPa</dc:creator>
+      <guid isPermaLink="false">137@/discussions</guid>
+      <description><![CDATA[When I set the one_time property to 1, should I assume that means that the trigger will only be sent out to the first user, or once per user?]]></description>
+   </item>
+   <item>
+      <title>Subscribe an user in a layer.</title>
+      <link>http://community.geoloqi.com/discussion/239/subscribe-an-user-in-a-layer.</link>
+      <pubDate>Tue, 16 Jul 2013 07:20:58 -0700</pubDate>
+      <dc:creator>K5guz1j0Mixn5cZSH</dc:creator>
+      <guid isPermaLink="false">239@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Hi, i'm with some problem with rest api. I'm using iOS sdk to register an anonimous user, but i want to receive push notification in a layer i created, with some locations (create some triggers for those locations). But i can't receive it, because the user is not subscribe in this layer. So how can i subscribe him?&nbsp;</span><div><br /></div><div>I'm using api console <a href="https://api.geoloqi.com/1/layer/subscribe/:id" target="_blank" rel="nofollow">https://api.geoloqi.com/1/layer/subscribe/:id</a></div><div><br /></div><div>params:</div><div>client_id, client_secret,layer_id,user_id</div><div><br /></div><div>and still get an&nbsp;<span>Access denied to this layer.</span></div><div><br /></div><div><span style="font-family: monospace, serif;"><span>Also, i list my layers and see my layer is not subscribed. Take a look:</span></span></div><div><span style="font-family: monospace, serif; color: #718c00;"><span><br /></span></span></div><div><span>{<br />      "</span><span class="attribute">layer_id</span><span>": </span><span class="value"><span class="string">"9eq_"</span></span><span>,<br />      "</span><span class="attribute">user_id</span><span>": </span><span class="value"><span class="string">"fyT"</span></span><span>,<br />      "</span><span class="attribute">type</span><span>": </span><span class="value"><span class="string">"normal"</span></span><span>,<br />      "</span><span class="attribute">name</span><span>": </span><span class="value"><span class="string">"Locais2"</span></span><span>,<br />      "</span><span class="attribute">public</span><span>": </span><span class="value"><span class="number">1</span></span><span>,<br />      "</span><span class="attribute">public_userlist</span><span>": </span><span class="value"><span class="number">0</span></span><span>,<br />      "</span><span class="attribute">icon</span><span>": </span><span class="value"><span class="string">"<a href="https://geoloqi.com/images/default_layer.png" target="_blank" rel="nofollow">https://geoloqi.com/images/default_layer.png</a>"</span></span><span>,<br />      "</span><span class="attribute">description</span><span>": </span><span class="value"><span class="string">"Locais em Sorocaba"</span></span><span>,<br />      "</span><span class="attribute">url</span><span>": </span><span class="value"><span class="string">"<a href="https://a.geoloqi.com/layer/description/9eq_" target="_blank" rel="nofollow">https://a.geoloqi.com/layer/description/9eq_</a>"</span></span><span>,<br />      "</span><span class="attribute">subscribed</span><span>": </span><span class="value"><span class="literal">false</span><br />    </span><span>}</span></div><div><span style="font-family: monospace, serif; color: #718c00;"><span><br /></span></span></div><div><span style="font-family: monospace, serif;"><span>How can i fix that to receive the pushes?</span></span></div><div><br /></div><div><br /></div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>Limit per month on Geonote triggers?</title>
+      <link>http://community.geoloqi.com/discussion/156/limit-per-month-on-geonote-triggers</link>
+      <pubDate>Fri, 28 Dec 2012 13:29:06 -0800</pubDate>
+      <dc:creator>FFuAP1isUgmzsz7KX</dc:creator>
+      <guid isPermaLink="false">156@/discussions</guid>
+      <description><![CDATA[Hi everyone...<div><br /></div><div>Can someone please tell me if there is a limit per month on Geonote triggers? Mine appears to have stopped at 50 for the month. I have an Egg account. I would be willing to upgrade but I don't want to upgrade to receive extra geotriggers for my applications if it won't resolve my problem in Geonotes.</div><div><br /></div><div>Thanks,</div><div><br /></div><div>BC</div>]]></description>
+   </item>
+   <item>
+      <title>Beginners Start Here:____________</title>
+      <link>http://community.geoloqi.com/discussion/155/beginners-start-here____________</link>
+      <pubDate>Wed, 26 Dec 2012 18:56:32 -0800</pubDate>
+      <dc:creator>oNWHr1jenNAVdG2rk</dc:creator>
+      <guid isPermaLink="false">155@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">The short question I have is what would (minus the obvious&nbsp;//developers.geoloqi.com/ios/getting-started) an advanced user place in here?&nbsp;</span><div><br /></div><div><span style="font-family: Arial, Verdana; font-size: small;"><span style="font-size: small;">I am&nbsp;</span>definitely<span style="font-size: small;">&nbsp;a beginner... but I do understand some. I have an app right now that is live on the Apple App Store and I have a test app that I have included your SDK into. I get 3 different&nbsp;responses&nbsp;when in the Debug part of the Geoloqi.com website under my applications, but NOTHING in the usages section. I have setup a layer but have no idea how to&nbsp;incorporate&nbsp;the layer ID into the app in Xcode. It is my understanding that the API Requests won't&nbsp;increment&nbsp;with just running the app on my device but rather after a trigger is ... errr um triggered??&nbsp;</span></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Anyway, I am sure my ignorance is steaming all over the LCD's of those reading this but I really would appreciate any help or a point in the right direction.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I may be off base here but I think that these services are the&nbsp;future&nbsp;of ALL mobile marketing and with every aspect of ones life going in that&nbsp;direction&nbsp;the&nbsp;opportunity&nbsp;seems endless and one with very little competition right now.&nbsp;</span></div>]]></description>
+   </item>
+   <item>
+      <title>Layers</title>
+      <link>http://community.geoloqi.com/discussion/4/layers</link>
+      <pubDate>Sun, 27 Nov 2011 19:32:40 -0800</pubDate>
+      <dc:creator>caseorganic</dc:creator>
+      <guid isPermaLink="false">4@/discussions</guid>
+      <description><![CDATA[Working on a layer? Have an idea for one? Suggest and collaborate here!]]></description>
+   </item>
+   <item>
+      <title>Alerting users who are inside a new layer to that layer</title>
+      <link>http://community.geoloqi.com/discussion/116/alerting-users-who-are-inside-a-new-layer-to-that-layer</link>
+      <pubDate>Sun, 26 Aug 2012 03:58:37 -0700</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">116@/discussions</guid>
+      <description><![CDATA[All<br /><br />Here is my dilemma. In my app, I want users to be able to create their own alerts to other users. This is not a problem using places and triggers. My problem comes into play if another user is already within the trigger geofence. They'll never know about the layer and can't auto subscribe them since they may not have the app open. How do I notify them an subsequently subscribe them? <br /><br />Thoughts and suggestions appreciated!<br />Thanks<br />B]]></description>
+   </item>
+   <item>
+      <title>Confused over layers created via API</title>
+      <link>http://community.geoloqi.com/discussion/29/confused-over-layers-created-via-api</link>
+      <pubDate>Tue, 06 Mar 2012 15:44:44 -0800</pubDate>
+      <dc:creator>nEv9s1hgv7C1qvC3Y</dc:creator>
+      <guid isPermaLink="false">29@/discussions</guid>
+      <description><![CDATA[I've used the API to create a couple layers.<div>I see them when I use the&nbsp;<a href="https://api.geoloqi.com/1/layer/list" target="_blank" rel="nofollow">https://api.geoloqi.com/1/layer/list</a> API call.</div><div><br /></div><div>But, I'm not seeing them on my&nbsp;<a href="https://developers.geoloqi.com/account/layers" target="_blank" rel="nofollow">https://developers.geoloqi.com/account/layers</a> page.</div><div><br /></div><div>Is there something I'm missing?</div>]]></description>
+   </item>
+   <item>
+      <title>Can&#039;t seem to get &quot;other&quot; nearby places to show up</title>
+      <link>http://community.geoloqi.com/discussion/37/can039t-seem-to-get-other-nearby-places-to-show-up</link>
+      <pubDate>Sun, 25 Mar 2012 11:57:50 -0700</pubDate>
+      <dc:creator>JaRi91hpsfLgUjEDw</dc:creator>
+      <guid isPermaLink="false">37@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">In a test script, using the php sdk, I'm creating a layer, adding 2 places which are about 5 blocks from one another, then running places/nearby on the location of one of those 2 places. &nbsp;The response only seems to contain the record at the location I specified in the nearby query, but not the other, no matter how high I set the distance.</span><div><br /></div><div>Here are the requests - via your app debugger page - all with a Response Code of 200:</div><div><br /></div><div><hr /></div><div><br /></div><div><span style="font-family: 'Courier New'; font-size: xx-small;">layer/create:&nbsp;<span>{"name":"users","description":"Users","public":0}</span></span></div><div><span><span style="font-family: 'Courier New'; font-size: xx-small;"><br /></span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span>Response:</span><span> </span><span>{"layer_id":"E5k"}</span></span></div><div><span><span style="font-family: 'Courier New'; font-size: xx-small;"><br /></span></span></div><div><hr /></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><br /></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;">place/create:&nbsp;<span>{"latitude":40.7024,"longitude":-73.9419,"layer_id":"E5k","name":"test-1","extra":{"user_id":1}}</span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span><br /></span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span>Response:&nbsp;</span><span>{"place_id":"1zCB","name":"test-1","latitude":40.7024,"longitude":-73.9419,"radius":0,"display_name":"test-1","time_from":"00:00:00","time_to":"00:00:00","active":1,"extra":{"user_id":1},"description":""}</span></span></div><div><span><span style="font-family: 'Courier New'; font-size: xx-small;"><br /></span></span></div><div><hr /></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span><br /></span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span>place/create:&nbsp;</span><span>{"latitude":40.6995,"longitude":-73.9395,"layer_id":"E5k","name":"test-2","extra":{"user_id":2}}</span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span><br /></span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span>Response:&nbsp;</span><span>{"place_id":"1zCC","name":"test-2","latitude":40.6995,"longitude":-73.9395,"radius":0,"display_name":"test-2","time_from":"00:00:00","time_to":"00:00:00","active":1,"extra":{"user_id":2},"description":""}</span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span><br /></span></span></div><div><hr /></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span><br /></span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span>place/nearby:&nbsp;</span><span>{"latitude":40.6995,"longitude":-73.9395,"layer_id":"E5k","distance":100}</span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span><br /></span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span>Response:&nbsp;</span><span>{"nearby":[{"place_id":"1zCC","name":"test-2","latitude":40.6995,"longitude":-73.9395,"radius":0,"display_name":"test-2","time_from":"00:00:00","time_to":"00:00:00","active":1,"extra":{"user_id":2},"description":""}],"paging":{"limit":25,"total":1}}</span></span></div><div><span style="font-family: 'Courier New'; font-size: xx-small;"><span><br /></span></span></div><div><hr /></div><div><br /></div><div>After creating the layers, I ran a layer/list to make sure the layer showed up. &nbsp;After creating the places, I ran a place/list to make sure they showed up properly with all the correct data as well.</div><div><br /></div><div>Here is where the two test locations are on a map:</div><div>test-1: <a rel="nofollow" href="http://g.co/maps/d267f">http://g.co/maps/d267f</a></div><div>test-2:&nbsp;<a rel="nofollow" href="http://g.co/maps/ektg5">http://g.co/maps/ektg5</a></div>]]></description>
+   </item>
+   <item>
+      <title>Get layer id by unique key?</title>
+      <link>http://community.geoloqi.com/discussion/28/get-layer-id-by-unique-key</link>
+      <pubDate>Mon, 05 Mar 2012 11:40:09 -0800</pubDate>
+      <dc:creator>nEv9s1hgv7C1qvC3Y</dc:creator>
+      <guid isPermaLink="false">28@/discussions</guid>
+      <description><![CDATA[The layer/create call lets me add a unique key to a layer.<div><br /></div><div>Is there a way to get a layer ID, by that unique key?</div><div><br /></div><div>It would allow me to not have to create a conversion table in my app, converting from unique player IDs to a layer ID.</div>]]></description>
+   </item>
+   </channel>
+</rss>

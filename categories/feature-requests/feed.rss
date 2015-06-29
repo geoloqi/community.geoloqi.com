@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+      <title>Feature Requests - Geoloqi Community</title>
+      <link>http://community.geoloqi.com/categories/feature-requests/feed.rss</link>
+      <pubDate>Sat, 28 Feb 15 14:25:10 -0800</pubDate>
+         <description>Feature Requests - Geoloqi Community</description>
+   <language>en-CA</language>
+   <atom:link href="/discussions/feed.rss" rel="self" type="application/rss+xml" />
+   <item>
+      <title>Android Push Notification - Open App</title>
+      <link>http://community.geoloqi.com/discussion/186/android-push-notification-open-app</link>
+      <pubDate>Thu, 04 Apr 2013 10:04:52 -0700</pubDate>
+      <dc:creator>HPdRa1juJ2ePMcF8</dc:creator>
+      <guid isPermaLink="false">186@/discussions</guid>
+      <description><![CDATA[<div>Hi,</div><div><br /></div>On Android, is there any way to open the app automatically after the user taps on the received push notification message?<div><br /></div><div>Thanks</div>]]></description>
+   </item>
+   <item>
+      <title>Trigger Option - Inside Alert</title>
+      <link>http://community.geoloqi.com/discussion/148/trigger-option-inside-alert</link>
+      <pubDate>Thu, 22 Nov 2012 07:54:21 -0800</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">148@/discussions</guid>
+      <description><![CDATA[All,<div><br /></div><div>One of the issues I have encountered is how to alert users already inside a trigger radius to an event happening nearby. I have tried to use the message/broadcast but can't get that to work, and have resorted to using layer/users, looping through the returned places to find the place I want to send to, then sending using message/send to each user located in the place.&nbsp;</div><div><br /></div><div>I cannot imagine I am alone in needing such functionality as I would think it would be a required feature for any first responder or emergency type application. For example, say there was a campus bomb threat (we had over 100 in two months at Pitt last spring). It would be helpful to have the trigger set on enter around the area, but also to notify those already inside the trigger radius. i.e. don't enter if you are coming, and leave if you are already here. &nbsp;</div><div><br /></div><div>It would be awesome if there were a property in the Trigger/Create call to send alerts to those already inside an area. This way I could simply set the trigger type (enter/exit), set my place or lat/lon, radius, and sendInsideMessages: true.&nbsp;<span>This could eliminate the need for an additional coded API call on the developer's end.</span></div><div><span><br /></span></div><div><span>Just a thought.</span></div><div><span>&nbsp;</span></div><div><span>Thanks,</span></div><div><span>Bruce</span></div>]]></description>
+   </item>
+   <item>
+      <title>Username</title>
+      <link>http://community.geoloqi.com/discussion/20/username</link>
+      <pubDate>Thu, 15 Dec 2011 16:53:01 -0800</pubDate>
+      <dc:creator>Rzw8U1h9Z7PRo3ZFM</dc:creator>
+      <guid isPermaLink="false">20@/discussions</guid>
+      <description><![CDATA[How can i set up a username? instead of having my link look like <br /><a href="https://geoloqi.com/_Rzw8U1h9Z7PRo3687" target="_blank" rel="nofollow">https://geoloqi.com/_Rzw8U1h9Z7PRo3687</a><br />i want it to be like <a href="https://geoloqi.com/MYUSERNAME" target="_blank" rel="nofollow">https://geoloqi.com/MYUSERNAME</a><br /><br />is that possible? <br />]]></description>
+   </item>
+   <item>
+      <title>One click to my history map?</title>
+      <link>http://community.geoloqi.com/discussion/46/one-click-to-my-history-map</link>
+      <pubDate>Sat, 31 Mar 2012 00:33:24 -0700</pubDate>
+      <dc:creator>rknLA</dc:creator>
+      <guid isPermaLink="false">46@/discussions</guid>
+      <description><![CDATA[It would be super awesome if I could go to <a href="https://geoloqi.com/" target="_blank" rel="nofollow">https://geoloqi.com/</a> and take advantage of my session by accessing my /map and my /:username page in a single click each.<div><br /></div><div>Right now it's two clicks (and however many visits I spent trying to find the link) to get to maps, and I've resorted to accessing geoloqi.com/rknLA by typing it into the address bar. =\</div>]]></description>
+   </item>
+   </channel>
+</rss>

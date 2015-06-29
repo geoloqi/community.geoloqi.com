@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Triggers don&#039;t work every time - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/64/triggers-dont-work-every-time/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F187">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/bug-reports" class="TabLink">Bug Reports</a></li>
+   </ul>
+   <div class="SubTab">Triggers don&#039;t work every time</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_64">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/286/sZyYo1iDGX0YuGbeF">sZyYo1iDGX0YuGbeF</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/64/triggers-dont-work-every-time/p1" class="Permalink" name="Item_1" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I am testing your service in iOS app, but I have some issues with receiving push notifications. In visual editor I have created layer added four places and in every place I add trigger which should send push notification. In iOS app I subscribe user to that layer but I don't receive push notifications for every place I go through or enter.<div><br></div><div>Today I have received only two notifications for two places but I should four because I did go through all four places. When yesterday I received notification for place that I didn't today. It seems to me that it is working on some random pattern or if I am doing something wrong?</div><div><br></div><div><br></div><div><br></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>5 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/187?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/187?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_184">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/31/patrickarlt">patrickarlt</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/184#Comment_184" class="Permalink" name="Item_2" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			There are several reasons you could not be getting messages.<div><br></div><div>* You may have made your places to small generally 60-100 meters is a good place to start. Smaller places may not trigger because you actually never entered the place. You should check <a rel="nofollow" href="https://developers.geoloqi.com/api/location/history">location/history</a>&nbsp;to make sure you actually entered all 4 places.</div><div><br></div><div>* If you enter all 4 places in rapid succession Apple may actually be rate limiting your triggers. If you really did enter all 4 places check&nbsp;<a rel="nofollow" href="https://developers.geoloqi.com/api/trigger/history">trigger/history</a>&nbsp;to see if you trigger the event but the messages are being rate limited.</div><div><br></div><div>Also are you developing your own app for using the Geoloqi App from the App Store. The app in the app store is out of date and should not be used to testing. It is better to use the <a rel="nofollow" href="https://github.com/geoloqi/Geoloqi-iPhone-SDK/tree/master/TrackerSample/TrackerSample">sample app</a> that comes with the IOS SDK.</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_187">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/286/sZyYo1iDGX0YuGbeF">sZyYo1iDGX0YuGbeF</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/187#Comment_187" class="Permalink" name="Item_3" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I have checked trigger/history and there have been all triggers for the places I entered. So triggers apparently works the question is why I don't receive notifications? The first place I enter at 5:39pm, second at&nbsp;5:56pm, third at 6:12pm and so on. Apple could rate limit triggers? that is something new for me could you tell me some more about that how it works?<div><br></div><div>Today for example in my way to work I received just one.<br><div><br></div><div>I was using sample app as a guide for implementation and did exactly like it is in sample app except I subscribe user to my layer so I don't think there is something wrong with my implementation.</div></div><div><br></div><div>Could be this somehow connected with push notification development mode?</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_188">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/286/sZyYo1iDGX0YuGbeF">sZyYo1iDGX0YuGbeF</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/188#Comment_188" class="Permalink" name="Item_4" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			We did some more testing with three new devices two iPhone 4 and one iPhone 3G. On 3G we received notifications only if app was opened. On one 4 we always received notifications and on the other never. While on mine 4S I receive notifications just for some places.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_189">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/189#Comment_189" class="Permalink" name="Item_5" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana; font-size: small;">In our testing, we found that the iPhone 3G and 3GS have native location services that are much less accurate. Often the accuracy of the raw GPS data is quite poor. Apple has made many improvements in the iPhone 4, and even more in the 4S, due to the new chipsets used for GPS and wifi-assisted positioning. In general, the better the native capabilities of the device, the better our triggers will work as well. As such, we have seen the best performance on the iPhone 4S.</span><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;">As far as the push notifications themselves, Apple actually makes no guarantee of delivery, and there are many reasons why some push notifications may not go through. Please see this technical note from Apple for more details:</div><div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;"><br></div><div><span style="font-family: Arial, Verdana; font-size: small;"><a href="http://developer.apple.com/library/ios/#technotes/tn2265/_index.html" target="_blank" rel="nofollow">http://developer.apple.com/library/ios/#technotes/tn2265/_index.html</a></span></div><blockquote><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><b>Some Notifications Received, but Not All</b></span></div><div>If you are sending multiple notifications to the same device or computer within a short period of time, the push service will send only the last one.</div><div><br></div><div>Here's why. The device or computer acknowledges receipt of each notification. Until the push service receives that acknowledgment, it can only assume that the device or computer has gone off-line for some reason and stores the notification in the quality of service (QoS) queue for future redelivery. The round-trip network latency here is of course a major factor.</div><div><br></div><div>As described in the Local and Push Notification Programming Guide, the QoS queue holds a single notification per app per device or computer. If the service receives another notification before the one in the queue is sent, the new notification overwrites the previous one.</div><div><br></div><div>All of this points out that the intent is that a notification indicates to an app that something of interest has changed on the provider, and the app should check in with the provider to get the details. Notifications should not contain data which isn't also available elsewhere, and they should also not be stateful.</div></blockquote>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_190">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/286/sZyYo1iDGX0YuGbeF">sZyYo1iDGX0YuGbeF</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/190#Comment_190" class="Permalink" name="Item_6" rel="nofollow">May 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thanks that explains a lot.		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F187%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F187" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F187" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1 Active"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               May 2012            </li>
+                        <li>
+               <strong><a href="/profile/31/patrickarlt" class="UserLink">patrickarlt</a></strong>
+               May 2012            </li>
+                        <li>
+               <strong><a href="/profile/286/sZyYo1iDGX0YuGbeF" class="UserLink">sZyYo1iDGX0YuGbeF</a></strong>
+               May 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="64" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f24aeacb635" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="190" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="V2DQA1XMJXHE" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/187" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

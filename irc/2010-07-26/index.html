@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+<title>#geoloqi logs - 2010-07-26 - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</script>
+<style type="text/css">
+   .irclogs { font-family: courier, courier new, fixed-width; font-size: 10pt; } .irclogs a.time { color: #999; } .irclogs .msg-join, .msg-join a { color: #bbb; } .irclogs .msg-wiki, .msg-wiki a { color: #542b76; } .irclogs .msg-twitter, .msg-twitter a { color: #345e84; } .irclogs a { color: #222299; } .irclogs .calendar { float: left; margin-right: 24px; margin-bottom: 15px; height: 160px; } .irclogs .calendar-month { font-weight: bold; font-size: 11pt; } .irclogs .calendar th { color: #555; font-size: 8pt; font-weight: bold; text-align: center; } .irclogs .calendar td { text-align: center; color: #eee; font-size: 10pt; } .irclogs .calendar td a { text-decoration: underline; } .irclogs .calendar td.range-100 a, .irclogs .calendar td.range-90 a { color: #b63737; } .irclogs .calendar td.range-80 a, .irclogs .calendar td.range-70 a { color: #b64747; } .irclogs .calendar td.range-60 a, .irclogs .calendar td.range-50 a { color: #b65a5a; } .irclogs .calendar td.range-40 a, .irclogs .calendar td.range-30 a { color: #b66969; } .irclogs .calendar td.range-20 a, .irclogs .calendar td.range-10 a { color: #b67474; } .irclogs .calendar td.range-0 a { color: #b69e9e; } 
+  #Content {
+    width: 900px;
+  }
+  #Content .page {
+    background: white;
+    padding: 5px;
+    border-right: 1px #f7f0e7 solid;
+    border-left: 1px #f7f0e7 solid;
+  }
+  #Content .irclogs div {
+    line-height: 1em;
+    margin-bottom: 3px;
+  }
+</style>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-25750303-8']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); 
+  ga.type = 'text/javascript'; 
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(ga, s);})();
+</script>
+</head>
+<body>
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Support" /></span></a></h1>
+            <ul id="Menu"><li><a href="/dashboard/settings">Dashboard</a></li>
+<li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc/">IRC</a></li>
+<li><a href="/messages/all">Inbox</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content">
+<div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+  <ul>
+    <li><a href="/irc/2010-07-25" class="TabLink">Previous: Jul 25</a></li>
+    <li><a href="/irc/2010-07-27" class="TabLink">Next: Jul 27</a></li>
+    <li><a href="/irc/" class="TabLink">Index</a></li>
+  </ul>
+  <div class="SubTab">Geoloqi IRC</div>
+</div>
+<div class="page">
+
+<h2>2010-07-26</h2>
+
+<div class="irclogs">
+<div id="t1280127693000" class="msg-message"><a href="/irc/2010-07-26#t1280127693000" class="time">00:01</a> &lt;tjgillies&gt; hrm actually i don't think the actual client id/secret gets sent does it? its just used to generate request token</div>
+<div id="t1280127709000" class="msg-message"><a href="/irc/2010-07-26#t1280127709000" class="time">00:01</a> &lt;tjgillies&gt; need to brush up on actual spec, ive been babied by libraries ;)</div>
+<div id="t1280127754000" class="msg-message"><a href="/irc/2010-07-26#t1280127754000" class="time">00:02</a> &lt;aaronpk&gt; it gets sent when the client requests tokens, but not when it makes requests for resources</div>
+<div id="t1280127761000" class="msg-message"><a href="/irc/2010-07-26#t1280127761000" class="time">00:02</a> &lt;aaronpk&gt; it's sent using HTTP Basic auth</div>
+<div id="t1280127828000" class="msg-message"><a href="/irc/2010-07-26#t1280127828000" class="time">00:03</a> &lt;aaronpk&gt; <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-2">http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-2</a></div>
+<div id="t1280127837000" class="msg-message"><a href="/irc/2010-07-26#t1280127837000" class="time">00:03</a> &lt;aaronpk&gt; &quot;The authorization server MAY support additional authentication schemes suitable for the transmission of a password.</div>
+<div id="t1280127871000" class="msg-message"><a href="/irc/2010-07-26#t1280127871000" class="time">00:04</a> &lt;aaronpk&gt; which means we have the option of using Digest auth</div>
+<div id="t1280128009000" class="msg-message"><a href="/irc/2010-07-26#t1280128009000" class="time">00:06</a> &lt;tjgillies&gt; so i guess that means it doesn't matter if they know client id/secret?</div>
+<div id="t1280128025000" class="msg-message"><a href="/irc/2010-07-26#t1280128025000" class="time">00:07</a> &lt;aaronpk&gt; who is &quot;they&quot;?</div>
+<div id="t1280128036000" class="msg-message"><a href="/irc/2010-07-26#t1280128036000" class="time">00:07</a> &lt;tjgillies&gt; the geoloqi server owner</div>
+<div id="t1280128055000" class="msg-message"><a href="/irc/2010-07-26#t1280128055000" class="time">00:07</a> &lt;aaronpk&gt; the geoloqi server needs to get the client ID/secret in order to verify anything</div>
+<div id="t1280128067000" class="msg-message"><a href="/irc/2010-07-26#t1280128067000" class="time">00:07</a> &lt;tjgillies&gt; right, thats what ive been saying</div>
+<div id="t1280128081000" class="msg-message"><a href="/irc/2010-07-26#t1280128081000" class="time">00:08</a> &lt;tjgillies&gt; i was asking if that was bad</div>
+<div id="t1280128096000" class="msg-message"><a href="/irc/2010-07-26#t1280128096000" class="time">00:08</a> &lt;aaronpk&gt; ah, well you bring up an interesting point</div>
+<div id="t1280128149000" class="msg-message"><a href="/irc/2010-07-26#t1280128149000" class="time">00:09</a> &lt;tjgillies&gt; afaik, theres no opensource tool that uses oauth</div>
+<div id="t1280128156000" class="msg-message"><a href="/irc/2010-07-26#t1280128156000" class="time">00:09</a> &lt;aaronpk&gt; I wouldn't want someone else to be able to see the iPhone client's id/secret, but the iPhone sending it to my server is fine.</div>
+<div id="t1280128186000" class="msg-message"><a href="/irc/2010-07-26#t1280128186000" class="time">00:09</a> &lt;aaronpk&gt; If the user changes the server URL in the iPhone client, the client shouldn't send the geoloqi id/secret to the user's server</div>
+<div id="t1280128211000" class="msg-message"><a href="/irc/2010-07-26#t1280128211000" class="time">00:10</a> &lt;tjgillies&gt; then how will it auth?</div>
+<div id="t1280128224000" class="msg-message"><a href="/irc/2010-07-26#t1280128224000" class="time">00:10</a> &lt;aaronpk&gt; it'll need a new id/secret somehow</div>
+<div id="t1280128239000" class="msg-message"><a href="/irc/2010-07-26#t1280128239000" class="time">00:10</a> &lt;tjgillies&gt; hrm ok have an idea</div>
+<div id="t1280128271000" class="msg-message"><a href="/irc/2010-07-26#t1280128271000" class="time">00:11</a> &lt;tjgillies&gt; have option to put in client id/secret from &quot;create an app page&quot;</div>
+<div id="t1280128281000" class="msg-message"><a href="/irc/2010-07-26#t1280128281000" class="time">00:11</a> &lt;tjgillies&gt; don't know if that would be too technical for users</div>
+<div id="t1280128307000" class="msg-message"><a href="/irc/2010-07-26#t1280128307000" class="time">00:11</a> &lt;aaronpk&gt; ah that's probably a good way to do it</div>
+<div id="t1280128313000" class="msg-message"><a href="/irc/2010-07-26#t1280128313000" class="time">00:11</a> &lt;tjgillies&gt; its what im implementing right now, which is how i came up with my original question</div>
+<div id="t1280128352000" class="msg-message"><a href="/irc/2010-07-26#t1280128352000" class="time">00:12</a> &lt;aaronpk&gt; wait a sec</div>
+<div id="t1280128356000" class="msg-message"><a href="/irc/2010-07-26#t1280128356000" class="time">00:12</a> &lt;aaronpk&gt; that's backwards</div>
+<div id="t1280128383000" class="msg-message"><a href="/irc/2010-07-26#t1280128383000" class="time">00:13</a> &lt;aaronpk&gt; what exactly are you implementing? a geoloqi server in Node.js?</div>
+<div id="t1280128406000" class="msg-message"><a href="/irc/2010-07-26#t1280128406000" class="time">00:13</a> &lt;aaronpk&gt; or a geoloqi client?</div>
+<div id="t1280128425000" class="msg-message"><a href="/irc/2010-07-26#t1280128425000" class="time">00:13</a> &lt;tjgillies&gt; server</div>
+<div id="t1280128436000" class="msg-message"><a href="/irc/2010-07-26#t1280128436000" class="time">00:13</a> &lt;aaronpk&gt; whoa ok crazy</div>
+<div id="t1280128447000" class="msg-message"><a href="/irc/2010-07-26#t1280128447000" class="time">00:14</a> &lt;tjgillies&gt; yeah, im copying your api</div>
+<div id="t1280128458000" class="msg-message"><a href="/irc/2010-07-26#t1280128458000" class="time">00:14</a> &lt;tjgillies&gt; but making a javascript implementation</div>
+<div id="t1280128470000" class="msg-message"><a href="/irc/2010-07-26#t1280128470000" class="time">00:14</a> &lt;aaronpk&gt; so you're gonna need to do oauth from the server side too</div>
+<div id="t1280128476000" class="msg-message"><a href="/irc/2010-07-26#t1280128476000" class="time">00:14</a> &lt;tjgillies&gt; yeah</div>
+<div id="t1280128481000" class="msg-message"><a href="/irc/2010-07-26#t1280128481000" class="time">00:14</a> &lt;tjgillies&gt; thats what im doing now</div>
+<div id="t1280128489000" class="msg-message"><a href="/irc/2010-07-26#t1280128489000" class="time">00:14</a> &lt;aaronpk&gt; i doubt there's a Node.js OAuth 2 library out there yet</div>
+<div id="t1280128493000" class="msg-message"><a href="/irc/2010-07-26#t1280128493000" class="time">00:14</a> &lt;tjgillies&gt; nope</div>
+<div id="t1280128509000" class="msg-message"><a href="/irc/2010-07-26#t1280128509000" class="time">00:15</a> &lt;tjgillies&gt; thats why im writing one, i told you id write one if you suported oauth2</div>
+<div id="t1280128514000" class="msg-message"><a href="/irc/2010-07-26#t1280128514000" class="time">00:15</a> &lt;aaronpk&gt; sweet</div>
+<div id="t1280128543000" class="msg-message"><a href="/irc/2010-07-26#t1280128543000" class="time">00:15</a> &lt;tjgillies&gt; or at least use mine until someone writes a better one ;)</div>
+<div id="t1280128554000" class="msg-message"><a href="/irc/2010-07-26#t1280128554000" class="time">00:15</a> &lt;tjgillies&gt; which is inevitable</div>
+<div id="t1280128612000" class="msg-message"><a href="/irc/2010-07-26#t1280128612000" class="time">00:16</a> &lt;aaronpk&gt; not if you write yours first! I bet yours will become the &quot;official&quot; one</div>
+<div id="t1280128632000" class="msg-message"><a href="/irc/2010-07-26#t1280128632000" class="time">00:17</a> &lt;tjgillies&gt; oh god, i hope not</div>
+<div id="t1280128638000" class="msg-message"><a href="/irc/2010-07-26#t1280128638000" class="time">00:17</a> &lt;tjgillies&gt; ;)</div>
+<div id="t1280128695000" class="msg-message"><a href="/irc/2010-07-26#t1280128695000" class="time">00:18</a> &lt;aaronpk&gt; ok so your question about the id/secret</div>
+<div id="t1280128736000" class="msg-message"><a href="/irc/2010-07-26#t1280128736000" class="time">00:18</a> &lt;aaronpk&gt; if you download the iPhone app, you need a way to enter a new id/secret into the app to use with your server, which will be different from the id sent to my server</div>
+<div id="t1280128777000" class="msg-message"><a href="/irc/2010-07-26#t1280128777000" class="time">00:19</a> &lt;tjgillies&gt; yeah, thats what i said ;)</div>
+<div id="t1280128802000" class="msg-message"><a href="/irc/2010-07-26#t1280128802000" class="time">00:20</a> &lt;aaronpk&gt; we'll have to add that to the Settings page</div>
+<div id="t1280128810000" class="msg-message"><a href="/irc/2010-07-26#t1280128810000" class="time">00:20</a> &lt;tjgillies&gt; but that means every user will need to make their own app</div>
+<div id="t1280128889000" class="msg-message"><a href="/irc/2010-07-26#t1280128889000" class="time">00:21</a> &lt;aaronpk&gt; if you had a way to enter your own id/secret into the app's settings screen then you wouldn't need a new build of the app</div>
+<div id="t1280128922000" class="msg-message"><a href="/irc/2010-07-26#t1280128922000" class="time">00:22</a> &lt;tjgillies&gt; thats essentially a username/password</div>
+<div id="t1280128936000" class="msg-message"><a href="/irc/2010-07-26#t1280128936000" class="time">00:22</a> &lt;aaronpk&gt; yes, for the app, not for the user</div>
+<div id="t1280128978000" class="msg-message"><a href="/irc/2010-07-26#t1280128978000" class="time">00:22</a> &lt;tjgillies&gt; but each phone should have a seperate client id/secret?</div>
+<div id="t1280129009000" class="msg-message"><a href="/irc/2010-07-26#t1280129009000" class="time">00:23</a> &lt;tjgillies&gt; and that would have to match client id/secret of server</div>
+<div id="t1280129023000" class="msg-message"><a href="/irc/2010-07-26#t1280129023000" class="time">00:23</a> &lt;tjgillies&gt; well on server</div>
+<div id="t1280129088000" class="msg-message"><a href="/irc/2010-07-26#t1280129088000" class="time">00:24</a> &lt;aaronpk&gt; *each* phone doesn't need a separate client id, you only need a new client id to talk to a new server</div>
+<div id="t1280129114000" class="msg-wiki"><a href="/irc/2010-07-26#t1280129114000" class="time">00:25</a> &lt;Loqi&gt; [[Mobile App Guidelines]]  <a href="http://geoloqi.org/index.php?diff=247&amp;oldid=241&amp;rcid=249">http://geoloqi.org/index.php?diff=247&amp;oldid=241&amp;rcid=249</a> * Caseorganic * (+78)</div>
+<div id="t1280129136000" class="msg-message"><a href="/irc/2010-07-26#t1280129136000" class="time">00:25</a> &lt;aaronpk&gt; the default build of the iPhone app will include the id/secret that I've got in my database. if you're running your own server, you'd need to enter the id/secret that's in your db</div>
+<div id="t1280129157000" class="msg-wiki"><a href="/irc/2010-07-26#t1280129157000" class="time">00:25</a> &lt;Loqi&gt; [[Mobile App Guidelines]]  <a href="http://geoloqi.org/index.php?diff=248&amp;oldid=247&amp;rcid=250">http://geoloqi.org/index.php?diff=248&amp;oldid=247&amp;rcid=250</a> * Caseorganic * (+67)</div>
+<div id="t1280129185000" class="msg-wiki"><a href="/irc/2010-07-26#t1280129185000" class="time">00:26</a> &lt;Loqi&gt; [[Mobile App Guidelines]]  <a href="http://geoloqi.org/index.php?diff=249&amp;oldid=248&amp;rcid=251">http://geoloqi.org/index.php?diff=249&amp;oldid=248&amp;rcid=251</a> * Caseorganic * (+1)</div>
+<div id="t1280129193000" class="msg-message"><a href="/irc/2010-07-26#t1280129193000" class="time">00:26</a> &lt;tjgillies&gt; so you have multiple people sharing the same client id/secret, is that a good idea?</div>
+<div id="t1280129200000" class="msg-message"><a href="/irc/2010-07-26#t1280129200000" class="time">00:26</a> &lt;aaronpk&gt; yes</div>
+<div id="t1280129203000" class="msg-message"><a href="/irc/2010-07-26#t1280129203000" class="time">00:26</a> &lt;tjgillies&gt; ok</div>
+<div id="t1280129213000" class="msg-message"><a href="/irc/2010-07-26#t1280129213000" class="time">00:26</a> &lt;aaronpk&gt; it's equivalent to OAuth 1's consumer key and secret</div>
+<div id="t1280129234000" class="msg-message"><a href="/irc/2010-07-26#t1280129234000" class="time">00:27</a> &lt;aaronpk&gt; all Tweetdeck apps use the same key/secret</div>
+<div id="t1280129241000" class="msg-message"><a href="/irc/2010-07-26#t1280129241000" class="time">00:27</a> &lt;aaronpk&gt; that's how Twitter knows it's Tweetdeck</div>
+<div id="t1280129250000" class="msg-message"><a href="/irc/2010-07-26#t1280129250000" class="time">00:27</a> &lt;tjgillies&gt; yeah but you don't know what it is</div>
+<div id="t1280129267000" class="msg-message"><a href="/irc/2010-07-26#t1280129267000" class="time">00:27</a> &lt;tjgillies&gt; with this model everyone sharing will know what the id/secret is</div>
+<div id="t1280129297000" class="msg-message"><a href="/irc/2010-07-26#t1280129297000" class="time">00:28</a> &lt;aaronpk&gt; we'll need to make sure the official iPhone app's client id/secret isn't visible to users</div>
+<div id="t1280129327000" class="msg-message"><a href="/irc/2010-07-26#t1280129327000" class="time">00:28</a> &lt;tjgillies&gt; right, so its ok if they know id/secret for other clients, just not the &quot;official&quot; one</div>
+<div id="t1280129413000" class="msg-message"><a href="/irc/2010-07-26#t1280129413000" class="time">00:30</a> &lt;aaronpk&gt; if you're writing a client talking to geoloqi.com, you'll get your own id/secret, which you shouldn't give out to others</div>
+<div id="t1280129466000" class="msg-message"><a href="/irc/2010-07-26#t1280129466000" class="time">00:31</a> &lt;tjgillies&gt; right</div>
+<div id="t1280129481000" class="msg-message"><a href="/irc/2010-07-26#t1280129481000" class="time">00:31</a> &lt;tjgillies&gt; but for &quot;normal&quot; users they'll have to share a public one</div>
+<div id="t1280129495000" class="msg-message"><a href="/irc/2010-07-26#t1280129495000" class="time">00:31</a> &lt;tjgillies&gt; if they use mobile app</div>
+<div id="t1280129515000" class="msg-message"><a href="/irc/2010-07-26#t1280129515000" class="time">00:31</a> &lt;tjgillies&gt; and aren't talking to geoloqi.com</div>
+<div id="t1280129546000" class="msg-message"><a href="/irc/2010-07-26#t1280129546000" class="time">00:32</a> &lt;aaronpk&gt; well if you're talking to something other than geoloqi.com, you presumably have a way to create a new client id/secret, so you'd create your own on your server then enter that into the app</div>
+<div id="t1280129628000" class="msg-message"><a href="/irc/2010-07-26#t1280129628000" class="time">00:33</a> &lt;tjgillies&gt; which is &quot;creating your own app&quot; i.e. the process of creating a new client id/secret</div>
+<div id="t1280129666000" class="msg-message"><a href="/irc/2010-07-26#t1280129666000" class="time">00:34</a> &lt;aaronpk&gt; i *think* we're on the same page here, but the terminology is slightly confusing</div>
+<div id="t1280129790000" class="msg-message"><a href="/irc/2010-07-26#t1280129790000" class="time">00:36</a> &lt;tjgillies&gt; yeah the point im making is that any user who uses any server besides geoloqi.com will have to create a new id/secret (which is an app), and then enter that app information into the mobile application</div>
+<div id="t1280129819000" class="msg-message"><a href="/irc/2010-07-26#t1280129819000" class="time">00:36</a> &lt;aaronpk&gt; perfect</div>
+<div id="t1280129828000" class="msg-message"><a href="/irc/2010-07-26#t1280129828000" class="time">00:37</a> &lt;tjgillies&gt; which might be &quot;tough&quot; for normal people</div>
+<div id="t1280129856000" class="msg-message"><a href="/irc/2010-07-26#t1280129856000" class="time">00:37</a> &lt;tjgillies&gt; oh well, only way i see how to do it though</div>
+<div id="t1280129870000" class="msg-message"><a href="/irc/2010-07-26#t1280129870000" class="time">00:37</a> &lt;aaronpk&gt; unless there was an API method for provisioning client id/secrets</div>
+<div id="t1280129879000" class="msg-message"><a href="/irc/2010-07-26#t1280129879000" class="time">00:37</a> &lt;aaronpk&gt; which is not too unrealistic</div>
+<div id="t1280129885000" class="msg-message"><a href="/irc/2010-07-26#t1280129885000" class="time">00:38</a> &lt;aaronpk&gt; but let's take it one step at a time</div>
+<div id="t1280129888000" class="msg-message"><a href="/irc/2010-07-26#t1280129888000" class="time">00:38</a> &lt;tjgillies&gt; yeah</div>
+<div id="t1280129919000" class="msg-message"><a href="/irc/2010-07-26#t1280129919000" class="time">00:38</a> &lt;tjgillies&gt; its good to know what potential problems there are, so we can think of addressing them, instead of accidently falling into them</div>
+<div id="t1280129936000" class="msg-message"><a href="/irc/2010-07-26#t1280129936000" class="time">00:38</a> &lt;aaronpk&gt; yea, i think this is pretty solid so far</div>
+<div id="t1280130066000" class="msg-message"><a href="/irc/2010-07-26#t1280130066000" class="time">00:41</a> &lt;tjgillies&gt; aaronpk, any idea what you want to use for 'scopes'?</div>
+<div id="t1280130081000" class="msg-message"><a href="/irc/2010-07-26#t1280130081000" class="time">00:41</a> &lt;aaronpk&gt; yea, just took some notes but haven't officially named them yet, one sec</div>
+<div id="t1280130144000" class="msg-message"><a href="/irc/2010-07-26#t1280130144000" class="time">00:42</a> &lt;tjgillies&gt; ok</div>
+<div id="t1280130313000" class="msg-message"><a href="/irc/2010-07-26#t1280130313000" class="time">00:45</a> &lt;aaronpk&gt; there will be current_location and location_history, which also  justifies having separate location/last and location/history methods ;)</div>
+<div id="t1280130325000" class="msg-message"><a href="/irc/2010-07-26#t1280130325000" class="time">00:45</a> &lt;aaronpk&gt; maybe it should be called last_location actually</div>
+<div id="t1280130437000" class="msg-message"><a href="/irc/2010-07-26#t1280130437000" class="time">00:47</a> &lt;tjgillies&gt; yeah moer accurate</div>
+<div id="t1280130439000" class="msg-message"><a href="/irc/2010-07-26#t1280130439000" class="time">00:47</a> &lt;tjgillies&gt; more</div>
+<div id="t1280130548000" class="msg-wiki"><a href="/irc/2010-07-26#t1280130548000" class="time">00:49</a> &lt;Loqi&gt; [[API]]  <a href="http://geoloqi.org/index.php?diff=250&amp;oldid=246&amp;rcid=252">http://geoloqi.org/index.php?diff=250&amp;oldid=246&amp;rcid=252</a> * Aaronpk * (+667) added oauth scopes</div>
+<div id="t1280130551000" class="msg-message"><a href="/irc/2010-07-26#t1280130551000" class="time">00:49</a> &lt;aaronpk&gt; <a href="http://geoloqi.org/API">http://geoloqi.org/API</a></div>
+<div id="t1280130681000" class="msg-message"><a href="/irc/2010-07-26#t1280130681000" class="time">00:51</a> &lt;tjgillies&gt; the default path for a lot of oauth2 client libraries is /oauth/access_token</div>
+<div id="t1280130683000" class="msg-message"><a href="/irc/2010-07-26#t1280130683000" class="time">00:51</a> &lt;tjgillies&gt; <a href="http://github.com/intridea/oauth2/blob/master/lib/oauth2/client.rb#L48">http://github.com/intridea/oauth2/blob/master/lib/oauth2/client.rb#L48</a></div>
+<div id="t1280130715000" class="msg-message"><a href="/irc/2010-07-26#t1280130715000" class="time">00:51</a> &lt;tjgillies&gt; its what facebook uses</div>
+<div id="t1280130732000" class="msg-message"><a href="/irc/2010-07-26#t1280130732000" class="time">00:52</a> &lt;aaronpk&gt; the spec used &quot;token&quot; as the example :P</div>
+<div id="t1280130732000" class="msg-action"><a href="/irc/2010-07-26#t1280130732000" class="time">00:52</a> &lt;Loqi&gt; Loqi grabs aaronpk's tongue</div>
+<div id="t1280130769000" class="msg-message"><a href="/irc/2010-07-26#t1280130769000" class="time">00:52</a> &lt;aaronpk&gt; <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1">http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1</a></div>
+<div id="t1280130805000" class="msg-message"><a href="/irc/2010-07-26#t1280130805000" class="time">00:53</a> &lt;aaronpk&gt; it uses the same path for access tokens, refresh tokens, and password grants</div>
+<div id="t1280130935000" class="msg-message"><a href="/irc/2010-07-26#t1280130935000" class="time">00:55</a> &lt;aaronpk&gt; tho I suppose separating out the access types into different paths would make access control easier</div>
+<div id="t1280131007000" class="msg-message"><a href="/irc/2010-07-26#t1280131007000" class="time">00:56</a> &lt;tjgillies&gt; i think the server might return the paths in response parameters after request to /oauth/authorize</div>
+<div id="t1280131063000" class="msg-message"><a href="/irc/2010-07-26#t1280131063000" class="time">00:57</a> &lt;tjgillies&gt; this makes me think that: <a href="http://github.com/intridea/oauth2/blob/master/lib/oauth2/strategy/web_server.rb#L24">http://github.com/intridea/oauth2/blob/master/lib/oauth2/strategy/web_server.rb#L24</a></div>
+<div id="t1280131098000" class="msg-message"><a href="/irc/2010-07-26#t1280131098000" class="time">00:58</a> &lt;aaronpk&gt; i think that's just the token</div>
+<div id="t1280131130000" class="msg-message"><a href="/irc/2010-07-26#t1280131130000" class="time">00:58</a> &lt;tjgillies&gt; gotcha</div>
+<div id="t1280131132000" class="msg-message"><a href="/irc/2010-07-26#t1280131132000" class="time">00:58</a> &lt;aaronpk&gt; &quot;The location of the token endpoint can be found in the service documentation, or can be obtained by using [[ OAuth Discovery ]]</div>
+<div id="t1280131179000" class="msg-message"><a href="/irc/2010-07-26#t1280131179000" class="time">00:59</a> &lt;tjgillies&gt; oh, didn't even know oauth discovery existed</div>
+<div id="t1280131185000" class="msg-message"><a href="/irc/2010-07-26#t1280131185000" class="time">00:59</a> &lt;aaronpk&gt; heh yea</div>
+<div id="t1280131246000" class="msg-message"><a href="/irc/2010-07-26#t1280131246000" class="time">01:00</a> &lt;aaronpk&gt; wille be fun to get there eventually</div>
+<div id="t1280131362000" class="msg-message"><a href="/irc/2010-07-26#t1280131362000" class="time">01:02</a> &lt;aaronpk&gt; how far along are you with an oauth2 client?</div>
+<div id="t1280131416000" class="msg-message"><a href="/irc/2010-07-26#t1280131416000" class="time">01:03</a> &lt;tjgillies&gt; not very far</div>
+<div id="t1280131436000" class="msg-message"><a href="/irc/2010-07-26#t1280131436000" class="time">01:03</a> &lt;tjgillies&gt; still trying to get a good grasp of the spec before i go screwing things up ;)</div>
+<div id="t1280131471000" class="msg-message"><a href="/irc/2010-07-26#t1280131471000" class="time">01:04</a> &lt;aaronpk&gt; k. I'm almost done tying in the oauth methods and will need a client to test it</div>
+<div id="t1280131583000" class="msg-message"><a href="/irc/2010-07-26#t1280131583000" class="time">01:06</a> &lt;tjgillies&gt; i can use ruby to test it</div>
+<div id="t1280131601000" class="msg-message"><a href="/irc/2010-07-26#t1280131601000" class="time">01:06</a> &lt;tjgillies&gt; the oauth2 client gem only requires a few lines of code</div>
+<div id="t1280131607000" class="msg-message"><a href="/irc/2010-07-26#t1280131607000" class="time">01:06</a> &lt;aaronpk&gt; oh awesome ok</div>
+<div id="t1280131624000" class="msg-message"><a href="/irc/2010-07-26#t1280131624000" class="time">01:07</a> &lt;aaronpk&gt; makes me feel better using someone else's code to test against my server rather than writing a client too</div>
+<div id="t1280131892000" class="msg-message"><a href="/irc/2010-07-26#t1280131892000" class="time">01:11</a> &lt;tjgillies&gt; aaronpk, fwiw, i think putting a leading &quot;/&quot; in front of resource paths would make it more aesthetic</div>
+<div id="t1280131943000" class="msg-message"><a href="/irc/2010-07-26#t1280131943000" class="time">01:12</a> &lt;aaronpk&gt; the full path will be api.geoloqi.com/1/location/last, that won't be confusing then?</div>
+<div id="t1280131991000" class="msg-message"><a href="/irc/2010-07-26#t1280131991000" class="time">01:13</a> &lt;tjgillies&gt; ok nevermind</div>
+<div id="t1280132368000" class="msg-message"><a href="/irc/2010-07-26#t1280132368000" class="time">01:19</a> &lt;tjgillies&gt; ok app is setup, just waiting for id/secret</div>
+<div id="t1280132443000" class="msg-message"><a href="/irc/2010-07-26#t1280132443000" class="time">01:20</a> &lt;aaronpk&gt; your server is ready?</div>
+<div id="t1280132528000" class="msg-message"><a href="/irc/2010-07-26#t1280132528000" class="time">01:22</a> &lt;tjgillies&gt; no my client</div>
+<div id="t1280132562000" class="msg-message"><a href="/irc/2010-07-26#t1280132562000" class="time">01:22</a> &lt;aaronpk&gt; the ruby one?</div>
+<div id="t1280132566000" class="msg-message"><a href="/irc/2010-07-26#t1280132566000" class="time">01:22</a> &lt;tjgillies&gt; yeah</div>
+<div id="t1280132643000" class="msg-message"><a href="/irc/2010-07-26#t1280132643000" class="time">01:24</a> &lt;tjgillies&gt; <a href="http://gist.github.com/490308">http://gist.github.com/490308</a></div>
+<div id="t1280132863000" class="msg-message"><a href="/irc/2010-07-26#t1280132863000" class="time">01:27</a> &lt;aaronpk&gt; cool. I have no idea if this is going to work yet!</div>
+<div id="t1280132874000" class="msg-message"><a href="/irc/2010-07-26#t1280132874000" class="time">01:27</a> &lt;aaronpk&gt; i've been writing code for the last couple hours but haven't run any of it yet :/</div>
+<div id="t1280133114000" class="msg-message"><a href="/irc/2010-07-26#t1280133114000" class="time">01:31</a> &lt;aaronpk&gt; tried to run that, got an error <a href="http://gist.github.com/490308#comments">http://gist.github.com/490308#comments</a></div>
+<div id="t1280133192000" class="msg-message"><a href="/irc/2010-07-26#t1280133192000" class="time">01:33</a> &lt;tjgillies&gt; you need to 'gem install' the required gems</div>
+<div id="t1280133202000" class="msg-message"><a href="/irc/2010-07-26#t1280133202000" class="time">01:33</a> &lt;aaronpk&gt; i thought I got them all</div>
+<div id="t1280133246000" class="msg-message"><a href="/irc/2010-07-26#t1280133246000" class="time">01:34</a> &lt;aaronpk&gt; sinatra, oauth2, json</div>
+<div id="t1280133364000" class="msg-message"><a href="/irc/2010-07-26#t1280133364000" class="time">01:36</a> &lt;tjgillies&gt; hrmm. what are you running it with?</div>
+<div id="t1280133369000" class="msg-message"><a href="/irc/2010-07-26#t1280133369000" class="time">01:36</a> &lt;tjgillies&gt; on the command line</div>
+<div id="t1280133383000" class="msg-message"><a href="/irc/2010-07-26#t1280133383000" class="time">01:36</a> &lt;tjgillies&gt; might also want to gem install thin fi you don't have it</div>
+<div id="t1280133387000" class="msg-message"><a href="/irc/2010-07-26#t1280133387000" class="time">01:36</a> &lt;tjgillies&gt; if*</div>
+<div id="t1280133468000" class="msg-message"><a href="/irc/2010-07-26#t1280133468000" class="time">01:37</a> &lt;aaronpk&gt; i have ruby 1.8.6.399</div>
+<div id="t1280133485000" class="msg-message"><a href="/irc/2010-07-26#t1280133485000" class="time">01:38</a> &lt;aaronpk&gt; I ran `ruby geoloqi.rb` from the command line, not as root</div>
+<div id="t1280133560000" class="msg-message"><a href="/irc/2010-07-26#t1280133560000" class="time">01:39</a> &lt;aaronpk&gt; `sudo gem install thin` dies with <a href="https://gist.github.com/34040d46970acf2f2c75">https://gist.github.com/34040d46970acf2f2c75</a></div>
+<div id="t1280133608000" class="msg-message"><a href="/irc/2010-07-26#t1280133608000" class="time">01:40</a> &lt;tjgillies&gt; are you on a mac?</div>
+<div id="t1280133647000" class="msg-message"><a href="/irc/2010-07-26#t1280133647000" class="time">01:40</a> &lt;aaronpk&gt; this is a fedora server</div>
+<div id="t1280133693000" class="msg-message"><a href="/irc/2010-07-26#t1280133693000" class="time">01:41</a> &lt;tjgillies&gt; yum groupinstall &quot;Development Tools&quot; &quot;Legacy Software Development&quot;</div>
+<div id="t1280133698000" class="msg-message"><a href="/irc/2010-07-26#t1280133698000" class="time">01:41</a> &lt;tjgillies&gt; sudo</div>
+<div id="t1280133738000" class="msg-message"><a href="/irc/2010-07-26#t1280133738000" class="time">01:42</a> &lt;tjgillies&gt; thin uses c libraries for speed</div>
+<div id="t1280133747000" class="msg-message"><a href="/irc/2010-07-26#t1280133747000" class="time">01:42</a> &lt;aaronpk&gt; oh god so many packages</div>
+<div id="t1280133783000" class="msg-message"><a href="/irc/2010-07-26#t1280133783000" class="time">01:43</a> &lt;tjgillies&gt; yeah, fedoras dev environment is dependency bloated</div>
+<div id="t1280133825000" class="msg-message"><a href="/irc/2010-07-26#t1280133825000" class="time">01:43</a> &lt;tjgillies&gt; i actually like ubuntu the best</div>
+<div id="t1280133837000" class="msg-message"><a href="/irc/2010-07-26#t1280133837000" class="time">01:43</a> &lt;tjgillies&gt; was using arch but processes liked to segfault randomly</div>
+<div id="t1280133977000" class="msg-message"><a href="/irc/2010-07-26#t1280133977000" class="time">01:46</a> &lt;aaronpk&gt; got it to build by installing just g++ stuff</div>
+<div id="t1280133989000" class="msg-message"><a href="/irc/2010-07-26#t1280133989000" class="time">01:46</a> &lt;aaronpk&gt; now thin is installed, but still getting that error</div>
+<div id="t1280134181000" class="msg-message"><a href="/irc/2010-07-26#t1280134181000" class="time">01:49</a> &lt;tjgillies&gt; damn</div>
+<div id="t1280134184000" class="msg-message"><a href="/irc/2010-07-26#t1280134184000" class="time">01:49</a> &lt;Loqi&gt; lolz</div>
+<div id="t1280134188000" class="msg-message"><a href="/irc/2010-07-26#t1280134188000" class="time">01:49</a> &lt;tjgillies&gt; runs fine on my machine</div>
+<div id="t1280134250000" class="msg-message"><a href="/irc/2010-07-26#t1280134250000" class="time">01:50</a> &lt;aaronpk&gt; I don't know enough about ruby to decode that error message</div>
+<div id="t1280134316000" class="msg-message"><a href="/irc/2010-07-26#t1280134316000" class="time">01:51</a> &lt;tjgillies&gt; make a file with a line that just says require 'sinatra'</div>
+<div id="t1280134321000" class="msg-message"><a href="/irc/2010-07-26#t1280134321000" class="time">01:52</a> &lt;tjgillies&gt; and try to run that</div>
+<div id="t1280134360000" class="msg-message"><a href="/irc/2010-07-26#t1280134360000" class="time">01:52</a> &lt;aaronpk&gt; yea I get the same error</div>
+<div id="t1280134377000" class="msg-message"><a href="/irc/2010-07-26#t1280134377000" class="time">01:52</a> &lt;tjgillies&gt; your system has a jacked up install of sinatra</div>
+<div id="t1280134384000" class="msg-message"><a href="/irc/2010-07-26#t1280134384000" class="time">01:53</a> &lt;aaronpk&gt; well crap</div>
+<div id="t1280134495000" class="msg-message"><a href="/irc/2010-07-26#t1280134495000" class="time">01:54</a> &lt;tjgillies&gt; might be your ruby version</div>
+<div id="t1280134500000" class="msg-message"><a href="/irc/2010-07-26#t1280134500000" class="time">01:55</a> &lt;tjgillies&gt; any way to can up to 1.8.7?</div>
+<div id="t1280134537000" class="msg-message"><a href="/irc/2010-07-26#t1280134537000" class="time">01:55</a> &lt;aaronpk&gt; doesn't look like that's available from the package manager yet</div>
+<div id="t1280134582000" class="msg-message"><a href="/irc/2010-07-26#t1280134582000" class="time">01:56</a> &lt;tjgillies&gt; packagers always mess up ruby</div>
+<div id="t1280134606000" class="msg-message"><a href="/irc/2010-07-26#t1280134606000" class="time">01:56</a> &lt;tjgillies&gt; you might have a package of sinata</div>
+<div id="t1280134614000" class="msg-message"><a href="/irc/2010-07-26#t1280134614000" class="time">01:56</a> &lt;tjgillies&gt; what does yum search sinatra do?</div>
+<div id="t1280134634000" class="msg-message"><a href="/irc/2010-07-26#t1280134634000" class="time">01:57</a> &lt;aaronpk&gt; one sec, updating all my packages</div>
+<div id="t1280134654000" class="msg-message"><a href="/irc/2010-07-26#t1280134654000" class="time">01:57</a> &lt;aaronpk&gt; rubygems was one of the updates</div>
+<div id="t1280134665000" class="msg-message"><a href="/irc/2010-07-26#t1280134665000" class="time">01:57</a> &lt;tjgillies&gt; ok</div>
+<div id="t1280134680000" class="msg-message"><a href="/irc/2010-07-26#t1280134680000" class="time">01:58</a> &lt;tjgillies&gt; that might be the prob</div>
+<div id="t1280134698000" class="msg-message"><a href="/irc/2010-07-26#t1280134698000" class="time">01:58</a> &lt;tjgillies&gt; one thing i like about ruby 1.9 is that rubygems is part of the language and not some hacked together dependency</div>
+<div id="t1280134964000" class="msg-message"><a href="/irc/2010-07-26#t1280134964000" class="time">02:02</a> &lt;aaronpk&gt; ok well the yum package of sinatra was not installed so I isntalled it, but still getting that error</div>
+<div id="t1280135194000" class="msg-message"><a href="/irc/2010-07-26#t1280135194000" class="time">02:06</a> &lt;tjgillies&gt; hrm.. its probably something with /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra.rb</div>
+<div id="t1280135197000" class="msg-message"><a href="/irc/2010-07-26#t1280135197000" class="time">02:06</a> &lt;tjgillies&gt; line 4</div>
+<div id="t1280135283000" class="msg-message"><a href="/irc/2010-07-26#t1280135283000" class="time">02:08</a> &lt;aaronpk&gt; line 4 is &quot;require 'sinatra/base'&quot;?</div>
+<div id="t1280135314000" class="msg-message"><a href="/irc/2010-07-26#t1280135314000" class="time">02:08</a> &lt;tjgillies&gt; yeah nevermind i'll setup a python outh2 file</div>
+<div id="t1280135324000" class="msg-message"><a href="/irc/2010-07-26#t1280135324000" class="time">02:08</a> &lt;aaronpk&gt; heh ok</div>
+<div id="t1280135329000" class="msg-message"><a href="/irc/2010-07-26#t1280135329000" class="time">02:08</a> &lt;tjgillies&gt; hopefully you have a better python install</div>
+<div id="t1280136214000" class="msg-message"><a href="/irc/2010-07-26#t1280136214000" class="time">02:23</a> &lt;aaronpk&gt; oh jeez, they changed the names of the auth types between version 9 and 10</div>
+<div id="t1280136280000" class="msg-message"><a href="/irc/2010-07-26#t1280136280000" class="time">02:24</a> &lt;tjgillies&gt; <a href="http://github.com/simplegeo/python-oauth2">http://github.com/simplegeo/python-oauth2</a> this is the best python one</div>
+<div id="t1280136291000" class="msg-message"><a href="/irc/2010-07-26#t1280136291000" class="time">02:24</a> &lt;tjgillies&gt; all the other ones besides ruby are so convoluted though</div>
+<div id="t1280136298000" class="msg-message"><a href="/irc/2010-07-26#t1280136298000" class="time">02:24</a> &lt;tjgillies&gt; people think to technically</div>
+<div id="t1280136303000" class="msg-message"><a href="/irc/2010-07-26#t1280136303000" class="time">02:25</a> &lt;tjgillies&gt; s/to/too/</div>
+<div id="t1280136320000" class="msg-message"><a href="/irc/2010-07-26#t1280136320000" class="time">02:25</a> &lt;aaronpk&gt; it's quite a bit simpler than v1</div>
+<div id="t1280136353000" class="msg-message"><a href="/irc/2010-07-26#t1280136353000" class="time">02:25</a> &lt;tjgillies&gt; yeah the spec itself, i mean the clients</div>
+<div id="t1280137067000" class="msg-message"><a href="/irc/2010-07-26#t1280137067000" class="time">02:37</a> &lt;aaronpk&gt; *whew*</div>
+<div id="t1280137144000" class="msg-message"><a href="/irc/2010-07-26#t1280137144000" class="time">02:39</a> &lt;tjgillies&gt; what?</div>
+<div id="t1280137153000" class="msg-message"><a href="/irc/2010-07-26#t1280137153000" class="time">02:39</a> &lt;aaronpk&gt; finally ran all that codfe</div>
+<div id="t1280137164000" class="msg-message"><a href="/irc/2010-07-26#t1280137164000" class="time">02:39</a> &lt;aaronpk&gt; <a href="http://gist.github.com/490364">http://gist.github.com/490364</a></div>
+<div id="t1280137170000" class="msg-message"><a href="/irc/2010-07-26#t1280137170000" class="time">02:39</a> &lt;aaronpk&gt; and got an access token given user/pass!</div>
+<div id="t1280137192000" class="msg-message"><a href="/irc/2010-07-26#t1280137192000" class="time">02:39</a> &lt;tjgillies&gt; nice!</div>
+<div id="t1280137244000" class="msg-message"><a href="/irc/2010-07-26#t1280137244000" class="time">02:40</a> &lt;aaronpk&gt; ok that's about all i've got in me for this evening</div>
+<div id="t1280137257000" class="msg-message"><a href="/irc/2010-07-26#t1280137257000" class="time">02:40</a> &lt;tjgillies&gt; nicely done</div>
+<div id="t1280137264000" class="msg-message"><a href="/irc/2010-07-26#t1280137264000" class="time">02:41</a> &lt;tjgillies&gt; i'll talk to you tomorrow</div>
+<div id="t1280137301000" class="msg-message"><a href="/irc/2010-07-26#t1280137301000" class="time">02:41</a> &lt;aaronpk&gt; alright, ttyl</div>
+<div id="t1280155368000" class="msg-join"><a href="/irc/2010-07-26#t1280155368000" class="time">07:42</a> caseorganic joined #geoloqi</div>
+<div id="t1280155430000" class="msg-join"><a href="/irc/2010-07-26#t1280155430000" class="time">07:43</a> caseorganic_ joined #geoloqi</div>
+<div id="t1280157213000" class="msg-join"><a href="/irc/2010-07-26#t1280157213000" class="time">08:13</a> workshop joined #geoloqi</div>
+<div id="t1280159815000" class="msg-join"><a href="/irc/2010-07-26#t1280159815000" class="time">08:56</a> jtbandes joined #geoloqi</div>
+<div id="t1280164259000" class="msg-message"><a href="/irc/2010-07-26#t1280164259000" class="time">10:10</a> &lt;donpdonp&gt; needed: translate username@geoloqi.com to a URL that gives json locations</div>
+<div id="t1280164825000" class="msg-message"><a href="/irc/2010-07-26#t1280164825000" class="time">10:20</a> &lt;aaronpk&gt; agreed</div>
+<div id="t1280164860000" class="msg-message"><a href="/irc/2010-07-26#t1280164860000" class="time">10:21</a> &lt;aaronpk&gt; except that we won't be providing actual email services</div>
+<div id="t1280164873000" class="msg-message"><a href="/irc/2010-07-26#t1280164873000" class="time">10:21</a> &lt;aaronpk&gt; which I think is then confusing to users since that looks a lot like an email address</div>
+<div id="t1280164885000" class="msg-message"><a href="/irc/2010-07-26#t1280164885000" class="time">10:21</a> &lt;donpdonp&gt; right, that was discussed on the webfinger list in some detail</div>
+<div id="t1280164893000" class="msg-message"><a href="/irc/2010-07-26#t1280164893000" class="time">10:21</a> &lt;aaronpk&gt; hm I should look at that</div>
+<div id="t1280164898000" class="msg-message"><a href="/irc/2010-07-26#t1280164898000" class="time">10:21</a> &lt;donpdonp&gt; i think they're going with it anyways</div>
+<div id="t1280165059000" class="msg-message"><a href="/irc/2010-07-26#t1280165059000" class="time">10:24</a> &lt;donpdonp&gt; here is some of it <a href="http://groups.google.com/group/webfinger/browse_thread/thread/0733c9f5305aef32#">http://groups.google.com/group/webfinger/browse_thread/thread/0733c9f5305aef32#</a></div>
+<div id="t1280165195000" class="msg-message"><a href="/irc/2010-07-26#t1280165195000" class="time">10:26</a> &lt;aaronpk&gt; do you think twitter.com is going to start supporting aaronpk@twitter.com? I don't...</div>
+<div id="t1280165234000" class="msg-message"><a href="/irc/2010-07-26#t1280165234000" class="time">10:27</a> &lt;donpdonp&gt; i dont expect twitter to support SMTP at that address, but its possible they will support webfinger discovery for that address</div>
+<div id="t1280165283000" class="msg-message"><a href="/irc/2010-07-26#t1280165283000" class="time">10:28</a> &lt;aaronpk&gt; interesting point about the autocomplete at the bottom</div>
+<div id="t1280165295000" class="msg-message"><a href="/irc/2010-07-26#t1280165295000" class="time">10:28</a> &lt;donpdonp&gt; the flow im thinking of is, android client asks for someone to follow. the identifier for someone is their email address, OR if its known they use geoloqi, bob@geoloqi.com is an acceptable identifier</div>
+<div id="t1280165316000" class="msg-message"><a href="/irc/2010-07-26#t1280165316000" class="time">10:28</a> &lt;donpdonp&gt; that way bob can tell me how to reach him on geoloqi, and not give out his email address.</div>
+<div id="t1280165325000" class="msg-message"><a href="/irc/2010-07-26#t1280165325000" class="time">10:28</a> &lt;aaronpk&gt; interesting case</div>
+<div id="t1280165339000" class="msg-message"><a href="/irc/2010-07-26#t1280165339000" class="time">10:28</a> &lt;aaronpk&gt; I want to set up some sort of discovery on parecki.com so I can use aaron@parecki.com</div>
+<div id="t1280165340000" class="msg-message"><a href="/irc/2010-07-26#t1280165340000" class="time">10:29</a> &lt;donpdonp&gt; or maybe his email address also gives location provider info</div>
+<div id="t1280165354000" class="msg-message"><a href="/irc/2010-07-26#t1280165354000" class="time">10:29</a> &lt;donpdonp&gt; right, i think it can go either way, depending on the person</div>
+<div id="t1280165358000" class="msg-message"><a href="/irc/2010-07-26#t1280165358000" class="time">10:29</a> &lt;aaronpk&gt; yea</div>
+<div id="t1280165532000" class="msg-message"><a href="/irc/2010-07-26#t1280165532000" class="time">10:32</a> &lt;aaronpk&gt; is there a discussion somewhere about service discovery?</div>
+<div id="t1280165546000" class="msg-message"><a href="/irc/2010-07-26#t1280165546000" class="time">10:32</a> &lt;aaronpk&gt; like how would you say &quot;this is my ___ provider&quot;</div>
+<div id="t1280165602000" class="msg-message"><a href="/irc/2010-07-26#t1280165602000" class="time">10:33</a> &lt;donpdonp&gt; not that i know of. i think that is territory that needs to be defined</div>
+<div id="t1280165626000" class="msg-message"><a href="/irc/2010-07-26#t1280165626000" class="time">10:33</a> &lt;aaronpk&gt; let's DO EET</div>
+<div id="t1280165695000" class="msg-message"><a href="/irc/2010-07-26#t1280165695000" class="time">10:34</a> &lt;donpdonp&gt; DOOO EET</div>
+<div id="t1280165697000" class="msg-action"><a href="/irc/2010-07-26#t1280165697000" class="time">10:34</a> &lt;Loqi&gt; Loqi slaps donpdonp with a large trout</div>
+<div id="t1280165708000" class="msg-message"><a href="/irc/2010-07-26#t1280165708000" class="time">10:35</a> &lt;donpdonp&gt; SHOOOT HER! &lt;jurassic park&gt;</div>
+<div id="t1280166030000" class="msg-message"><a href="/irc/2010-07-26#t1280166030000" class="time">10:40</a> &lt;aaronpk&gt; so I go to webfinger.org and put in my email, and it finds a bunch of things listed in my google profile, but they're pretty disorganized and not nice URLs</div>
+<div id="t1280166140000" class="msg-message"><a href="/irc/2010-07-26#t1280166140000" class="time">10:42</a> &lt;aaronpk&gt; I want those to be &quot;typed&quot;</div>
+<div id="t1280166164000" class="msg-message"><a href="/irc/2010-07-26#t1280166164000" class="time">10:42</a> &lt;donpdonp&gt; yup. i think rel='describedby' is an attempt at that</div>
+<div id="t1280166217000" class="msg-message"><a href="/irc/2010-07-26#t1280166217000" class="time">10:43</a> &lt;donpdonp&gt; example flow: <a href="http://pastie.org/1060813">http://pastie.org/1060813</a></div>
+<div id="t1280166222000" class="msg-message"><a href="/irc/2010-07-26#t1280166222000" class="time">10:43</a> &lt;donpdonp&gt; using rel='locatedat'</div>
+<div id="t1280166459000" class="msg-message"><a href="/irc/2010-07-26#t1280166459000" class="time">10:47</a> &lt;donpdonp&gt; which i made up :)</div>
+<div id="t1280166969000" class="msg-message"><a href="/irc/2010-07-26#t1280166969000" class="time">10:56</a> &lt;aaronpk&gt; what does &quot;describedby&quot; mean?</div>
+<div id="t1280167331000" class="msg-message"><a href="/irc/2010-07-26#t1280167331000" class="time">11:02</a> &lt;aaronpk&gt; donpdonp: I made some serious progress on OAuth 2 last night</div>
+<div id="t1280167510000" class="msg-message"><a href="/irc/2010-07-26#t1280167510000" class="time">11:05</a> &lt;donpdonp&gt; aaronpk: woo!</div>
+<div id="t1280167522000" class="msg-message"><a href="/irc/2010-07-26#t1280167522000" class="time">11:05</a> &lt;donpdonp&gt; on the server side?</div>
+<div id="t1280167524000" class="msg-message"><a href="/irc/2010-07-26#t1280167524000" class="time">11:05</a> &lt;aaronpk&gt; yep</div>
+<div id="t1280167528000" class="msg-message"><a href="/irc/2010-07-26#t1280167528000" class="time">11:05</a> &lt;donpdonp&gt; what lib are you using</div>
+<div id="t1280167542000" class="msg-action"><a href="/irc/2010-07-26#t1280167542000" class="time">11:05</a> &lt;donpdonp&gt; donpdonp is afraid the answer is 'my own' </div>
+<div id="t1280167553000" class="msg-message"><a href="/irc/2010-07-26#t1280167553000" class="time">11:05</a> &lt;aaronpk&gt; luckily someone started one for php <a href="http://code.google.com/p/oauth2-php/">http://code.google.com/p/oauth2-php/</a></div>
+<div id="t1280167559000" class="msg-message"><a href="/irc/2010-07-26#t1280167559000" class="time">11:05</a> &lt;donpdonp&gt; ah :)</div>
+<div id="t1280167563000" class="msg-message"><a href="/irc/2010-07-26#t1280167563000" class="time">11:06</a> &lt;aaronpk&gt; but it's at v9 of the spec so I had to make a few minor tweaks for v10</div>
+<div id="t1280167568000" class="msg-message"><a href="/irc/2010-07-26#t1280167568000" class="time">11:06</a> &lt;donpdonp&gt; word.</div>
+<div id="t1280167597000" class="msg-message"><a href="/irc/2010-07-26#t1280167597000" class="time">11:06</a> &lt;aaronpk&gt; it's surprisingly simpler than oauth1</div>
+<div id="t1280167604000" class="msg-message"><a href="/irc/2010-07-26#t1280167604000" class="time">11:06</a> &lt;aaronpk&gt; it almost doesn't need a library on the client side</div>
+<div id="t1280167631000" class="msg-message"><a href="/irc/2010-07-26#t1280167631000" class="time">11:07</a> &lt;donpdonp&gt; interesting.</div>
+<div id="t1280167641000" class="msg-message"><a href="/irc/2010-07-26#t1280167641000" class="time">11:07</a> &lt;aaronpk&gt; especially for the password method</div>
+<div id="t1280167690000" class="msg-message"><a href="/irc/2010-07-26#t1280167690000" class="time">11:08</a> &lt;aaronpk&gt; <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-10#page-24">http://tools.ietf.org/html/draft-ietf-oauth-v2-10#page-24</a></div>
+<div id="t1280167726000" class="msg-action"><a href="/irc/2010-07-26#t1280167726000" class="time">11:08</a> &lt;donpdonp&gt; donpdonp nods</div>
+<div id="t1280170169000" class="msg-join"><a href="/irc/2010-07-26#t1280170169000" class="time">11:49</a> jtbandes_ joined #geoloqi</div>
+<div id="t1280184752000" class="msg-join"><a href="/irc/2010-07-26#t1280184752000" class="time">15:52</a> workshop joined #geoloqi</div>
+<div id="t1280185547000" class="msg-join"><a href="/irc/2010-07-26#t1280185547000" class="time">16:05</a> tjgillies joined #geoloqi</div>
+<div id="t1280188800000" class="msg-message"><a href="/irc/2010-07-26#t1280188800000" class="time">17:00</a> &lt;jtbandes&gt; revelation of the day: geoloqi rhymes with hokey-pokey</div>
+<div id="t1280188812000" class="msg-message"><a href="/irc/2010-07-26#t1280188812000" class="time">17:00</a> &lt;jtbandes&gt; discuss</div>
+<div id="t1280190876000" class="msg-join"><a href="/irc/2010-07-26#t1280190876000" class="time">17:34</a> caseorganic joined #geoloqi</div>
+<div id="t1280192440000" class="msg-join"><a href="/irc/2010-07-26#t1280192440000" class="time">18:00</a> workshop joined #geoloqi</div>
+<div id="t1280192530000" class="msg-message"><a href="/irc/2010-07-26#t1280192530000" class="time">18:02</a> &lt;workshop&gt; maybe the hokey pokey IS really what it's all about</div>
+<div id="t1280193452000" class="msg-message"><a href="/irc/2010-07-26#t1280193452000" class="time">18:17</a> &lt;tjgillies&gt; aaronpk, i have my serverside ouath2 working also</div>
+<div id="t1280193463000" class="msg-message"><a href="/irc/2010-07-26#t1280193463000" class="time">18:17</a> &lt;aaronpk&gt; nicely done</div>
+<div id="t1280193548000" class="msg-message"><a href="/irc/2010-07-26#t1280193548000" class="time">18:19</a> &lt;tjgillies&gt; aaronpk, this is how my flow works, you ask for &quot;code&quot; at /oauth/authorize, then it redirects you to my geoloqi server and asks if you want to allow app access, you click yes, then it redirects back with an access token. is that how the mobile flow is going to be?</div>
+<div id="t1280193583000" class="msg-message"><a href="/irc/2010-07-26#t1280193583000" class="time">18:19</a> &lt;aaronpk&gt; the user will enter their user/pass in the mobile phone directly, so the phone will talk directly to /oauth/token to get an access token</div>
+<div id="t1280193616000" class="msg-message"><a href="/irc/2010-07-26#t1280193616000" class="time">18:20</a> &lt;tjgillies&gt; aaronpk, why not have it ask username/pass on the webpage?</div>
+<div id="t1280193629000" class="msg-message"><a href="/irc/2010-07-26#t1280193629000" class="time">18:20</a> &lt;aaronpk&gt; wanted to not have to hop out to a web page from the mobile phone</div>
+<div id="t1280193669000" class="msg-message"><a href="/irc/2010-07-26#t1280193669000" class="time">18:21</a> &lt;tjgillies&gt; ok</div>
+<div id="t1280193680000" class="msg-message"><a href="/irc/2010-07-26#t1280193680000" class="time">18:21</a> &lt;tjgillies&gt; so thats whay you were doing the digest auth stuff</div>
+<div id="t1280193684000" class="msg-message"><a href="/irc/2010-07-26#t1280193684000" class="time">18:21</a> &lt;tjgillies&gt; why*</div>
+<div id="t1280193769000" class="msg-message"><a href="/irc/2010-07-26#t1280193769000" class="time">18:22</a> &lt;aaronpk&gt; yea</div>
+<div id="t1280193778000" class="msg-message"><a href="/irc/2010-07-26#t1280193778000" class="time">18:22</a> &lt;aaronpk&gt; digest auth of the client id/secret</div>
+<div id="t1280193780000" class="msg-message"><a href="/irc/2010-07-26#t1280193780000" class="time">18:23</a> &lt;tjgillies&gt; ok i'll redo my server flow</div>
+<div id="t1280193796000" class="msg-message"><a href="/irc/2010-07-26#t1280193796000" class="time">18:23</a> &lt;aaronpk&gt; it'll use oauth/authorize for any web apps, just not the mobile ones</div>
+<div id="t1280193812000" class="msg-message"><a href="/irc/2010-07-26#t1280193812000" class="time">18:23</a> &lt;tjgillies&gt; ok so i'll add an additional flow</div>
+<div id="t1280193824000" class="msg-message"><a href="/irc/2010-07-26#t1280193824000" class="time">18:23</a> &lt;tjgillies&gt; because mobile is my first priority ;)</div>
+<div id="t1280196034000" class="msg-message"><a href="/irc/2010-07-26#t1280196034000" class="time">19:00</a> &lt;tjgillies&gt; curl &quot;rital.in/oauth/token?grant_type=password&amp;username=tyler&amp;password=tyler&quot;</div>
+<div id="t1280196034000" class="msg-message"><a href="/irc/2010-07-26#t1280196034000" class="time">19:00</a> &lt;tjgillies&gt; {&quot;access_token&quot;:&quot;tgosvgOaUogpvE2MDJH7BP70cS2PzNSF&quot;,&quot;expires_in&quot;:3600}</div>
+<div id="t1280196064000" class="msg-message"><a href="/irc/2010-07-26#t1280196064000" class="time">19:01</a> &lt;tjgillies&gt; still need to add section to verify client_id and client_secret</div>
+<div id="t1280196857000" class="msg-message"><a href="/irc/2010-07-26#t1280196857000" class="time">19:14</a> &lt;aaronpk&gt; that's an important bit ;)</div>
+<div id="t1280197179000" class="msg-message"><a href="/irc/2010-07-26#t1280197179000" class="time">19:19</a> &lt;tjgillies&gt; im installing base64 library right now so i can do it, im suprised nodejs doesn't have native base64 support</div>
+<div id="t1280198943000" class="msg-message"><a href="/irc/2010-07-26#t1280198943000" class="time">19:49</a> &lt;tjgillies&gt; woohoo: curl &quot;rital.in/oauth/token?grant_type=password&amp;username=tyler&amp;password=tyler&quot; -u foobar:ibDVVWRSmr3Zr0tvwLJByC6ENN3sH9qr</div>
+<div id="t1280198943000" class="msg-message"><a href="/irc/2010-07-26#t1280198943000" class="time">19:49</a> &lt;tjgillies&gt; {&quot;access_token&quot;:&quot;6bmwrN3rfea8dxSW8zmSmT5UaGptTBQo&quot;,&quot;expires_in&quot;:3600}</div>
+<div id="t1280198953000" class="msg-join"><a href="/irc/2010-07-26#t1280198953000" class="time">19:49</a> jtbandes joined #geoloqi</div>
+<div id="t1280198968000" class="msg-message"><a href="/irc/2010-07-26#t1280198968000" class="time">19:49</a> &lt;aaronpk&gt; awesome!</div>
+<div id="t1280198978000" class="msg-message"><a href="/irc/2010-07-26#t1280198978000" class="time">19:49</a> &lt;aaronpk&gt; i'll be back later this evening to poke at some more code</div>
+<div id="t1280199002000" class="msg-message"><a href="/irc/2010-07-26#t1280199002000" class="time">19:50</a> &lt;aaronpk&gt; jtbandes: are you available this week or weekend to work on some oauth code for the iphone app?</div>
+<div id="t1280199090000" class="msg-message"><a href="/irc/2010-07-26#t1280199090000" class="time">19:51</a> &lt;jtbandes&gt; I'm going on vacation this weekend, might do some hacking before/after then</div>
+<div id="t1280199103000" class="msg-message"><a href="/irc/2010-07-26#t1280199103000" class="time">19:51</a> &lt;jtbandes&gt; what was awesome that I missed?</div>
+<div id="t1280199107000" class="msg-message"><a href="/irc/2010-07-26#t1280199107000" class="time">19:51</a> &lt;aaronpk&gt; ok great, i gotta run but i'll be back later this evening</div>
+<div id="t1280199175000" class="msg-message"><a href="/irc/2010-07-26#t1280199175000" class="time">19:52</a> &lt;tjgillies&gt; jtbandes, i added oauth2 suport for basic auth to my nodejs geoloqi server</div>
+<div id="t1280199182000" class="msg-message"><a href="/irc/2010-07-26#t1280199182000" class="time">19:53</a> &lt;jtbandes&gt; nice</div>
+<div id="t1280199207000" class="msg-message"><a href="/irc/2010-07-26#t1280199207000" class="time">19:53</a> &lt;jtbandes&gt; aaronpk mentioned something about not using oauth 2.0 on the mobile clients</div>
+<div id="t1280199223000" class="msg-message"><a href="/irc/2010-07-26#t1280199223000" class="time">19:53</a> &lt;jtbandes&gt; [18:58]  &lt;aaronpk&gt; oh right... I didn't want to use OAuth 2 for themobile clients because of the overhead of the SSL handshake</div>
+<div id="t1280199287000" class="msg-message"><a href="/irc/2010-07-26#t1280199287000" class="time">19:54</a> &lt;tjgillies&gt; it doesn't &quot;have&quot; to be ssl</div>
+<div id="t1280199310000" class="msg-message"><a href="/irc/2010-07-26#t1280199310000" class="time">19:55</a> &lt;tjgillies&gt; i mean the spec says it does, but afaik, both aaron and i use normal http</div>
+<div id="t1280203265000" class="msg-join"><a href="/irc/2010-07-26#t1280203265000" class="time">21:01</a> aaronpk_ joined #geoloqi</div>
+<div id="t1280203368000" class="msg-join"><a href="/irc/2010-07-26#t1280203368000" class="time">21:02</a> tjgillies joined #geoloqi</div>
+<div id="t1280203501000" class="msg-join"><a href="/irc/2010-07-26#t1280203501000" class="time">21:05</a> tjgillies joined #geoloqi</div>
+<div id="t1280203502000" class="msg-join"><a href="/irc/2010-07-26#t1280203502000" class="time">21:05</a> donpdonp joined #geoloqi</div>
+<div id="t1280203502000" class="msg-join"><a href="/irc/2010-07-26#t1280203502000" class="time">21:05</a> Loqi joined #geoloqi</div>
+<div id="t1280203691000" class="msg-join"><a href="/irc/2010-07-26#t1280203691000" class="time">21:08</a> tjgillies joined #geoloqi</div>
+<div id="t1280203691000" class="msg-join"><a href="/irc/2010-07-26#t1280203691000" class="time">21:08</a> donpdonp joined #geoloqi</div>
+<div id="t1280203691000" class="msg-join"><a href="/irc/2010-07-26#t1280203691000" class="time">21:08</a> Loqi joined #geoloqi</div>
+<div id="t1280204061000" class="msg-join"><a href="/irc/2010-07-26#t1280204061000" class="time">21:14</a> donpdonp joined #geoloqi</div>
+<div id="t1280204061000" class="msg-join"><a href="/irc/2010-07-26#t1280204061000" class="time">21:14</a> tjgillies joined #geoloqi</div>
+<div id="t1280204061000" class="msg-join"><a href="/irc/2010-07-26#t1280204061000" class="time">21:14</a> Loqi joined #geoloqi</div>
+<div id="t1280204336000" class="msg-join"><a href="/irc/2010-07-26#t1280204336000" class="time">21:18</a> Loqi joined #geoloqi</div>
+<div id="t1280204336000" class="msg-join"><a href="/irc/2010-07-26#t1280204336000" class="time">21:18</a> tjgillies joined #geoloqi</div>
+<div id="t1280204336000" class="msg-join"><a href="/irc/2010-07-26#t1280204336000" class="time">21:18</a> donpdonp joined #geoloqi</div>
+<div id="t1280204336000" class="msg-join"><a href="/irc/2010-07-26#t1280204336000" class="time">21:18</a> aaronpk_ joined #geoloqi</div>
+<div id="t1280207837000" class="msg-message"><a href="/irc/2010-07-26#t1280207837000" class="time">22:17</a> &lt;aaronpk_&gt; jtbandes: I read through the spec and realized that it's possible to do non-ssl communication even with oauth 2</div>
+<div id="t1280207844000" class="msg-message"><a href="/irc/2010-07-26#t1280207844000" class="time">22:17</a> &lt;jtbandes&gt; ah</div>
+<div id="t1280207860000" class="msg-message"><a href="/irc/2010-07-26#t1280207860000" class="time">22:17</a> &lt;aaronpk_&gt; the negotiation to get the access token will be SSL because that will happen only once</div>
+<div id="t1280207875000" class="msg-message"><a href="/irc/2010-07-26#t1280207875000" class="time">22:17</a> &lt;aaronpk_&gt; then it can send data over http with an access token that expires often</div>
+<div id="t1280207888000" class="msg-message"><a href="/irc/2010-07-26#t1280207888000" class="time">22:18</a> &lt;aaronpk_&gt; and it will periodically request a new access token</div>
+<div id="t1280207899000" class="msg-message"><a href="/irc/2010-07-26#t1280207899000" class="time">22:18</a> &lt;aaronpk_&gt; it's actually pretty well thought out</div>
+<div id="t1280208658000" class="msg-join"><a href="/irc/2010-07-26#t1280208658000" class="time">22:30</a> caseorganic joined #geoloqi</div>
+<div id="t1280211952000" class="msg-message"><a href="/irc/2010-07-26#t1280211952000" class="time">23:25</a> &lt;tjgillies&gt; aaronpk, what api resource are you going to port over to the new version first?</div>
+</div>
+
+</div>
+    </div>
+	</body>
+</html>

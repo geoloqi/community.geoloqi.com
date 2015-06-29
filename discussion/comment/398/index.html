@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>[LQSession userID]: unrecognized selector sent to instance - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/110/lqsession-userid-unrecognized-selector-sent-to-instance/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F398">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/bug-reports" class="TabLink">Bug Reports</a></li>
+   </ul>
+   <div class="SubTab">[LQSession userID]: unrecognized selector sent to instance</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_110">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/110/lqsession-userid-unrecognized-selector-sent-to-instance/p1" class="Permalink" name="Item_1" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span class="Apple-style-span" style="color: rgb(53, 89, 93); font-family: Monaco; font-size: 14px;"><span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0);">[</span><span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(83, 129, 135);">LQSession</span><span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0);">&nbsp;</span>createAnonymousUserAccountWithUserInfo<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0);">:gDict&nbsp;</span>completion<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0);">:^(</span><span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(83, 129, 135);">LQSession</span><span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0);">*sessionLocal,&nbsp;</span><span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(114, 48, 168);">NSError</span><span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0);">* error)</span></span><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Seoge UI', Arial, Tahoma, Verdana, sans-serif; line-height: 18px;">{<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(184, 8, 161);">if</span>(sessionLocal.<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(83, 129, 135);">accessToken</span>) {<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(65, 10, 128);">NSLog</span>(<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(204, 36, 37);">@"Logged in successfully! %@ user %@"</span>, sessionLocal.<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(83, 129, 135);">accessToken</span>, sessionLocal.<span style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; color: rgb(83, 129, 135);">userID</span>);<br></span>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>13 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/398?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/398?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_352">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/352#Comment_352" class="Permalink" name="Item_2" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			why does this happen? I am able to get the userID detail from the server.. I can see it in the debug log.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_353">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/353#Comment_353" class="Permalink" name="Item_3" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">create anonymous response: {</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; "access_token" = "19312-27adf5bcb3e912b405b1c38d1725a22936b51bb1";</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; "display_name" = Anonymous;</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; extra = &nbsp; &nbsp; {</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; &nbsp; &nbsp; "device_id" = 415348825ce800db8731da526d65596eea48af2f;</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; };</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; "is_anonymous" = 1;</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; "password_reset_token" = "_tSPS01io78vk7Nb8A";</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; scope = "&lt;null&gt;";</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; "user_id" = Uem;</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">&nbsp; &nbsp; username = "_hXy_U1io78vfT8KoQ";</p><br><p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo">}</p>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_355">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/355#Comment_355" class="Permalink" name="Item_4" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			any insight? I have no idea why an exposed accessor would give me that ..		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_365">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/365#Comment_365" class="Permalink" name="Item_5" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			thanks for your help!		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_366">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/366#Comment_366" class="Permalink" name="Item_6" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Please make sure you are using the latest version of the SDK. I just double checked and a fresh download of the SDK does not have this problem.&nbsp;		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_367">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/367#Comment_367" class="Permalink" name="Item_7" rel="nofollow">August 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			ok thanks Aaron... this is what I've been using. that's the latest from what I understand. what could I be doing wrong?<div><br></div><div><p style="margin: 0px; font-size: 14px; font-family: Monaco;"><span style="color: #bb2ca2">static</span> NSString *<span style="color: #bb2ca2">const</span> LQSDKNameString = <span style="color: #d12f1b">@"com.geoloqi.iphone"</span>;</p><br><p style="margin: 0px; font-size: 14px; font-family: Monaco; min-height: 19px;"><br></p><br><p style="margin: 0px; font-size: 14px; font-family: Monaco;"><span style="color: #bb2ca2">static</span> NSString *<span style="color: #bb2ca2">const</span> LQSDKVersionString = <span style="color: #d12f1b">@"12.160"</span>;</p><br><p style="margin: 0px; font-size: 14px; font-family: Monaco; min-height: 19px;"><br></p><br><p style="margin: 0px; font-size: 14px; font-family: Monaco; color: rgb(0, 132, 0);">// This build string is automatically updated when the sdk is built! Do not modify.</p><br><p style="margin: 0px; font-size: 14px; font-family: Monaco; color: rgb(209, 47, 27);"><span style="color: #bb2ca2">static</span><span style="color: #000000"> NSString *</span><span style="color: #bb2ca2">const</span><span style="color: #000000"> LQSDKVersionGitVersion = </span>@"79b2524207766577f2e84c2ca93a8366b22d9011"<span style="color: #000000">;</span></p></div><div><span style="color: #000000"><br></span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_398">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/398#Comment_398" class="Permalink" name="Item_8" rel="nofollow">September 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hey Aaron,<br><br>We are still having issues with this one. Is there any way we can get some personalized help? We have been going back forth between this SDK and the one from Qualcomm, but we would love to figure this one out and use Geoloqi. <br><br>Please let us know what we can do, maybe connect via email or Skype.<br><br>Thank you<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_401">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/401#Comment_401" class="Permalink" name="Item_9" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I'm not quite sure why you are having this problem. I would suggest importing the latest SDK files from <a href="https://github.com/geoloqi/Geoloqi-iPhone-SDK" target="_blank" rel="nofollow">https://github.com/geoloqi/Geoloqi-iPhone-SDK</a> and doing a Clean, then try rebuilding. If you would like, we can take a look at the code. The easiest way would be to share the source code on Github, or you could email a .zip file to support@geoloqi.com. Thanks!		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_406">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/406#Comment_406" class="Permalink" name="Item_10" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Aaron,<br><br>we opened this ticket <a href="https://geoloqi.zendesk.com/tickets/66" target="_blank" rel="nofollow">https://geoloqi.zendesk.com/tickets/66</a><br><br>But no reply yet.<br><br>We're really at a point where some guidance would be useful. We shared all the details in the Zendesk ticket. <br><br>Thank you. <br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_407">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/407#Comment_407" class="Permalink" name="Item_11" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<span style="font-family: Arial, Verdana;">Hi there, I tried with a fresh download of the SDK from&nbsp;<a href="https://github.com/geoloqi/Geoloqi-iPhone-SDK" target="_blank" rel="nofollow">https://github.com/geoloqi/Geoloqi-iPhone-SDK</a>, and wrote the same method you had above trying to print the userID from the LQSession object. I didn't have any trouble, in my XCode logs I get the expected result:</span><div style="font-family: Arial, Verdana;"><br></div><div><div><span style="font-family: Courier New;">2012-10-09 16:23:48.200 TrackerSample[65432:c07] Logged in successfully! 28c08-XXXXXXXX</span></div><div><span style="font-family: Courier New;">2012-10-09 16:23:48.201 TrackerSample[65432:c07] userid:mN0</span></div></div><div style="font-family: Arial, Verdana;"><br></div><div style="font-family: Arial, Verdana;">The only thing I can think of is to make sure you've downloaded the latest SDK from Github and make sure you do a fresh clean and build.</div><div style="font-family: Arial, Verdana;"><br></div><div style="font-family: Arial, Verdana;">You should also note that you don't need the user ID on the phone most of the time. Any time you're dealing with methods like <a rel="nofollow" href="https://developers.geoloqi.com/api/layer/subscribe/:id">layer/subscribe/:id</a>, the authenticating user will be subscribed to the layer so you don't actually need to specify the user ID in the request.</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_409">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/409#Comment_409" class="Permalink" name="Item_12" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi Aaron,<div><br></div><div>We fixed that issue, thank you. You were right!</div><div><br></div><div>We also opened a ticket a week ago and no response yet</div><div><br></div><div><p style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; background-color: rgb(255, 255, 255);">Your request (<a rel="nofollow" href="https://geoloqi.zendesk.com/tickets/83" target="_blank" style="color: rgb(17, 85, 204);">#83</a>) has been received and is being reviewed by our support staff.</p><p style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; background-color: rgb(255, 255, 255);">To add additional comments, reply to this email or click the link below:<br><a rel="nofollow" href="http://geoloqi.zendesk.com/tickets/83" target="_blank" style="color: rgb(17, 85, 204);">http://<span class="il">geoloqi</span>.zendesk.com/tickets/83</a></p><p style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; background-color: rgb(255, 255, 255);"><br></p><p style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; background-color: rgb(255, 255, 255);">Can you please help us? We would like to release this build by Monday.</p><p style="color: rgb(68, 68, 68); font-family: 'Lucida Grande', Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; background-color: rgb(255, 255, 255);"><br></p></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_410">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/410#Comment_410" class="Permalink" name="Item_13" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Apologies for the slow reply! As you can imagine, we've been busy with the news! I'm replying to your ticket now. <a href="http://techcrunch.com/2012/10/15/esri-acquires-location-platform-geoloqi-plans-to-launch-alternative-ios-mapping-library-soon/" target="_blank" rel="nofollow">http://techcrunch.com/2012/10/15/esri-acquires-location-platform-geoloqi-plans-to-launch-alternative-ios-mapping-library-soon/</a>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_412">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/198/6cu3U1hs8JsjCM3Ln">6cu3U1hs8JsjCM3Ln</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/412#Comment_412" class="Permalink" name="Item_14" rel="nofollow">October 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thank you Aaron. I know, I saw the news :) Congratulations.&nbsp;		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F398%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F398" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F398" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1 Active"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/198/6cu3U1hs8JsjCM3Ln" class="UserLink">6cu3U1hs8JsjCM3Ln</a></strong>
+               October 2012            </li>
+                        <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               October 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="110" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f249f9d5ad0" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="412" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="RHQSWE0PKP5V" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/398" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

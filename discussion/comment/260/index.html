@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Track particular user in android? - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/83/track-particular-user-in-android/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F260">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/bug-reports" class="TabLink">Bug Reports</a></li>
+   </ul>
+   <div class="SubTab">Track particular user in android?</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_83">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>-1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/336/rajesh">rajesh</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/83/track-particular-user-in-android/p1" class="Permalink" name="Item_1" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi,<br>I have registered my application with Geoloqi and got Client ID,Client Secret. <br>Using those I have created user_anon with phone number as user name and got display_name,user_id, access_token etc, <br>then how can I track particular user in android.<br>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>11 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/260?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/260?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_258">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/258#Comment_258" class="Permalink" name="Item_2" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			If you start up the LQService provided by the Android SDK it will automatically begin tracking the user in the Adaptive profile. If the device has an active network connection it will begin delivering location updates to the Geoloqi servers. You can query for those updates using the Geoloqi REST API.<br><br><a href="https://developers.geoloqi.com/android" target="_blank" rel="nofollow">https://developers.geoloqi.com/android</a><br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_264">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/264#Comment_264" class="Permalink" name="Item_3" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			You can use the `<a rel="nofollow" href="https://developers.geoloqi.com/api/location/last">location/last</a>` API endpoint to get the user's last location update. All you need to provide is that user's id. Simply sign the request with your application access token. This works because the application created that user.<br><br>You may also be interested in the `<a rel="nofollow" href="https://developers.geoloqi.com/api/location/history">location/history</a>` endpoint. This works exactly the same way as above but returns a paginated list of all the user's location updates.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_267">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/267#Comment_267" class="Permalink" name="Item_4" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Was the user you are trying to access created by the same application token? Can you post the code you're using to make this request? Thanks!<br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_278">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>1</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/278#Comment_278" class="Permalink" name="Item_5" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			You cannot use the API console to access this user's data. This is because the user was created by your application, not your developer account. You'll need to make a request to the Geoloqi API using your application credentials. You can do this using "curl" or one of our other client library projects (Python, Ruby, etc). Just make sure you use the same app credentials as you used with the Android SDK.<br><br><a href="https://developers.geoloqi.com/client-libraries" target="_blank" rel="nofollow">https://developers.geoloqi.com/client-libraries</a><br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_259">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/347/Ui9xc1i2S3ucXe49">Ui9xc1i2S3ucXe49</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/259#Comment_259" class="Permalink" name="Item_6" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<pre class="" id="console_response">     <br><br></pre>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_260">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/336/rajesh">rajesh</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/260#Comment_260" class="Permalink" name="Item_7" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi twaddington,<br><br>Thank you for your reply. Yes as you told I am using API console to retrieve the <br>data. I am able to see list of users registered, By using users/list but how can<br>get particular user lat &amp; long. Can you please help me in this. Please let me <br>know which API i have to use in this case. And the users are created as anonymous.<br>users, doesn't have password.&nbsp; <br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_265">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/348/geetha">geetha</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/265#Comment_265" class="Permalink" name="Item_8" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hello twaddington,<br>I am facing the same issue I don't know is it correct procedure or not. I have tried as you told. I have given appliation_access_token and user_id as keys, supplied corresponding values also to location/list in the API Consolve and I got ,<br><pre class="">{<br>  "error_code": 403,<br>  "error": "forbidden",<br>  "error_description": "Access denied to this resource."<br>}<br> <br>Is there anything wrong from my end?<br></pre>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_276">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/347/Ui9xc1i2S3ucXe49">Ui9xc1i2S3ucXe49</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/276#Comment_276" class="Permalink" name="Item_9" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi twaddington,<br><br>I am not at all using application access token.<br>I just used Geoloqi sdk, and before starting the service I just used<br>LQSharedPreferences.setClientId() and&nbsp; <br>LQSharedPreferences.setClientSecret() methods and the user is created by Geoloqi sdk itself.<br>I am able to get the userId using session. I am able to get last recorded observation in android,<br>but in the API console of Geoloqi I have used location/last with userid and application accesstoke as parameters but saying that <br><pre class="">{<br>  "error_code": 403,<br>  "error": "forbidden",<br>  "error_description": "Access denied to this resource."<br>}<br>Can you please help me how to trace particular user through API Console of Geoloqi.<br></pre><br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_281">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/347/Ui9xc1i2S3ucXe49">Ui9xc1i2S3ucXe49</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/281#Comment_281" class="Permalink" name="Item_10" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi Twaddington,<br>Thank you for your reply.<br>Now I am able to find out user, using client library project.<br>And I have one more problem.<br>I am not able to catch,<br>&nbsp;&nbsp; Failed to create anonymous user!<br>&nbsp; com.geoloqi.android.sdk.LQException: No active network connection!<br>Geoloqi sdk throws and catches this exception.<br>I have to catch this exception, please let me know how it is possible?.<br>Thank you very much for your support.<br><br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_282">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/336/rajesh">rajesh</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/282#Comment_282" class="Permalink" name="Item_11" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi <span class="Author"><a rel="nofollow" href="https://community.geoloqi.com/profile/13/twaddington">twaddington,</a><br><br>I am also doing same thing.<br>When My mobile gps ON and wifi OFF, at this time if I sent request to Geoloqi <br>it is saying that </span>No active network connection!.<br>Can you please help me in it.<br><br>Thank you very much.<br>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_283">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="twaddington" href="/profile/13/twaddington" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/139/nDLZ6GDGN3NGU.jpg" alt="twaddington" class="ProfilePhotoMedium" /></a><a href="/profile/13/twaddington">twaddington</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/283#Comment_283" class="Permalink" name="Item_12" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			The Geoloqi Android SDK requires an active network connection to initialize itself. Once a valid session has been created, it can continue functioning even if the network connection drops.<br><br>Unfortunately, there isn't a good way to catch the exception that is thrown when the session fails to initialize the anonymous user account. Since this work is being done autonomously by the service, it's difficult to access directly from your Activity code.<br><br>You can check the state of the user session in several ways. Either by binding to the service and querying the getter methods of the tracker session; or by querying the static LQSharedPreferences getter methods, such as `<a rel="nofollow" href="https://developers.geoloqi.com/android/docs/com/geoloqi/android/sdk/LQSharedPreferences.html#getSessionAccessToken%28android.content.Context%29">getSessionAccessToken</a>`. If there is no access token, then the service has failed to create an anonymous user account. I'd suggest checking the network state before you start the LQService class and alerting your user if there is not an active connection.<br><br>We're working on making this initialization process smoother and may do something in the future to allow you to bind a callback to the service initialization process so you know when it's finished.<br>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F260%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F260" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F260" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1 Active"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/348/geetha" class="UserLink">geetha</a></strong>
+               June 2012            </li>
+                        <li>
+               <strong><a href="/profile/336/rajesh" class="UserLink">rajesh</a></strong>
+               July 2012            </li>
+                        <li>
+               <strong><a href="/profile/13/twaddington" class="UserLink">twaddington</a></strong>
+               July 2012            </li>
+                        <li>
+               <strong><a href="/profile/347/Ui9xc1i2S3ucXe49" class="UserLink">Ui9xc1i2S3ucXe49</a></strong>
+               July 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="83" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f249c60f114" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="283" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="FJ3WO5XEZWN1" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/260" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

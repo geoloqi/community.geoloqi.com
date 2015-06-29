@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+      <title>Bug Reports - Geoloqi Community</title>
+      <link>http://community.geoloqi.com/categories/bug-reports/feed.rss</link>
+      <pubDate>Sat, 28 Feb 15 14:25:10 -0800</pubDate>
+         <description>Bug Reports - Geoloqi Community</description>
+   <language>en-CA</language>
+   <atom:link href="/discussions/feed.rss" rel="self" type="application/rss+xml" />
+   <item>
+      <title>Handling push notifications and LQSession.handlePush.</title>
+      <link>http://community.geoloqi.com/discussion/3254/handling-push-notifications-and-lqsession.handlepush.</link>
+      <pubDate>Wed, 20 Nov 2013 21:17:25 -0800</pubDate>
+      <dc:creator>oyvind</dc:creator>
+      <guid isPermaLink="false">3254@/discussions</guid>
+      <description><![CDATA[<div class="method-subsection method-declaration"><span>According to the documentation here:&nbsp;</span><span style="font-family: Lucida Grande, Geneva, Helvetica, Arial, sans-serif; font-size: small;"><a href="https://developers.geoloqi.com/ios/docs/Classes/LQSession.html" target="_blank" rel="nofollow">https://developers.geoloqi.com/ios/docs/Classes/LQSession.html</a> for LQSession.handlePush method:</span></div><blockquote><div class="method-subsection method-declaration"><span>If a push notification is received when your app is in the foreground, you can call this method from the app delegate and the SDK will handle everything for you</span></div></blockquote><span style="font-family: Lucida Grande, Geneva, Helvetica, Arial, sans-serif; font-size: small;">When the app is running and I delegate to this method is displays an alert view with "View" and "Close" buttons. &nbsp;How do I do something in response to the user tapping "View" button.</span>]]></description>
+   </item>
+   <item>
+      <title>How to limit the number of push per day</title>
+      <link>http://community.geoloqi.com/discussion/3252/how-to-limit-the-number-of-push-per-day</link>
+      <pubDate>Thu, 14 Nov 2013 15:55:04 -0800</pubDate>
+      <dc:creator>Concepto</dc:creator>
+      <guid isPermaLink="false">3252@/discussions</guid>
+      <description><![CDATA[I want to limit the number of available push notifications by geo reference per day<div><br /></div><div>Is there a way to do it?</div><div><br /></div><div>We have several places and we wanto to stop triggering push notifications when the limit is reached</div><div><br /></div><div><br /></div><div>Tnks in advance</div>]]></description>
+   </item>
+   <item>
+      <title>Titanium module not found</title>
+      <link>http://community.geoloqi.com/discussion/191/titanium-module-not-found</link>
+      <pubDate>Mon, 15 Apr 2013 05:34:47 -0700</pubDate>
+      <dc:creator>awarzon</dc:creator>
+      <guid isPermaLink="false">191@/discussions</guid>
+      <description><![CDATA[All of the links from&nbsp;<a href="https://developers.geoloqi.com/titanium" target="_blank" rel="nofollow">https://developers.geoloqi.com/titanium</a> to download the Geoloqi module on the Titanium marketplace are broken. They give 404 page not found errors. When I search the Titanium marketplace for "geoloqi" I get no results.<div><br /></div><div>Where is the Geoloqi Titanium module? Thanks.</div>]]></description>
+   </item>
+   <item>
+      <title>GeoLoqi Server Lag problem Android</title>
+      <link>http://community.geoloqi.com/discussion/263/geoloqi-server-lag-problem-android</link>
+      <pubDate>Wed, 24 Jul 2013 06:04:04 -0700</pubDate>
+      <dc:creator>rajababar</dc:creator>
+      <guid isPermaLink="false">263@/discussions</guid>
+      <description><![CDATA[Hi Geoloqi team,<span class="Apple-tab-span">	</span><div><span class="Apple-tab-span">			</span>I have observed that the triggers doesn't work before its 6 pm (Pakistan Standard Time), i have created the triggers without any criteria of time and date.</div><div>Before 6 pm whether i enter or exit the geo fence, triggers doesn't work but after 6 pm the triggers work very good, is this some thing that your servers are being down at that time, please help me this being a big pain since i cannot test any thing before 6</div>]]></description>
+   </item>
+   <item>
+      <title>Class not found exception Geoloqi Android Sdk</title>
+      <link>http://community.geoloqi.com/discussion/214/class-not-found-exception-geoloqi-android-sdk</link>
+      <pubDate>Mon, 08 Jul 2013 22:26:21 -0700</pubDate>
+      <dc:creator>s3techummi</dc:creator>
+      <guid isPermaLink="false">214@/discussions</guid>
+      <description><![CDATA[i have downloaded the Geoloqi Android Sdk from Github when i try to run the sdk i get Class not found exception&nbsp;<div><span>07-09 11:21:01.951: E/AndroidRuntime(264): java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.geoloqi.android.sample/com.geoloqi.android.sample.ui.LauncherActivity}: java.lang.ClassNotFoundException: com.geoloqi.android.sample.ui.LauncherActivity in loader dalvik.system.PathClassLoader[/data/app/com.geoloqi.android.sample-1.apk]</span></div><div><br /></div><div>Please help me<br /><div><span><br /></span></div></div>]]></description>
+   </item>
+   <item>
+      <title>User/List Paging.</title>
+      <link>http://community.geoloqi.com/discussion/210/userlist-paging.</link>
+      <pubDate>Sat, 29 Jun 2013 06:00:22 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">210@/discussions</guid>
+      <description><![CDATA[It appears as thought offset and limit are not working with the user/list API.&nbsp;<div><br /></div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>Not triggering the message which is created at the time of creating the trigger from the web site</title>
+      <link>http://community.geoloqi.com/discussion/207/not-triggering-the-message-which-is-created-at-the-time-of-creating-the-trigger-from-the-web-site</link>
+      <pubDate>Wed, 22 May 2013 03:42:48 -0700</pubDate>
+      <dc:creator>eu9GU1kZfgP9K3fyo</dc:creator>
+      <guid isPermaLink="false">207@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">i create layer,place and also add trigger including the trigger type,trigger message,time,date but i cant get any push notification.but when i create a&nbsp;Geo&nbsp;note through&nbsp;Geo&nbsp;notes android application and my test application using the api call getting the push notification,why i&nbsp;didn't&nbsp;get the trigger message .</span>]]></description>
+   </item>
+   <item>
+      <title>PHP User List.</title>
+      <link>http://community.geoloqi.com/discussion/206/php-user-list.</link>
+      <pubDate>Mon, 20 May 2013 03:50:01 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">206@/discussions</guid>
+      <description><![CDATA[Using the PHP-SDK I am unable to use the LIMIT on the user/list. It always returns 25 users...<br /><br />    $paging['limit'] = "10";<br />	$response = $GLOBALS['geoloqi']-&gt;post('user/list', array(<br />	'limit' =&gt; "10",<br />	'client_id' =&gt; variable_get('geoloqi_api_key', ''),<br />	'client_secret' =&gt; variable_get('geoloqi_api_secret', ''),<br />), &amp;$headers);<br />    if (isset($response-&gt;error_code)) {<br />       form_set_error('key', t('Unable to get userlist' . $response-&gt;error_code));<br />       return t('');<br />	}<br /><br />]]></description>
+   </item>
+   <item>
+      <title>iOS Devices not getting Push even after success from API console</title>
+      <link>http://community.geoloqi.com/discussion/205/ios-devices-not-getting-push-even-after-success-from-api-console</link>
+      <pubDate>Fri, 17 May 2013 19:31:50 -0700</pubDate>
+      <dc:creator>nestmy</dc:creator>
+      <guid isPermaLink="false">205@/discussions</guid>
+      <description><![CDATA[The message/send POST call from API console sends the push successfully but the iOS app is not able to receive it,<div>this was working for us 2 weeks back.</div><div><br /></div><div>The code used to register push :</div><div><br /></div><div><br /><br /><br /><br /><br /><br /><br /><br /><p class="p1"><span class="s1">[</span><span class="s2">LQSession</span><span class="s1"> </span><span class="s3">setAPIKey</span><span class="s1">:</span>@"d0ce2db5956fdadd0f757bd11221fdf6"<span class="s1">];</span></p><br /><p class="p2"><span class="s1">&nbsp; &nbsp; </span><span class="s4">if</span><span class="s1">([</span><span class="s2">LQSession</span><span class="s1"> </span>savedSession<span class="s1">]) {</span></p><br /><p class="p2"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span class="s2">LQTracker</span><span class="s1"> </span>sharedTracker<span class="s1">];</span></p><br /><p class="p2"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span class="s2">LQSession</span><span class="s1"> </span>registerForPushNotificationsWithCallback<span class="s1">:</span><span class="s4">NULL</span><span class="s1">];</span></p><br /><p class="p1"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s5">NSLog</span><span class="s1">(</span>@"Saved GEOLOQI User ID %@"<span class="s1">,[[</span><span class="s2">LQSession</span><span class="s1"> </span><span class="s3">savedSession</span><span class="s1">] </span><span class="s3">userID</span><span class="s1">]);</span></p><br /><p class="p3">&nbsp; &nbsp; } <span class="s4">else</span> {</p><br /><p class="p2"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; [</span><span class="s2">LQSession</span><span class="s1"> </span>createAnonymousUserAccountWithUserInfo<span class="s1">:</span><span class="s4">nil</span><span class="s1"> </span>completion<span class="s1">:^(</span><span class="s2">LQSession</span><span class="s1"> *session, </span><span class="s6">NSError</span><span class="s1"> *error) {</span></p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="s4">if</span>(error) {</p><br /><p class="p1"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s5">NSLog</span><span class="s1">(</span>@"ERROR: Failed to create account: %@"<span class="s1">, error);</span></p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <span class="s4">else</span> {</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [<span class="s2">LQSession</span> <span class="s3">setSavedSession</span>:session];</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="s5">NSLog</span>(<span class="s7">@"User ID %@"</span>,[session <span class="s3">userID</span>]);</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [<span class="s2">LQSession</span> <span class="s3">registerForPushNotificationsWithCallback</span>:^(<span class="s6">NSData</span> *deviceToken, <span class="s6">NSError</span> *error) {</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="s4">if</span>(error){</p><br /><p class="p1"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s5">NSLog</span><span class="s1">(</span>@"Failed to register for push tokens: %@"<span class="s1">, error);</span></p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <span class="s4">else</span> {</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="s5">NSLog</span>(<span class="s7">@"Got a push token! %@"</span>, deviceToken);</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="s5">NSLog</span>(<span class="s7">@"GEOLOQI User ID %@"</span>,[session <span class="s3">userID</span>]);</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }];</p><br /><p class="p4"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>// Start tracking</p><br /><p class="p2"><span class="s1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [[</span><span class="s2">LQTracker</span><span class="s1"> </span>sharedTracker<span class="s1">] </span>setProfile<span class="s1">:</span>LQTrackerProfileAdaptive<span class="s1">];</span></p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><br /><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp; }];</p><br /><p class="p3">&nbsp; &nbsp; }</p><br /><p class="p5"><br /></p><br /><p class="p4"><span class="s1">&nbsp; &nbsp; </span>// Tell the SDK the app finished launching so it can properly handle push notifications, etc</p><br /><p class="p2"><span class="s1">&nbsp; &nbsp; [</span><span class="s2">LQSession</span><span class="s1"> </span>application<span class="s1">:application </span>didFinishLaunchingWithOptions<span class="s1">:launchOptions];</span></p></div><img src="http://community.geoloqi.com/uploads/FileUpload/3b/dc0ba5625a27ee2549c404bf8267af.png" alt="image" /><img src="http://community.geoloqi.com/uploads/FileUpload/3b/dc0ba5625a27ee2549c404bf8267af.png" alt="image" /><img src="http://community.geoloqi.com/uploads/FileUpload/3b/dc0ba5625a27ee2549c404bf8267af.png" alt="image" /><img src="http://community.geoloqi.com/uploads/FileUpload/3b/dc0ba5625a27ee2549c404bf8267af.png" alt="image" />]]></description>
+   </item>
+   <item>
+      <title>Developers &gt; Layers &gt; settings tab inaccessible</title>
+      <link>http://community.geoloqi.com/discussion/204/developers-layers-settings-tab-inaccessible</link>
+      <pubDate>Thu, 16 May 2013 11:35:23 -0700</pubDate>
+      <dc:creator>monking</dc:creator>
+      <guid isPermaLink="false">204@/discussions</guid>
+      <description><![CDATA[Clicking the "settings" tab on <a href="http://developers.geoloqi.com/account/layers/XXXX/edit" target="_blank" rel="nofollow">http://developers.geoloqi.com/account/layers/XXXX/edit</a> has no effect.<div><br /></div><div>steps to reproduce</div><div>1) Log in to an account with an application and layer</div><div>2) Click "Your Account" in the top right corner</div><div>3) Click "Layers" in the "Developers" section</div><div>4) Click the "Edit" button on a layer under your application</div><div>5) Click the "Settings" tab on the left panel</div>]]></description>
+   </item>
+   <item>
+      <title>Android - No Location Updates.</title>
+      <link>http://community.geoloqi.com/discussion/203/android-no-location-updates.</link>
+      <pubDate>Thu, 09 May 2013 03:43:07 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">203@/discussions</guid>
+      <description><![CDATA[Finally got it working and registering with titanium. In debug console I can see commands going, but i never see a location update.<div><br /></div><div>During debug I see&nbsp;</div><div><br /><br /><br /><br /><br /><br /><br /><br /><p class="p1">I/TiRootActivity(&nbsp; 426): (main) [0,0] checkpoint, on root activity resume. activity = com.reeldealnetwork.rdnapp.ReeldealnetworkActivity@44fe3780</p><br /><p class="p1">W/LQSharedPreferences(&nbsp; 426): Failed to load geoloqi.properties! Did you create it?</p><br /><p class="p1">W/LQSharedPreferences(&nbsp; 426): Failed to load geoloqi.properties! Did you create it?</p><br /><p class="p1">W/LQSharedPreferences(&nbsp; 426): Failed to load geoloqi.properties! Did you create it?</p><br /><p class="p1">W/LQSharedPreferences(&nbsp; 426): Failed to load geoloqi.properties! Did you create it?</p></div><br /><br /><br /><br /><br /><br /><br /><br />]]></description>
+   </item>
+   <item>
+      <title>Titanium Support.</title>
+      <link>http://community.geoloqi.com/discussion/199/titanium-support.</link>
+      <pubDate>Fri, 03 May 2013 05:00:34 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">199@/discussions</guid>
+      <description><![CDATA[All I can say is I am more than bummed about the dropped support for titanium....was going in to beta in the next week or so for an app/business concept that I have been working on since November....Really liked the Titanium module for the fact of the shared code....I guess it is back to the drawing board...<div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>wake lock does not seems to be working with android SDK</title>
+      <link>http://community.geoloqi.com/discussion/195/wake-lock-does-not-seems-to-be-working-with-android-sdk</link>
+      <pubDate>Sat, 27 Apr 2013 04:41:20 -0700</pubDate>
+      <dc:creator>mdakram24</dc:creator>
+      <guid isPermaLink="false">195@/discussions</guid>
+      <description><![CDATA[<p><span style="font-family: Helvetica, arial, freesans, clean, sans-serif; color: #333333; font-size: small;"><span>I am using&nbsp;</span></span><span style="font-family: Helvetica, arial, freesans, clean, sans-serif; color: #0000ee; font-size: small;"><span><span style="text-decoration: underline;"><a rel="nofollow" href="https://github.com/geoloqi/Geoloqi-Android-SDK">Geoloqi-Android-SDK</a></span></span></span><span style="font-family: Helvetica, arial, freesans, clean, sans-serif; color: #333333; font-size: small;"><span>&nbsp;with some extension.</span></span></p><p>1.added mapview user track on map.<br />2. and a list view to see which provider is generating the fixes.</p><p>but i find out while service is running in background.<br />gps is not getting fixes. might be the case library is not using wake lock concept.</p><p>tell me if i am wrong</p><p>Thanks<br />Akram</p>]]></description>
+   </item>
+   <item>
+      <title>Alloy/Titanium Question.....Android.</title>
+      <link>http://community.geoloqi.com/discussion/194/alloytitanium-question.....android.</link>
+      <pubDate>Fri, 26 Apr 2013 09:34:39 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">194@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Got an app working just fine for IOS I am exporting the geoloqi = require(ti.geoloqi) to a Global Variable, but on the android I cannot get access to the&nbsp;</span><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">.session</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">.tracer etc by referencing the global APP.GEOLOQI</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I get an uncaught type error.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Anyone got a work around?</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div>]]></description>
+   </item>
+   <item>
+      <title>Javascript Library not working?</title>
+      <link>http://community.geoloqi.com/discussion/187/javascript-library-not-working</link>
+      <pubDate>Fri, 05 Apr 2013 14:04:42 -0700</pubDate>
+      <dc:creator>ericironsidegmailcom</dc:creator>
+      <guid isPermaLink="false">187@/discussions</guid>
+      <description><![CDATA[Tried the simple examples for javascript, but it doesn't get past the following line loading the geoloqi library ("t is null'). All other resulting calls result in a "geoloqi is null" error (which makes sense since the library didn't load).<br /><br />&lt;<span class="start-tag">script</span><span class="attribute-name"> type</span>=<span class="attribute-value">"text/javascript" </span><span class="attribute-name">src</span><span>="</span><a rel="nofollow" href="denied:view-source:http://api.geoloqi.com/js/geoloqi.min.js">http://api.geoloqi.com/js/geoloqi.min.js</a><span>"</span>&gt;&lt;/<span class="end-tag">script</span>&gt;<br /><br />What am I doing wrong?<br />]]></description>
+   </item>
+   <item>
+      <title>Trigger/Run - Not generating a push message to the phone</title>
+      <link>http://community.geoloqi.com/discussion/193/triggerrun-not-generating-a-push-message-to-the-phone</link>
+      <pubDate>Wed, 24 Apr 2013 08:26:02 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">193@/discussions</guid>
+      <description><![CDATA[If I understand correctly. If I do a trigger/run. Then it should also send the push notifcation to the phone/app. But I can see that it is queued but I never get a push notification on the phone. &nbsp;Using Titanium. I get this back when I run the Trigger/Run from inside the app....but never see a message on the screen. I.E. Push Notification.<div><br /><div><br /></div><div><div>Response: {</div><div><span class="Apple-tab-span">	</span> &nbsp; &nbsp;message = "Free Small Fry with Purchase of Burger";</div><div><span class="Apple-tab-span">	</span> &nbsp; &nbsp;result = queued;</div><div><span class="Apple-tab-span">	</span> &nbsp; &nbsp;type = message;</div></div><div><br /></div></div>]]></description>
+   </item>
+   <item>
+      <title>android sdk: getting group/create api call to work</title>
+      <link>http://community.geoloqi.com/discussion/190/android-sdk-getting-groupcreate-api-call-to-work</link>
+      <pubDate>Wed, 10 Apr 2013 22:36:43 -0700</pubDate>
+      <dc:creator>rentaow</dc:creator>
+      <guid isPermaLink="false">190@/discussions</guid>
+      <description><![CDATA[I'm coding a project using the android sdk. I want to use the api method call group/create, but in my OnRunApiRequestListener() inner class, onComplete() keeps returning instead of onSuccess(). The error code that I find in logcat is "HTTP/1.1 400 Bad Request". I looked it up on geoloqi's website and the error code said that "Auth token found in GET or POST when token present in header". Not entirely sure what this means, but I think it has something to do with the fact that group/create requires an application access token. I have an application access token, but I don't know where to put it in my project. What do I do?]]></description>
+   </item>
+   <item>
+      <title>Batch place create with &quot;geocode&quot; and &quot;radius&quot; set... incorrect radius</title>
+      <link>http://community.geoloqi.com/discussion/184/batch-place-create-with-geocode-and-radius-set...-incorrect-radius</link>
+      <pubDate>Thu, 28 Mar 2013 06:05:17 -0700</pubDate>
+      <dc:creator>SoftelBE</dc:creator>
+      <guid isPermaLink="false">184@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Hi,</span><div><br /></div><div><span style="font-family: Arial, Verdana; font-size: small;">When using the API creating places in batches with geocode set to an address and radius set to 100. The radius that has actually been set in geoloqi isn't 100. Some of the&nbsp;radiuses are even as large as around 6500m, which gives us a lot of false positives. Was this caused by some changes in your API and how do we fix this?</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Also we have one batch left that needs to be created in Geoloqi and geocoded by Esri but the connection of the API call keeps getting closed&nbsp;unexpectedly by the server. I think this happens for 1 user of the application specifically. Any idea why?</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">Thanks.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">(At the moment we are updating all the places (in batch) for all the users of our application to a radius of 100, which seems to be working. But I have no idea what this is doing in your backend. Of course this isn't a solution to the problem.)</span></div>]]></description>
+   </item>
+   <item>
+      <title>Some Geo fencing messages not getting triggered in Android.</title>
+      <link>http://community.geoloqi.com/discussion/182/some-geo-fencing-messages-not-getting-triggered-in-android.</link>
+      <pubDate>Tue, 26 Mar 2013 09:20:49 -0700</pubDate>
+      <dc:creator>awarrier</dc:creator>
+      <guid isPermaLink="false">182@/discussions</guid>
+      <description><![CDATA[<p>I signed up for a free account with Geo Loqi , downloaded the GEONOTES app on Android.</p><p>Also once i signed up for a new account online, i logged int o my account on the web and created a new Test Layer and added geo fences to that layer. TO test this , i started driving through these geo fences with my GEONOTES APP runnign with GPS and Google Location Services Turned ON, it sent me some messages for ENTRY and EXIT messages, just for one .</p><p>I did not get any messages for any of the other geo fences, even though i did a refresh on my mobile device, even signed out and signed in...still nothing...</p><p>any ideas thoughts on what might be wrong here? Here is the approximate radius i set for all the visually created geo fences</p><p>GEO FENCE RADIUS</p><p>&nbsp;322 meters&nbsp;</p><p>360 meters</p><p>&nbsp;237 meters&nbsp;</p><p>100 meters&nbsp;</p><p>195 meters&nbsp;</p><p>193 meters</p><p>&nbsp;189 meters</p><p>is this a latency issue ?.. I am sure that i have not crossed the 100 limit for FREE Account , since i just started using it.. Then what could be wrong here.?</p>]]></description>
+   </item>
+   <item>
+      <title>Timezone.</title>
+      <link>http://community.geoloqi.com/discussion/181/timezone.</link>
+      <pubDate>Sun, 24 Mar 2013 15:50:10 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">181@/discussions</guid>
+      <description><![CDATA[How do you set the Timezone in Titanium so that a trigger history relfects the devices timezone?]]></description>
+   </item>
+   <item>
+      <title>Forgot password for users</title>
+      <link>http://community.geoloqi.com/discussion/180/forgot-password-for-users</link>
+      <pubDate>Sun, 24 Mar 2013 14:46:52 -0700</pubDate>
+      <dc:creator>Brianbrianfalloncom</dc:creator>
+      <guid isPermaLink="false">180@/discussions</guid>
+      <description><![CDATA[Is there a method for password retrieval if a user forgets a password using:&nbsp;<span>requestSessionWithUsername?</span>]]></description>
+   </item>
+   <item>
+      <title>ti.geoloqi.js exists: false</title>
+      <link>http://community.geoloqi.com/discussion/179/ti.geoloqi.js-exists-false</link>
+      <pubDate>Tue, 19 Mar 2013 07:45:00 -0700</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">179@/discussions</guid>
+      <description><![CDATA[See this when trying to run on emulator and/or device. Program Locks up during geoloqi.init in my app as well as when I run dino deals app.<div><br /></div><div>Any ideas?</div><div><br /></div><div>1.3 version of Module.</div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>Trigger Update</title>
+      <link>http://community.geoloqi.com/discussion/175/trigger-update</link>
+      <pubDate>Thu, 07 Mar 2013 01:21:13 -0800</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">175@/discussions</guid>
+      <description><![CDATA[How can you update a trigger? I.E. If I wanted to change the message or url callback after it is created?]]></description>
+   </item>
+   <item>
+      <title>Geoloqi SDK for Android</title>
+      <link>http://community.geoloqi.com/discussion/176/geoloqi-sdk-for-android</link>
+      <pubDate>Thu, 07 Mar 2013 23:59:04 -0800</pubDate>
+      <dc:creator>nestmy</dc:creator>
+      <guid isPermaLink="false">176@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Programming mistake at the following function</span><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">isPushNotificationHandlingEnabled(Context context)</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">It's not suppose to return true at all times.</span></div>]]></description>
+   </item>
+   <item>
+      <title>&quot;error_description&quot;: &quot;The place with key \\&quot;82\\&quot; was not found&quot;</title>
+      <link>http://community.geoloqi.com/discussion/174/error_description-the-place-with-key-82-was-not-found</link>
+      <pubDate>Thu, 07 Mar 2013 01:19:12 -0800</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">174@/discussions</guid>
+      <description><![CDATA[I am getting this when I try to create a trigger with a place_key.&nbsp;<div><br /></div><div>Here is the Array that is sent with the triggers/create/</div><div><br /></div><div><span>{<br />  "key": "82",<br />  "place_name": "Administrator-20",<br />  "place_layer_id": "4JMc",<br />  "place_key": "82",<br />  "type": "message",<br />  "latitude": "",<br />  "longitude": "",<br />  "radius": "20",<br />  "text": "kkkkkkkk",<br />  "date_to": "",<br />  "time_to": "",<br />  "date_from": "",<br />  "time_from": "",<br />  "trigger_on": "enter",<br />  "trigger_after": 15,<br />  "extra": {<br />    "triggertype": "coupon",<br />    "promocode": null,<br />    "node": null<br />  }<br />}</span></div>]]></description>
+   </item>
+   <item>
+      <title>Triggers show up on Geoloqi Layers Map but not when I issue a triggers/list</title>
+      <link>http://community.geoloqi.com/discussion/171/triggers-show-up-on-geoloqi-layers-map-but-not-when-i-issue-a-triggerslist</link>
+      <pubDate>Fri, 01 Mar 2013 05:46:29 -0800</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">171@/discussions</guid>
+      <description><![CDATA[I am creating triggers via the php api. They show up fine on the layers map at geoloqi (layer 4JMc) but if I issue a triggers/list as teh application, they do not show up.<div><br /></div><div>Also. Is there way to update an existing trigger or do you have to delete and then recreate it?</div><div><br /></div><div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>MUST i replace MapKit with arcGIS?</title>
+      <link>http://community.geoloqi.com/discussion/169/must-i-replace-mapkit-with-arcgis</link>
+      <pubDate>Tue, 26 Feb 2013 08:34:57 -0800</pubDate>
+      <dc:creator>nestmy</dc:creator>
+      <guid isPermaLink="false">169@/discussions</guid>
+      <description><![CDATA[Do I have to replace the MapKit with arcGIS in order for Geoloqi to work??]]></description>
+   </item>
+   <item>
+      <title>message/send not working</title>
+      <link>http://community.geoloqi.com/discussion/168/messagesend-not-working</link>
+      <pubDate>Sun, 24 Feb 2013 06:28:48 -0800</pubDate>
+      <dc:creator>HPdRa1juJ2ePMcF8</dc:creator>
+      <guid isPermaLink="false">168@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">Hi,</span><div><br /></div><div>When I use message/send on the console with these parameters:</div><div><br /></div><div><span style="font-family: Arial, Verdana; font-size: small;">text: test</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">layer_id:&nbsp;4Lk2</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">user_id:&nbsp;2PJy</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">I receive the following return:</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span>{<br />  "</span><span class="attribute">result</span><span>": </span><span class="value"><span class="string">"ok"</span></span><span>,<br />  "</span><span class="attribute">devices</span><span>": </span><span class="value"><span class="number">2</span></span><span>,<br />  "</span><span class="attribute">user</span><span>": </span><span class="value"><span class="string">"udbef124748e595349dc40fba9bbd7f15"</span></span><span>,<br />  "</span><span class="attribute">user_id</span><span>": </span><span class="value"><span class="string">"2PJy"</span><br /></span><span>}</span></div><div><span><br /></span></div><div><span style="font-family: monospace, serif; color: #4d4d4c;"><span>but no push is received by the device. However, if I use message/broadcast to the same layer_id, the device receive the notification.</span></span></div><div><span style="font-family: monospace, serif; color: #4d4d4c;"><span><br /></span></span></div><div><span style="font-family: monospace, serif; color: #4d4d4c;"><span>What may be wrong?</span></span></div><div><span style="font-family: monospace, serif; color: #4d4d4c;"><span><br /></span></span></div><div><span style="font-family: monospace, serif; color: #4d4d4c;"><span>Thanks</span></span></div><div><span style="font-family: monospace, serif; color: #4d4d4c;"><span><br /></span></span></div>]]></description>
+   </item>
+   <item>
+      <title>Getting unlicensed module error.</title>
+      <link>http://community.geoloqi.com/discussion/164/getting-unlicensed-module-error.</link>
+      <pubDate>Sun, 10 Feb 2013 20:09:01 -0800</pubDate>
+      <dc:creator>TQwr1jszr5NZUxMT</dc:creator>
+      <guid isPermaLink="false">164@/discussions</guid>
+      <description><![CDATA[I know it is the GEOLOQI. Config file I am using is working in another project. It is titanium. Any help would be appreciated!<div><br /></div>]]></description>
+   </item>
+   <item>
+      <title>Titanium Geoloqi Plugin - Place/Update does not work</title>
+      <link>http://community.geoloqi.com/discussion/163/titanium-geoloqi-plugin-placeupdate-does-not-work</link>
+      <pubDate>Fri, 01 Feb 2013 04:44:20 -0800</pubDate>
+      <dc:creator>bp4151</dc:creator>
+      <guid isPermaLink="false">163@/discussions</guid>
+      <description><![CDATA[<span style="font-family: Arial, Verdana; font-size: small;">All,</span><div><br /></div><div>I am using Appcelerator Titanium SDK 3.0 and Geoloqi plugin 1.2 for my app. I can see my Geoloqi place/info call, but when I try to make the place/update to change the radius, there is no call made and no error. I see no activity on the phone, no onSuccess or onFailure events triggered, no debug information either on the phone or on the Geoloqi debugger. I tried downgrading to Titanium SDK 2.1.4 with no success.</div><div><br /></div><div><div><span style="font-family: Arial, Verdana; font-size: small;"><br /></span></div><div><span style="font-family: Arial, Verdana; font-size: small;">function UpdatePlace(placeID, radius, latitude, longitude) {</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; Ti.API.log('UpdatePlace');</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; try {</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; geoloqi.session.postRequest("place/update/" + placeID, {</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; radius: radius,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; latitude: latitude,</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; longitude: longitude</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; }, {</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; onSucess: function (data) {</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ti.API.log(JSON.stringify(data));</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert('Alert update was successful!');</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; onFailure: function (data) {</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ti.API.log(JSON.stringify(data));</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert('There was a problem updating the area of your alert.')</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; });</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; } catch (e) {</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; alert(e);</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">&nbsp; &nbsp; }</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">}</span></div></div><div><br /></div><div>Can we either get a fix to the plugin or can someone suggest a workaround to changing the radius of a place?&nbsp;</div><div><br /></div><div>Thanks,</div><div>Bruce</div><div><br /></div><div><br /></div>]]></description>
+   </item>
+   </channel>
+</rss>

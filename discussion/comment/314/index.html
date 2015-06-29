@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>connecting to realtime streaming server with socket.io on iOS - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/81/connecting-to-realtime-streaming-server-with-socket.io-on-ios/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F314">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/bug-reports" class="TabLink">Bug Reports</a></li>
+   </ul>
+   <div class="SubTab">connecting to realtime streaming server with socket.io on iOS</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_81">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/317/bPRj61iJo0Zo3duaK">bPRj61iJo0Zo3duaK</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/81/connecting-to-realtime-streaming-server-with-socket.io-on-ios/p1" class="Permalink" name="Item_1" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I can successfully connect to&nbsp;<div><b style="font-weight: normal; font-size: 10pt;">subscribe.geoloqi.com:443</b><p class="p1" style="font-weight: normal;"><b>The first 'event' I receive is&nbsp;</b><b style="font-size: 10pt;">{"name":"enter authentication"}</b></p><p class="p1" style="font-weight: normal;"><b style="font-size: 10pt;">I have tried to send messages/events back in all kinds of combinations, but have yet to find the magic touch</b></p><p class="p1" style="font-weight: normal;"><b style="font-size: 10pt;">'token', 'trip-TQ4ew3Z'</b></p><p class="p1" style="font-weight: normal;"><b style="font-size: 10pt;">{"token":"trip-TQ4ew3Z"}</b></p><p class="p1" style="font-weight: normal;"><b style="font-size: 10pt;">No matter what I send I can't seem to get a response. &nbsp;What I would expect is that after I send the token/trip I would start receiving location updates for the trip. &nbsp;Is that correct?</b></p><p class="p1" style="font-weight: normal;"><b><br></b></p><p style="font-weight: normal;"></p><br><br><br><br><br><br><br><br></div>		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>3 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/314?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/314?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_254">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/254#Comment_254" class="Permalink" name="Item_2" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I am not super familiar with the socket.io iOS library, but you can check out the Javascript source code that we use on the website here:&nbsp;<a href="https://github.com/geoloqi/geoloqi-js/blob/master/source/geoloqi-sockets.js#L24" target="_blank" rel="nofollow">https://github.com/geoloqi/geoloqi-js/blob/master/source/geoloqi-sockets.js#L24</a><div><br></div><div>What you need to do is send an event of type "token" with a value of "trip-XXXXXXX" or "group-XXXXXXX". At that point, you should start receiving "location" events. I believe you need to first set up a listener for events of type "location" before you receive them.&nbsp;</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_263">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/317/bPRj61iJo0Zo3duaK">bPRj61iJo0Zo3duaK</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/263#Comment_263" class="Permalink" name="Item_3" rel="nofollow">June 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div><span style="font-family: Arial, Verdana; font-size: small;">got it working...</span></div><div><span style="font-family: Arial, Verdana; font-size: small;">emit sends an event along with data, but the socket.io framework only let me send a dictionary of values along with the event.&nbsp;<br>The author of the socket.io ios library I was using pointed me to a fork that sends data with the event (in this case the NSString @"trip-xxxx")</span></div><span style="font-family: Arial, Verdana; font-size: small;"><a rel="nofollow" href="https://github.com/TheFuzzball/socket.IO-objc" target="_blank" style="color: rgb(17, 85, 204); font-family: arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">https://github.com/TheFuzzball/socket.IO-objc</a><span class="s1">&nbsp;&nbsp;</span><span class="s2">if</span><span class="s1"> ([eventType </span><span class="s3">isEqualToString</span><span class="s1">:</span>@"enter authentication"<span class="s1">]) {</span><br><span class="Apple-tab-span" style="white-space:pre">	</span>[socketIO sendEvent:@"token" withData:@"trip-TQ4ew3Z"];<br>&nbsp; &nbsp; }<span style="font-family: Arial, Verdana; font-size: small;"><br></span><span style="font-family: Arial, Verdana; font-size: small;"><br></span><span style="font-family: Arial, Verdana; font-size: small;">Onto my next question...I can get real time location updates for groups &amp; trips found in this link (</span><span style="color: rgb(255, 0, 0); background-color: rgb(245, 245, 245); font-family: Monaco, 'Courier New', monospace; font-size: 12px; text-align: left;"><a href="http://stream.geoloqi.com:40003/group/gXnvkgTXn" target="_blank" rel="nofollow">http://stream.geoloqi.com:40003/group/gXnvkgTXn</a>)</span>, but can't get data for groups I create myself.<br><span style="font-family: Arial, Verdana; font-size: small;">Here's an example group I created:&nbsp;</span>2zbTheQgh</span><span style="font-family: Arial, Verdana; font-size: small;"><a href="http://stream.geoloqi.com:40003/group/2zbTheQgh" target="_blank" rel="nofollow">http://stream.geoloqi.com:40003/group/2zbTheQgh</a></span><div><span style="font-family: Arial, Verdana; font-size: small;">Any idea why my location updates aren't getting sent to the server? &nbsp;I guess better question - how do I get my location updates to the real time streaming server...I know I can pull location updates once they're there, but I don't seem to have access to update location there.</span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div><div><span style="font-family: Arial, Verdana; font-size: small;"><br></span></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_314">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/314#Comment_314" class="Permalink" name="Item_4" rel="nofollow">July 2012</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			It could be that your users are not joined to the group? Make sure you've run the <a rel="nofollow" href="https://developers.geoloqi.com/api/group/join/:token">group/join/:token</a> method for the users you want to show up in the group's stream.&nbsp;<div><br></div><div>The link you found is the experimental streaming HTTP service, which is not the same as the socket.io service. You should be able to connect to the group channel on socket.io by sending a "group-XXXXX" message of the type "token" when you first connect.</div>		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F314%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F314" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F314" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1 Active"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               July 2012            </li>
+                        <li>
+               <strong><a href="/profile/317/bPRj61iJo0Zo3duaK" class="UserLink">bPRj61iJo0Zo3duaK</a></strong>
+               June 2012            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="81" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f249aba3582" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="314" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="FN251A0MGBYX" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/314" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>

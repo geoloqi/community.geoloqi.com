@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Data streaming - Geoloqi Community</title>
+<link rel="stylesheet" type="text/css" href="/themes/geoloqi/design/style.css?v=2.0.18.1" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/FileUpload/design/fileupload.css?v=1.5.2" media="all" />
+<link rel="stylesheet" type="text/css" href="/plugins/Voting/design/voting.css?v=1.1.1b" media="all" />
+<!--[if gt IE 6]><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="/plugins/cleditor/design/jquery.cleditor.css?v=1.1" media="all" /><!-- <![endif]-->
+<link rel="shortcut icon" href="/themes/geoloqi/design/favicon.png" type="image/x-icon" />
+<link rel="canonical" href="http://community.geoloqi.com/discussion/19/data-streaming/p1" />
+<script src="/js/library/jquery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.18.1" type="text/javascript"></script>
+<script src="/plugins/FileUpload/js/fileupload.js?v=1.5.2" type="text/javascript"></script>
+<script src="/plugins/Voting/voting.js?v=1.1.1b" type="text/javascript"></script>
+<!--[if gt IE 6]><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><![endif]-->
+<!--[if !IE]> --><script src="/plugins/cleditor/js/jquery.cleditor.min.js?v=1.1" type="text/javascript"></script><!-- <![endif]-->
+<style type="text/css">
+a.PreviewButton {
+	display: none !important;
+}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// Make sure the removal of autogrow does not break anything
+		jQuery.fn.autogrow = function(o) { return; }
+		// Attach the editor to comment boxes
+		jQuery("#Form_Body").livequery(function() {
+			var frm = $(this).parents("div.CommentForm");
+			ed = jQuery(this).cleditor({width:"100%", height:"100%"})[0];
+			this.editor = ed; // Support other plugins!
+			jQuery(frm).bind("clearCommentForm", {editor:ed}, function(e) {
+				frm.find("textarea").hide();
+				e.data.editor.clear();
+			});
+		});
+	});
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-25750303-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+  <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc" />
+</head>
+<body id="vanilla_discussion_comment" class="Vanilla Discussion comment ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span><img src="http://community.geoloqi.com/uploads/UCF5TIEJOT0K.png" alt="Geoloqi Community" /></span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/irc">IRC</a></li>
+<li class="NonTab"><a href="/entry/signin?Target=discussion%2Fcomment%2F16">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs FirstPage">
+   
+   <ul>
+      <li><a href="/categories/support" class="TabLink">Support</a></li>
+   </ul>
+   <div class="SubTab">Data streaming</div>
+</div>
+<ul class="DataList MessageList Discussion FirstPage">
+   <li class="Item Comment FirstComment" id="Discussion_19">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/20/P5LXD1gxXksKD2t7z">P5LXD1gxXksKD2t7z</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/19/data-streaming/p1" class="Permalink" name="Item_1" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I am trying to make a location-based game based on Mapattack where street runners can interact with web players.<br>It requires location-streaming on web browsers.<br><br>For<br> Mapattack, all data streaming on iphone is perfect, but streaming does <br>not work on web portal(The web portal never update game status after <br>loading).<br><br>By checking debug console, I find a request&nbsp; to '<a rel="nofollow" href="http://subscribe.geoloqi.com:4567/" target="_blank">subscribe.geoloqi.com:4567</a>' is always aborted&nbsp; when web portal is loading.<br><br>What would be the most probable problem here?<br><br>I thought it might be a problem of my network, but I moved my mapattack <br>server (my laptop) to different networks, it does not help either.<br><br>p.s. I can not find documentations of geoloqi streaming API, it makes me struggling when I deal with issues of data streaming.<br><br>If it is not documented currently, could you give me a very brief <br>explanation about how it works, or some references that is worth <br>reading?<br><br>thank you in advance :)		</div>
+         </div>
+</li>
+		<li>
+			<div class="Tabs DiscussionTabs AnswerTabs">
+			<strong>10 Comments</strong> sorted by 
+				<ul>
+					<li class="Active"><a href="http://community.geoloqi.com/discussion/comment/16?Sort=popular" rel="nofollow">Votes</a></li>
+					<li><a href="http://community.geoloqi.com/discussion/comment/16?Sort=date" rel="nofollow">Date Added</a></li>
+				</ul>			</div>
+		</li>
+		<li class="Item Comment Alt" id="Comment_13">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/13#Comment_13" class="Permalink" name="Item_2" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			We're still working on the documentation for our Streaming API. In the mean time you can find some sample code in the geoloqi-js project as well as the MapAttack project.<div><br></div><div><a rel="nofollow" href="https://github.com/geoloqi/geoloqi-js/blob/master/demos/socket.html">https://github.com/geoloqi/geoloqi-js/blob/master/demos/socket.html</a></div><div><br></div><div><a rel="nofollow" href="https://github.com/geoloqi/MapAttack/blob/master/public/mapattack-web.js">https://github.com/geoloqi/MapAttack/blob/master/public/mapattack-web.js</a></div><div><br></div><div>The way the streaming API works from the web is by connecting to the socket.io server at subscribe.geoloqi.com. This is running on port 443 over SSL. Some browsers don't show the WebSockets connection in the debug console, but if you use a browser that doesn't support WebSockets, you should see it fall back to long-polling and you'll see a bunch of requests in the console.</div><div><br></div><div>In your mapattack-web.js file, try changing the connect line to look like this:</div><div><br></div><div><span class="kd" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-weight: bold; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">var</span><span class="Apple-style-span" style="font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);"> </span><span class="nx" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">socket</span><span class="Apple-style-span" style="font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);"> </span><span class="o" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-weight: bold; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">=</span><span class="Apple-style-span" style="font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);"> </span><span class="nx" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">io</span><span class="p" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">.</span><span class="nx" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">connect</span><span class="p" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">(</span><span class="s2" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(221, 17, 68); font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">"<a href="https://subscribe.geoloqi.com:443" target="_blank" rel="nofollow">https://subscribe.geoloqi.com:443</a>"</span><span class="p" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: 'Bitstream Vera Sans Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre; background-color: rgb(255, 255, 255);">);</span></div><div><span class="Apple-style-span" style="font-family: 'Bitstream Vera Sans Mono', Courier, monospace;"><span class="Apple-style-span" style="font-size: 12px; line-height: 16px; white-space: pre;"><br></span></span></div><br><br>I think the problem is that because there is no port specified, the socket.io library is defaulting to the port your Sinatra app is running on.<div><br></div><div>Let me know if that helps!</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_16">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/20/P5LXD1gxXksKD2t7z">P5LXD1gxXksKD2t7z</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/16#Comment_16" class="Permalink" name="Item_3" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			It works like magic! Thank you so much!&nbsp;		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_17">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/20/P5LXD1gxXksKD2t7z">P5LXD1gxXksKD2t7z</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/17#Comment_17" class="Permalink" name="Item_4" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi, <span class="Author"><a rel="nofollow" href="../../profile/2/aaronpk">aaronpk</a>         </span><br>         <span class="DateCreated"><br>            <br><a href="../comment/13#Comment_13" class="Permalink" name="Item_2" rel="nofollow" id="Item_2"></a></span>another question.<br>Is it possible to up stream some information to qeoloqi from web portal (using socket.io)?<br>I want to let online player control virtual objects moving around map and synchronous location of objects to all devices.<br>currently I use ajax as a workaround but the result is not ideal :( <br>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_18">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/18#Comment_18" class="Permalink" name="Item_5" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			There is a way to do this, actually. We do this in MapAttack to push messages to the clients when someone captures a coin.&nbsp;<div><br></div><div>This works by creating a "group" and having all your players join the group. Members of the group have the ability to publish custom messages to the group in addition to receiving all the streaming location information from everyone who has joined the group. You can see this in action in the MapAttack code here:&nbsp;<a href="https://github.com/geoloqi/MapAttack/blob/master/controller.rb#L220" target="_blank" rel="nofollow">https://github.com/geoloqi/MapAttack/blob/master/controller.rb#L220</a></div><div><br></div><div>Whatever JSON you publish to a group will be sent down the stream to anybody listening to that group.</div><div><br></div><div>Hope this helps!</div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_19">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/20/P5LXD1gxXksKD2t7z">P5LXD1gxXksKD2t7z</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/19#Comment_19" class="Permalink" name="Item_6" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			<div><br><br><br><br><br><br><br><br><p class="p1">Thank you very much for your reply</p><br><p class="p2">In Mapattack The data flows this way.</p><p class="p1">mobile client &nbsp; &nbsp;---(udp) --&gt; &nbsp; geoloqi &nbsp; &nbsp;---(socket.io)--&gt; &nbsp; web browser.</p><br><p class="p2"><br></p><br><p class="p1">in my understanding, the web browser is designed to listen to server.</p><br><p class="p2"><br></p><br><p class="p1">but I want data flows this way:</p><br><p class="p1">web browser&nbsp; &nbsp; ---(socket.io) --&gt; &nbsp; geoloqi &nbsp; &nbsp;-----&gt; &nbsp; mobile clients</p><br><p class="p1">browser will not only listen, but also publish data to the group.&nbsp;</p><br><p class="p2"><br></p><br><p class="p1">In mapattack-web.js, I find the code for setting up socket.io connection and listen to 'group' event. <span class="s1">Based on code that code, I have tried to send back a group event to geoloqi:</span></p><br><p class="p3">socket.emit(<span class="s2">'group'</span>, { user_id :<span class="s2">"xxx"</span>,latitude:<span class="s2">"xxx"</span>,longitude:<span class="s2">"xxx"</span>});</p><br><p class="p4"><br></p><br><p class="p3">Will geoloqi response to such a 'group' event? or is there a "geoloqi socket.io API" exists?</p><br><p class="p4"><br></p><br><p class="p3">currently I am using ajax to communicate to game server, then game server publish data to group</p><br><p class="p3">(web browser --(ajax)--&gt; game server --&gt; geoloqi --&gt; mobile clients)</p><br><p class="p3">but http request is not responsive enough for my game</p></div><div><br></div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_21">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/20/P5LXD1gxXksKD2t7z">P5LXD1gxXksKD2t7z</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/21#Comment_21" class="Permalink" name="Item_7" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Hi,&nbsp;<div>This is a bit urgent!</div><div>I suspect your UDP server is not working correctly&nbsp;now. I have to do a demo of my game tomorrow :(</div><div>I am not 100% sure it is your server's problem, but I have some reasons make me believe it is likely your server's problem.</div><div><br></div><div>1) It is not a problem of my game sourcecode:</div><div>To test, I built the totally unmodified sourcecode of mapattack (iphone) and connect to your game server and join game "infinie loop", the UDP do not work.</div><div><br></div><div>2) It is not a problem of my network:&nbsp;</div><div>I build client into iphone(not simulator) and use carrier's 3G network, so it is not behind any firewall or proxy.&nbsp;</div><div><br></div><div><br><br><br><br><br><br><br><br><p class="p1"><b>The massage from console:</b></p><p class="p1"><b>/-[GeoloqiSocketClient onUdpSocket:didSendDataWithTag:] (GeoloqiSocketClient.m:243)&nbsp;</b></p><br><p class="p1"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>[Write] did send</b></p><p class="p1"><b><br></b></p><p class="p1"><b>it just kept sending position data, &nbsp;not receiving anything. It worked perfectly days before, but it suddenly do not work now. Could you check your server once you see this massage? My demo is just hours later...</b></p><p class="p1"><b><br></b></p></div>		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_22">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/22#Comment_22" class="Permalink" name="Item_8" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			I'm looking into this now, can you also hop in our IRC channel? There is info here:&nbsp;<a href="https://community.geoloqi.com/irc/" target="_blank" rel="nofollow">https://community.geoloqi.com/irc/</a>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/23#Comment_23" class="Permalink" name="Item_9" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Can you try changing the host name you're connecting to apollo.geoloqi.com instead of loki.geoloqi.com?&nbsp;		</div>
+         </div>
+</li>
+<li class="Item Comment Alt" id="Comment_24">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a href="/profile/20/P5LXD1gxXksKD2t7z">P5LXD1gxXksKD2t7z</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/24#Comment_24" class="Permalink" name="Item_10" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Thank you for your quick help. but seems&nbsp;not work!<div>I will keep myself updated by watching on IRC!</div>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_25">
+   <div class="Comment">
+      <div class="Meta">
+         <span class="Votes"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteUp SignInPopup"><i class="ArrowSprite SpriteUp" rel="nofollow"><i>Vote Up</i></i></a><span>0</span><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="VoteDown SignInPopup"><i class="ArrowSprite SpriteDown" rel="nofollow"><i>Vote Down</i></i></a></span>         <span class="Author">
+            <a title="aaronpk" href="/profile/2/aaronpk" class="ProfileLink"><img src="http://community.geoloqi.com/uploads/userpics/504/nH4SPOJELL2SX.jpg" alt="aaronpk" class="ProfilePhotoMedium" /></a><a href="/profile/2/aaronpk">aaronpk</a>         </span>
+         <span class="DateCreated">
+            <a href="/discussion/comment/25#Comment_25" class="Permalink" name="Item_11" rel="nofollow">December 2011</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+			Can you give it another try now?		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot">
+      <a href="/entry/signin?Target=discussion%2Fcomment%2F16%3Fpost%23Form_Body" class="TabLink">Add a Comment</a> 
+   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="/entry/signin?Target=discussion%2Fcomment%2F16" class="Button">Sign In</a> <a href="/entry/register?Target=discussion%2Fcomment%2F16" class="Button ApplyButton">Apply for Membership</a></div>   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">340</span></span></li>
+<li class="Depth1"><strong><a href="/categories/bug-reports">Bug Reports</a></strong><span class="Count">89</span></li>
+<li class="Depth1"><strong><a href="/categories/feature-requests">Feature Requests</a></strong><span class="Count">7</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/support">Support</a></strong><span class="Count">88</span></li>
+<li class="Depth1"><strong><a href="/categories/layers">Layers</a></strong><span class="Count">132</span></li>
+<li class="Depth1"><strong><a href="/categories/general">General</a></strong><span class="Count">24</span></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="/profile/2/aaronpk" class="UserLink">aaronpk</a></strong>
+               December 2011            </li>
+                        <li>
+               <strong><a href="/profile/20/P5LXD1gxXksKD2t7z" class="UserLink">P5LXD1gxXksKD2t7z</a></strong>
+               December 2011            </li>
+                     </ul>
+      </div>
+      </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="19" />
+<input type="hidden" id="apcavailable" value="" />
+<input type="hidden" id="uploaderuniq" value="54f249ae70c23" />
+<input type="hidden" id="maxuploadsize" value="31457280" />
+<input type="hidden" id="AnalyticsTask" value="tick" />
+<input type="hidden" id="LastCommentID" value="25" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="A6TS7GZN6HIP" />
+<input type="hidden" id="WebRoot" value="http://community.geoloqi.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="Path" value="discussion/comment/16" />
+<input type="hidden" id="SignedIn" value="0" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>
