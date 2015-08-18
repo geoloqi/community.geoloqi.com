@@ -16,7 +16,7 @@
       <pubDate>Wed, 20 Nov 2013 21:17:25 -0800</pubDate>
       <dc:creator>oyvind</dc:creator>
       <guid isPermaLink="false">3254@/discussions</guid>
-      <description><![CDATA[<div class="method-subsection method-declaration"><span>According to the documentation here:&nbsp;</span><span style="font-family: Lucida Grande, Geneva, Helvetica, Arial, sans-serif; font-size: small;"><a href="https://developers.geoloqi.com/ios/docs/Classes/LQSession.html" target="_blank" rel="nofollow">https://developers.geoloqi.com/ios/docs/Classes/LQSession.html</a> for LQSession.handlePush method:</span></div><blockquote><div class="method-subsection method-declaration"><span>If a push notification is received when your app is in the foreground, you can call this method from the app delegate and the SDK will handle everything for you</span></div></blockquote><span style="font-family: Lucida Grande, Geneva, Helvetica, Arial, sans-serif; font-size: small;">When the app is running and I delegate to this method is displays an alert view with "View" and "Close" buttons. &nbsp;How do I do something in response to the user tapping "View" button.</span>]]></description>
+      <description><![CDATA[<div class="method-subsection method-declaration"><span>According to the documentation here:&nbsp;</span><span style="font-family: Lucida Grande, Geneva, Helvetica, Arial, sans-serif; font-size: small;"><a href="http://developers.geoloqi.com/ios/docs/Classes/LQSession.html" target="_blank" rel="nofollow">http://developers.geoloqi.com/ios/docs/Classes/LQSession.html</a> for LQSession.handlePush method:</span></div><blockquote><div class="method-subsection method-declaration"><span>If a push notification is received when your app is in the foreground, you can call this method from the app delegate and the SDK will handle everything for you</span></div></blockquote><span style="font-family: Lucida Grande, Geneva, Helvetica, Arial, sans-serif; font-size: small;">When the app is running and I delegate to this method is displays an alert view with "View" and "Close" buttons. &nbsp;How do I do something in response to the user tapping "View" button.</span>]]></description>
    </item>
    <item>
       <title>How to limit the number of push per day</title>
@@ -32,7 +32,7 @@
       <pubDate>Mon, 15 Apr 2013 05:34:47 -0700</pubDate>
       <dc:creator>awarzon</dc:creator>
       <guid isPermaLink="false">191@/discussions</guid>
-      <description><![CDATA[All of the links from&nbsp;<a href="https://developers.geoloqi.com/titanium" target="_blank" rel="nofollow">https://developers.geoloqi.com/titanium</a> to download the Geoloqi module on the Titanium marketplace are broken. They give 404 page not found errors. When I search the Titanium marketplace for "geoloqi" I get no results.<div><br /></div><div>Where is the Geoloqi Titanium module? Thanks.</div>]]></description>
+      <description><![CDATA[All of the links from&nbsp;<a href="http://developers.geoloqi.com/titanium" target="_blank" rel="nofollow">http://developers.geoloqi.com/titanium</a> to download the Geoloqi module on the Titanium marketplace are broken. They give 404 page not found errors. When I search the Titanium marketplace for "geoloqi" I get no results.<div><br /></div><div>Where is the Geoloqi Titanium module? Thanks.</div>]]></description>
    </item>
    <item>
       <title>GeoLoqi Server Lag problem Android</title>

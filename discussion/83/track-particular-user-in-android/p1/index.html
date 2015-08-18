@@ -105,7 +105,7 @@ a.PreviewButton {
                      </div>
                </div>
       <div class="Message">
-			If you start up the LQService provided by the Android SDK it will automatically begin tracking the user in the Adaptive profile. If the device has an active network connection it will begin delivering location updates to the Geoloqi servers. You can query for those updates using the Geoloqi REST API.<br><br><a href="https://developers.geoloqi.com/android" target="_blank" rel="nofollow">https://developers.geoloqi.com/android</a><br>		</div>
+			If you start up the LQService provided by the Android SDK it will automatically begin tracking the user in the Adaptive profile. If the device has an active network connection it will begin delivering location updates to the Geoloqi servers. You can query for those updates using the Geoloqi REST API.<br><br><a href="http://developers.geoloqi.com/android" target="_blank" rel="nofollow">http://developers.geoloqi.com/android</a><br>		</div>
          </div>
 </li>
 <li class="Item Comment" id="Comment_264">
@@ -119,7 +119,7 @@ a.PreviewButton {
                      </div>
                </div>
       <div class="Message">
-			You can use the `<a rel="nofollow" href="https://developers.geoloqi.com/api/location/last">location/last</a>` API endpoint to get the user's last location update. All you need to provide is that user's id. Simply sign the request with your application access token. This works because the application created that user.<br><br>You may also be interested in the `<a rel="nofollow" href="https://developers.geoloqi.com/api/location/history">location/history</a>` endpoint. This works exactly the same way as above but returns a paginated list of all the user's location updates.<br>		</div>
+			You can use the `<a rel="nofollow" href="http://developers.geoloqi.com/api/location/last">location/last</a>` API endpoint to get the user's last location update. All you need to provide is that user's id. Simply sign the request with your application access token. This works because the application created that user.<br><br>You may also be interested in the `<a rel="nofollow" href="http://developers.geoloqi.com/api/location/history">location/history</a>` endpoint. This works exactly the same way as above but returns a paginated list of all the user's location updates.<br>		</div>
          </div>
 </li>
 <li class="Item Comment Alt" id="Comment_267">
@@ -147,7 +147,7 @@ a.PreviewButton {
                      </div>
                </div>
       <div class="Message">
-			You cannot use the API console to access this user's data. This is because the user was created by your application, not your developer account. You'll need to make a request to the Geoloqi API using your application credentials. You can do this using "curl" or one of our other client library projects (Python, Ruby, etc). Just make sure you use the same app credentials as you used with the Android SDK.<br><br><a href="https://developers.geoloqi.com/client-libraries" target="_blank" rel="nofollow">https://developers.geoloqi.com/client-libraries</a><br>		</div>
+			You cannot use the API console to access this user's data. This is because the user was created by your application, not your developer account. You'll need to make a request to the Geoloqi API using your application credentials. You can do this using "curl" or one of our other client library projects (Python, Ruby, etc). Just make sure you use the same app credentials as you used with the Android SDK.<br><br><a href="http://developers.geoloqi.com/client-libraries" target="_blank" rel="nofollow">http://developers.geoloqi.com/client-libraries</a><br>		</div>
          </div>
 </li>
 <li class="Item Comment Alt" id="Comment_259">
@@ -245,7 +245,7 @@ a.PreviewButton {
                      </div>
                </div>
       <div class="Message">
-			The Geoloqi Android SDK requires an active network connection to initialize itself. Once a valid session has been created, it can continue functioning even if the network connection drops.<br><br>Unfortunately, there isn't a good way to catch the exception that is thrown when the session fails to initialize the anonymous user account. Since this work is being done autonomously by the service, it's difficult to access directly from your Activity code.<br><br>You can check the state of the user session in several ways. Either by binding to the service and querying the getter methods of the tracker session; or by querying the static LQSharedPreferences getter methods, such as `<a rel="nofollow" href="https://developers.geoloqi.com/android/docs/com/geoloqi/android/sdk/LQSharedPreferences.html#getSessionAccessToken%28android.content.Context%29">getSessionAccessToken</a>`. If there is no access token, then the service has failed to create an anonymous user account. I'd suggest checking the network state before you start the LQService class and alerting your user if there is not an active connection.<br><br>We're working on making this initialization process smoother and may do something in the future to allow you to bind a callback to the service initialization process so you know when it's finished.<br>		</div>
+			The Geoloqi Android SDK requires an active network connection to initialize itself. Once a valid session has been created, it can continue functioning even if the network connection drops.<br><br>Unfortunately, there isn't a good way to catch the exception that is thrown when the session fails to initialize the anonymous user account. Since this work is being done autonomously by the service, it's difficult to access directly from your Activity code.<br><br>You can check the state of the user session in several ways. Either by binding to the service and querying the getter methods of the tracker session; or by querying the static LQSharedPreferences getter methods, such as `<a rel="nofollow" href="http://developers.geoloqi.com/android/docs/com/geoloqi/android/sdk/LQSharedPreferences.html#getSessionAccessToken%28android.content.Context%29">getSessionAccessToken</a>`. If there is no access token, then the service has failed to create an anonymous user account. I'd suggest checking the network state before you start the LQService class and alerting your user if there is not an active connection.<br><br>We're working on making this initialization process smoother and may do something in the future to allow you to bind a callback to the service initialization process so you know when it's finished.<br>		</div>
          </div>
 </li>
 </ul>
